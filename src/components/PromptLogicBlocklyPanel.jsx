@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as Blockly from "blockly";
 import { javascriptGenerator } from "blockly/javascript";
+import * as BlocklyRu from "blockly/msg/ru";
 import {
   BLOCKLY_CONTEXT_PRESETS,
   DEFAULT_BLOCKLY_CONTEXT,
@@ -38,6 +39,7 @@ function PromptLogicBlocklyPanel({
   const [sourceJsonText, setSourceJsonText] = useState("");
   const [workspaceHeight, setWorkspaceHeight] = useState(loadBlocklyHeight);
   const [expanded, setExpanded] = useState(loadBlocklyExpanded);
+  const [toast, setToast] = useState(null);
 
   const toolbox = useMemo(
     () => ({
@@ -77,6 +79,7 @@ function PromptLogicBlocklyPanel({
   useEffect(() => {
     blockOptionsProvider = () => toDropdownOptions(blocks);
     sequenceOptionsProvider = () => toDropdownOptions(sequences);
+    Blockly.setLocale(BlocklyRu);
     registerCustomBlocks();
   }, [blocks, sequences]);
 
@@ -200,8 +203,10 @@ function PromptLogicBlocklyPanel({
         workspaceXml,
         context: runtimeContext,
       });
+      showToast(`Applied ${composition.length} block(s) with ${mergeStrategy}`, "success");
     } catch (error) {
       setRunError(error.message || "Blockly execution failed");
+      showToast(error.message || "Blockly execution failed", "error");
     }
   }
 
@@ -212,6 +217,7 @@ function PromptLogicBlocklyPanel({
     setRunError("");
     if (onClearActiveComposition) onClearActiveComposition();
     if (onWorkspaceXmlChange) onWorkspaceXmlChange(DEFAULT_BLOCKLY_WORKSPACE_XML);
+    showToast("Workspace reset to default", "info");
   }
 
   function handleContextPreset(value) {
@@ -233,16 +239,19 @@ function PromptLogicBlocklyPanel({
     setRunError("");
     if (!sourceJsonText.trim()) {
       setRunError("JSON source is empty");
+      showToast("JSON source is empty", "error");
       return;
     }
     const parsed = safeParseJson(sourceJsonText);
     if (!parsed.ok) {
       setRunError(`JSON parse error: ${parsed.error}`);
+      showToast("JSON parse error", "error");
       return;
     }
 
     const plan = buildPlanFromJson(parsed.value, blocks);
     applyPlanToWorkspace(plan);
+    showToast(`Auto-mapped ${plan.blockIds.length} block(s)`, "success");
   }
 
   function applyPlanToWorkspace(plan) {
@@ -251,6 +260,44 @@ function PromptLogicBlocklyPanel({
     const xml = buildWorkspaceXml(plan);
     restoreWorkspace(workspace, xml);
     if (onWorkspaceXmlChange) onWorkspaceXmlChange(xml);
+  }
+
+  function handleExportXml() {
+    const workspace = workspaceRef.current;
+    if (!workspace) return;
+    const xml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(workspace));
+    const blob = new Blob([xml], { type: "text/xml" });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "mmss_blockly_workspace.xml";
+    anchor.click();
+    URL.revokeObjectURL(url);
+    showToast("Workspace XML exported", "success");
+  }
+
+  async function handleImportXml(file) {
+    if (!file) return;
+    try {
+      const xmlText = await file.text();
+      const workspace = workspaceRef.current;
+      if (!workspace) return;
+      restoreWorkspace(workspace, xmlText);
+      if (onWorkspaceXmlChange) onWorkspaceXmlChange(xmlText);
+      setRunError("");
+      showToast("Workspace XML imported", "success");
+    } catch (error) {
+      setRunError(error.message || "XML import failed");
+      showToast("XML import failed", "error");
+    }
+  }
+
+  function showToast(message, type = "success") {
+    setToast({ message, type });
+    window.clearTimeout(showToast.timerId);
+    showToast.timerId = window.setTimeout(() => {
+      setToast(null);
+    }, 2800);
   }
 
   return (
@@ -343,10 +390,25 @@ function PromptLogicBlocklyPanel({
         <button className="accent-action" onClick={handleApply}>
           Apply Blocks
         </button>
+        <button onClick={handleAutoMapJson}>Auto-map JSON</button>
         <button onClick={handleReset}>Reset Workspace</button>
+        <button onClick={handleExportXml}>Export XML</button>
+        <label className="blockly-file-btn">
+          Import XML
+          <input
+            type="file"
+            accept=".xml,text/xml"
+            onChange={(event) => {
+              const file = event.target.files?.[0];
+              handleImportXml(file);
+              event.currentTarget.value = "";
+            }}
+          />
+        </label>
       </div>
 
       {runError ? <div className="json-error">Blockly error: {runError}</div> : null}
+      {toast ? <div className={`blockly-toast ${toast.type}`}>{toast.message}</div> : null}
     </div>
   );
 }
@@ -608,4 +670,3 @@ function registerCustomBlocks() {
 }
 
 export default PromptLogicBlocklyPanel;
-

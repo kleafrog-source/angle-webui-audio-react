@@ -315,6 +315,63 @@
   cursor: pointer;
 }
 
+.blockly-file-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  padding: 8px 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.blockly-file-btn input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.blockly-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10000;
+  padding: 10px 14px;
+  border-radius: 14px;
+  color: #f5f7fb;
+  font-size: 0.84rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.26);
+  animation: blockly-toast-in 180ms ease-out;
+}
+
+.blockly-toast.success {
+  background: #2a7f6e;
+}
+
+.blockly-toast.error {
+  background: #b33838;
+}
+
+.blockly-toast.info {
+  background: #3b5f8f;
+}
+
+@keyframes blockly-toast-in {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .compact-transport-bar {
   display: grid;
   gap: 14px;
