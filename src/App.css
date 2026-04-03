@@ -184,6 +184,44 @@
   gap: 10px;
 }
 
+.blockly-quick-tools,
+.blockly-size-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.blockly-quick-tools > span,
+.blockly-size-controls > span {
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blockly-quick-tools button,
+.blockly-size-controls button {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.blockly-size-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.blockly-size-controls input[type="range"] {
+  width: 160px;
+}
+
 .blockly-header p {
   margin: 6px 0 0;
   color: var(--muted);
@@ -216,12 +254,50 @@
 
 .blockly-workspace {
   width: 100%;
-  min-height: 420px;
-  max-height: 500px;
+  min-height: 300px;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
   background: rgba(5, 9, 16, 0.75);
+}
+
+.blockly-workspace.expanded {
+  min-height: 620px;
+}
+
+.blockly-json-map {
+  display: grid;
+  gap: 8px;
+}
+
+.blockly-json-map label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.blockly-json-map textarea {
+  width: 100%;
+  min-height: 96px;
+  max-height: 190px;
+  resize: vertical;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  font: inherit;
+}
+
+.blockly-json-map button {
+  justify-self: start;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  padding: 8px 10px;
+  cursor: pointer;
 }
 
 .blockly-footer {
@@ -1663,9 +1739,13 @@
     grid-template-columns: 1fr;
   }
 
-  .blockly-workspace {
-    min-height: 300px;
-    max-height: 350px;
+  .blockly-size-controls label {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .blockly-size-controls input[type="range"] {
+    width: 100%;
   }
 
   .mini-strip-head,

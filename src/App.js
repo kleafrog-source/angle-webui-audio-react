@@ -1016,6 +1016,11 @@ function App() {
                           <PromptLogicBlocklyPanel
                             blocks={state.promptLibrary.blocks}
                             sequences={state.promptLibrary.sequences}
+                            sourceJson={
+                              selectedBlock?.payload?.data ||
+                              state.promptLibrary.activeComposition.combinedJson?.data ||
+                              state.promptLibrary.activeComposition.combinedJson
+                            }
                             initialContext={state.promptLibrary.activeComposition.context || DEFAULT_BLOCKLY_CONTEXT}
                             initialWorkspaceXml={
                               state.promptLibrary.activeComposition.blocklyWorkspaceXml ||

@@ -8,6 +8,9 @@ import {
 } from "../mmss/promptTypes";
 import { DEFAULT_BLOCKLY_WORKSPACE_XML } from "../mmss/promptLibrary";
 
+const BLOCKLY_HEIGHT_STORAGE_KEY = "mmss.blockly.height.v1";
+const BLOCKLY_EXPANDED_STORAGE_KEY = "mmss.blockly.expanded.v1";
+
 let customBlocksRegistered = false;
 let blockOptionsProvider = () => [["No blocks", "__none__"]];
 let sequenceOptionsProvider = () => [["No sequences", "__none__"]];
@@ -15,6 +18,7 @@ let sequenceOptionsProvider = () => [["No sequences", "__none__"]];
 function PromptLogicBlocklyPanel({
   blocks,
   sequences,
+  sourceJson,
   onSetActiveComposition,
   onClearActiveComposition,
   initialContext,
@@ -31,6 +35,9 @@ function PromptLogicBlocklyPanel({
   }));
   const [selectedPreset, setSelectedPreset] = useState("neuro_dark");
   const [runError, setRunError] = useState("");
+  const [sourceJsonText, setSourceJsonText] = useState("");
+  const [workspaceHeight, setWorkspaceHeight] = useState(loadBlocklyHeight);
+  const [expanded, setExpanded] = useState(loadBlocklyExpanded);
 
   const toolbox = useMemo(
     () => ({
@@ -74,6 +81,16 @@ function PromptLogicBlocklyPanel({
   }, [blocks, sequences]);
 
   useEffect(() => {
+    if (sourceJson == null) return;
+    try {
+      const text = typeof sourceJson === "string" ? sourceJson : JSON.stringify(sourceJson, null, 2);
+      setSourceJsonText(text || "");
+    } catch {
+      setSourceJsonText("");
+    }
+  }, [sourceJson]);
+
+  useEffect(() => {
     registerCustomBlocks();
     if (!containerRef.current || workspaceRef.current) return;
     const workspace = Blockly.inject(containerRef.current, {
@@ -103,8 +120,8 @@ function PromptLogicBlocklyPanel({
       try {
         const xml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(workspace));
         onWorkspaceXmlChangeRef.current(xml);
-      } catch (error) {
-        // Keep runtime stable even if workspace XML conversion fails.
+      } catch {
+        // keep editor stable
       }
     };
     workspace.addChangeListener(changeListener);
@@ -122,6 +139,20 @@ function PromptLogicBlocklyPanel({
       ...(initialContext || {}),
     }));
   }, [initialContext]);
+
+  useEffect(() => {
+    window.localStorage.setItem(BLOCKLY_HEIGHT_STORAGE_KEY, String(workspaceHeight));
+  }, [workspaceHeight]);
+
+  useEffect(() => {
+    window.localStorage.setItem(BLOCKLY_EXPANDED_STORAGE_KEY, expanded ? "1" : "0");
+  }, [expanded]);
+
+  useEffect(() => {
+    const workspace = workspaceRef.current;
+    if (!workspace) return;
+    setTimeout(() => Blockly.svgResize(workspace), 0);
+  }, [workspaceHeight, expanded]);
 
   function handleApply() {
     const workspace = workspaceRef.current;
@@ -193,23 +224,75 @@ function PromptLogicBlocklyPanel({
     }));
   }
 
+  function handleTemplate(templateId) {
+    const plan = buildTemplatePlan(templateId, blocks);
+    applyPlanToWorkspace(plan);
+  }
+
+  function handleAutoMapJson() {
+    setRunError("");
+    if (!sourceJsonText.trim()) {
+      setRunError("JSON source is empty");
+      return;
+    }
+    const parsed = safeParseJson(sourceJsonText);
+    if (!parsed.ok) {
+      setRunError(`JSON parse error: ${parsed.error}`);
+      return;
+    }
+
+    const plan = buildPlanFromJson(parsed.value, blocks);
+    applyPlanToWorkspace(plan);
+  }
+
+  function applyPlanToWorkspace(plan) {
+    const workspace = workspaceRef.current;
+    if (!workspace) return;
+    const xml = buildWorkspaceXml(plan);
+    restoreWorkspace(workspace, xml);
+    if (onWorkspaceXmlChange) onWorkspaceXmlChange(xml);
+  }
+
   return (
     <div className="blockly-panel">
       <div className="blockly-header">
         <div>
           <strong>Prompt Logic Blockly</strong>
-          <p>
-            Visual rule layer for active composition. Build flow with blocks, then apply to
-            Prompt Library.
-          </p>
+          <p>Build composition visually, then apply to Prompt Library state.</p>
         </div>
+
+        <div className="blockly-quick-tools">
+          <span>Patterns</span>
+          <button onClick={() => handleTemplate("lyrics_arc")}>Lyrics Arc</button>
+          <button onClick={() => handleTemplate("technical_stack")}>Technical Stack</button>
+          <button onClick={() => handleTemplate("visual_pulse")}>Visual Pulse</button>
+          <button onClick={() => handleTemplate("balanced_mix")}>Balanced Mix</button>
+        </div>
+
+        <div className="blockly-size-controls">
+          <span>Workspace</span>
+          <button onClick={() => setWorkspaceHeight((h) => Math.max(300, h - 40))}>-</button>
+          <button onClick={() => setWorkspaceHeight((h) => Math.min(920, h + 40))}>+</button>
+          <button onClick={() => setExpanded((value) => !value)}>
+            {expanded ? "Compact" : "Expand"}
+          </button>
+          <label>
+            Height
+            <input
+              type="range"
+              min={300}
+              max={920}
+              step={10}
+              value={workspaceHeight}
+              onChange={(event) => setWorkspaceHeight(Number(event.target.value) || 460)}
+            />
+          </label>
+        </div>
+
         <div className="blockly-context-controls">
           <label>
             Context preset
-            <select
-              value={selectedPreset}
-              onChange={(event) => handleContextPreset(event.target.value)}
-            >
+            <select value={selectedPreset} onChange={(event) => handleContextPreset(event.target.value)}>
               {Object.keys(BLOCKLY_CONTEXT_PRESETS).map((key) => (
                 <option key={key} value={key}>
                   {key}
@@ -236,20 +319,46 @@ function PromptLogicBlocklyPanel({
             />
           </label>
         </div>
+
+        <div className="blockly-json-map">
+          <label>
+            Auto-map JSON to Blockly
+            <textarea
+              value={sourceJsonText}
+              onChange={(event) => setSourceJsonText(event.target.value)}
+              placeholder="Paste JSON and click Auto-map"
+            />
+          </label>
+          <button onClick={handleAutoMapJson}>Auto-map JSON</button>
+        </div>
       </div>
 
-      <div className="blockly-workspace" ref={containerRef} />
+      <div
+        className={`blockly-workspace ${expanded ? "expanded" : ""}`}
+        style={{ height: `${workspaceHeight}px` }}
+        ref={containerRef}
+      />
 
       <div className="blockly-footer">
         <button className="accent-action" onClick={handleApply}>
-          Применить блоки
+          Apply Blocks
         </button>
-        <button onClick={handleReset}>Сбросить</button>
+        <button onClick={handleReset}>Reset Workspace</button>
       </div>
 
       {runError ? <div className="json-error">Blockly error: {runError}</div> : null}
     </div>
   );
+}
+
+function loadBlocklyHeight() {
+  const raw = Number(window.localStorage.getItem(BLOCKLY_HEIGHT_STORAGE_KEY));
+  if (!Number.isFinite(raw)) return 460;
+  return Math.max(300, Math.min(920, raw));
+}
+
+function loadBlocklyExpanded() {
+  return window.localStorage.getItem(BLOCKLY_EXPANDED_STORAGE_KEY) === "1";
 }
 
 function toDropdownOptions(items) {
@@ -262,10 +371,160 @@ function restoreWorkspace(workspace, xmlText) {
   try {
     const dom = Blockly.utils.xml.textToDom(xmlText || DEFAULT_BLOCKLY_WORKSPACE_XML);
     Blockly.Xml.domToWorkspace(dom, workspace);
-  } catch (error) {
+  } catch {
     const fallback = Blockly.utils.xml.textToDom(DEFAULT_BLOCKLY_WORKSPACE_XML);
     Blockly.Xml.domToWorkspace(fallback, workspace);
   }
+}
+
+function buildTemplatePlan(templateId, blocks) {
+  if (!Array.isArray(blocks) || !blocks.length) {
+    return { mergeStrategy: "merge_deep", blockIds: [] };
+  }
+  if (templateId === "lyrics_arc") {
+    return {
+      mergeStrategy: "concat",
+      blockIds: takeByPredicate(blocks, (block) => hasTag(block, ["lyric", "lfe", "text"]), 8),
+    };
+  }
+  if (templateId === "technical_stack") {
+    return {
+      mergeStrategy: "merge_deep",
+      blockIds: takeByPredicate(
+        blocks,
+        (block) => hasTag(block, ["audio", "eq", "mix", "filter", "phase", "compression"]),
+        8
+      ),
+    };
+  }
+  if (templateId === "visual_pulse") {
+    return {
+      mergeStrategy: "merge_shallow",
+      blockIds: takeByPredicate(
+        blocks,
+        (block) => hasTag(block, ["visual", "shader", "color", "orbit", "stage", "image"]),
+        8
+      ),
+    };
+  }
+  return {
+    mergeStrategy: "merge_deep",
+    blockIds: blocks
+      .slice()
+      .sort((a, b) => (b.tags?.length || 0) - (a.tags?.length || 0))
+      .slice(0, 8)
+      .map((block) => block.id),
+  };
+}
+
+function buildPlanFromJson(value, blocks) {
+  const tokens = collectJsonTokens(value);
+  const scored = blocks
+    .map((block) => ({
+      id: block.id,
+      score: scoreBlockAgainstTokens(block, tokens),
+    }))
+    .sort((a, b) => b.score - a.score);
+  const selected = scored.filter((item) => item.score > 0).slice(0, 10).map((item) => item.id);
+  const blockIds = selected.length ? selected : blocks.slice(0, 6).map((block) => block.id);
+  const mergeStrategy = inferMergeStrategy(value, tokens);
+  return { mergeStrategy, blockIds };
+}
+
+function buildWorkspaceXml(plan) {
+  const strategy = MERGE_STRATEGIES.includes(plan?.mergeStrategy) ? plan.mergeStrategy : "merge_deep";
+  const ids = Array.isArray(plan?.blockIds) ? plan.blockIds.filter(Boolean).slice(0, 20) : [];
+
+  let chain = "";
+  for (let index = ids.length - 1; index >= 0; index -= 1) {
+    chain = `<next><block type="mmss_add_block"><field name="BLOCK_ID">${escapeXml(
+      ids[index]
+    )}</field>${chain}</block></next>`;
+  }
+
+  return `<xml xmlns="https://developers.google.com/blockly/xml"><block type="mmss_set_merge_strategy" x="24" y="24"><field name="MERGE_STRATEGY">${strategy}</field>${chain}</block></xml>`;
+}
+
+function collectJsonTokens(value) {
+  const tokens = new Set();
+  collectTokens(value, tokens, 0);
+  return tokens;
+}
+
+function collectTokens(value, out, depth) {
+  if (depth > 6 || out.size > 320) return;
+  if (Array.isArray(value)) {
+    value.forEach((item) => collectTokens(item, out, depth + 1));
+    return;
+  }
+  if (value && typeof value === "object") {
+    Object.entries(value).forEach(([key, child]) => {
+      tokenize(key).forEach((token) => out.add(token));
+      collectTokens(child, out, depth + 1);
+    });
+    return;
+  }
+  if (typeof value === "string") {
+    tokenize(value).forEach((token) => out.add(token));
+  }
+}
+
+function tokenize(text) {
+  return String(text || "")
+    .toLowerCase()
+    .split(/[^a-z0-9_]+/g)
+    .filter((token) => token.length > 2);
+}
+
+function scoreBlockAgainstTokens(block, tokens) {
+  if (!tokens?.size) return 0;
+  const local = new Set([
+    ...tokenize(block.name),
+    ...tokenize(block.category),
+    ...tokenize((block.tags || []).join(" ")),
+  ]);
+  let score = 0;
+  local.forEach((token) => {
+    if (tokens.has(token)) score += token.length > 7 ? 3 : 2;
+  });
+  if (tokens.has("lyrics") && hasTag(block, ["lyric", "lfe", "text"])) score += 2;
+  if (tokens.has("visual") && hasTag(block, ["visual", "shader", "color"])) score += 2;
+  if (tokens.has("audio") && hasTag(block, ["audio", "mix", "eq", "phase"])) score += 2;
+  return score;
+}
+
+function inferMergeStrategy(value, tokens) {
+  if (Array.isArray(value)) return "concat";
+  if (tokens.has("lyrics") || tokens.has("text") || tokens.has("archive")) return "concat";
+  if (tokens.has("visual") || tokens.has("metadata")) return "merge_shallow";
+  return "merge_deep";
+}
+
+function hasTag(block, fragments) {
+  const haystack = `${block.name || ""} ${block.category || ""} ${(block.tags || []).join(" ")}`.toLowerCase();
+  return fragments.some((token) => haystack.includes(token));
+}
+
+function takeByPredicate(blocks, predicate, limit) {
+  const picked = blocks.filter(predicate).slice(0, limit).map((block) => block.id);
+  if (picked.length) return picked;
+  return blocks.slice(0, Math.min(limit, blocks.length)).map((block) => block.id);
+}
+
+function safeParseJson(text) {
+  try {
+    return { ok: true, value: JSON.parse(text) };
+  } catch (error) {
+    return { ok: false, error: error.message };
+  }
+}
+
+function escapeXml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 function registerCustomBlocks() {
@@ -349,3 +608,4 @@ function registerCustomBlocks() {
 }
 
 export default PromptLogicBlocklyPanel;
+
