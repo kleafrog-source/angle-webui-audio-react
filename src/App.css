@@ -170,6 +170,75 @@
   overflow: auto;
 }
 
+.blockly-panel-shell {
+  overflow: hidden;
+}
+
+.blockly-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.blockly-header {
+  display: grid;
+  gap: 10px;
+}
+
+.blockly-header p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.blockly-context-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.blockly-context-controls label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.blockly-context-controls input,
+.blockly-context-controls select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+}
+
+.blockly-workspace {
+  width: 100%;
+  min-height: 420px;
+  max-height: 500px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  background: rgba(5, 9, 16, 0.75);
+}
+
+.blockly-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.blockly-footer button {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
 .compact-transport-bar {
   display: grid;
   gap: 14px;
@@ -1588,6 +1657,15 @@
   .batch-export-row,
   .library-step-actions {
     grid-template-columns: 1fr;
+  }
+
+  .blockly-context-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .blockly-workspace {
+    min-height: 300px;
+    max-height: 350px;
   }
 
   .mini-strip-head,

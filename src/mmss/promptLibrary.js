@@ -1,6 +1,10 @@
+import { DEFAULT_BLOCKLY_CONTEXT, MERGE_STRATEGIES } from "./promptTypes";
 const PROMPT_LIBRARY_SCHEMA_VERSION = 1;
 export const PROMPT_LIBRARY_STORAGE_KEY = "mmss.promptLibrary.v1";
 export const PROMPT_BINDING_BUTTONS = Array.from({ length: 16 }, (_, index) => `slot_${index + 1}`);
+
+export const DEFAULT_BLOCKLY_WORKSPACE_XML =
+  '<xml xmlns="https://developers.google.com/blockly/xml"><block type="mmss_set_merge_strategy" x="24" y="24"><field name="MERGE_STRATEGY">merge_deep</field><next><block type="mmss_add_block"></block></next></block></xml>';
 
 /**
  * @typedef {Object} PromptJsonBlock
@@ -163,6 +167,7 @@ export function reducePromptLibrary(state, action) {
         activeComposition: {
           ...state.activeComposition,
           blockIds: [...state.activeComposition.blockIds, action.blockId],
+          source: "manual",
         },
       });
 
@@ -172,6 +177,7 @@ export function reducePromptLibrary(state, action) {
         activeComposition: {
           ...state.activeComposition,
           blockIds: state.activeComposition.blockIds.filter((_, index) => index !== action.index),
+          source: "manual",
         },
       });
 
@@ -184,6 +190,7 @@ export function reducePromptLibrary(state, action) {
         activeComposition: {
           ...state.activeComposition,
           blockIds: nextIds,
+          source: "manual",
         },
       });
     }
@@ -195,6 +202,7 @@ export function reducePromptLibrary(state, action) {
           ...state.activeComposition,
           blockIds: [],
           combinedJson: {},
+          source: null,
         },
       });
 
@@ -204,6 +212,31 @@ export function reducePromptLibrary(state, action) {
         activeComposition: {
           ...state.activeComposition,
           blockIds: Array.isArray(action.blockIds) ? action.blockIds : [],
+          source: "manual",
+        },
+      });
+
+    case "PROMPT_ACTIVE_COMPOSITION_SET_FROM_BLOCKLY":
+      return syncPromptLibraryState({
+        ...state,
+        activeComposition: {
+          ...state.activeComposition,
+          blockIds: Array.isArray(action.blockIds) ? action.blockIds : [],
+          mergeStrategy: MERGE_STRATEGIES.includes(action.mergeStrategy)
+            ? action.mergeStrategy
+            : state.activeComposition.mergeStrategy,
+          source: "blockly",
+          blocklyWorkspaceXml:
+            typeof action.workspaceXml === "string" && action.workspaceXml.trim()
+              ? action.workspaceXml
+              : state.activeComposition.blocklyWorkspaceXml,
+          context:
+            action.context && typeof action.context === "object"
+              ? {
+                  ...state.activeComposition.context,
+                  ...action.context,
+                }
+              : state.activeComposition.context,
         },
       });
 
@@ -213,7 +246,17 @@ export function reducePromptLibrary(state, action) {
         activeComposition: {
           ...state.activeComposition,
           mergeStrategy: action.mergeStrategy,
+          source: state.activeComposition.source || "manual",
         },
+      });
+
+    case "PROMPT_SEQUENCE_CREATE_FROM_COMPOSITION":
+      return reducePromptLibrary(state, {
+        type: "PROMPT_SAVE_COMPOSITION_AS_SEQUENCE",
+        name: action.name,
+        description: action.description,
+        color: action.color,
+        icon: action.icon,
       });
 
     case "PROMPT_SET_BINDING_MODE":
@@ -437,6 +480,10 @@ function syncPromptLibraryState(state) {
     activeComposition: {
       ...state.activeComposition,
       mergeStrategy,
+      source: state.activeComposition?.source || null,
+      context: state.activeComposition?.context || DEFAULT_BLOCKLY_CONTEXT,
+      blocklyWorkspaceXml:
+        state.activeComposition?.blocklyWorkspaceXml || DEFAULT_BLOCKLY_WORKSPACE_XML,
       combinedJson,
     },
   };
@@ -827,6 +874,9 @@ function createDefaultPromptLibraryState() {
       blockIds: [],
       combinedJson: {},
       mergeStrategy: "merge_deep",
+      source: null,
+      context: DEFAULT_BLOCKLY_CONTEXT,
+      blocklyWorkspaceXml: DEFAULT_BLOCKLY_WORKSPACE_XML,
     },
   };
 }

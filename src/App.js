@@ -12,6 +12,7 @@ import JsonSequenceBuilder from "./components/JsonSequenceBuilder";
 import MatrixEditor from "./components/MatrixEditor";
 import MiniMatrixStrip from "./components/MiniMatrixStrip";
 import OrbitQuickPad from "./components/OrbitQuickPad";
+import PromptLogicBlocklyPanel from "./components/PromptLogicBlocklyPanel";
 import PrismaticCoreDock from "./components/PrismaticCoreDock";
 import SectionCard from "./components/SectionCard";
 import StageCanvas from "./components/StageCanvas";
@@ -29,6 +30,7 @@ import {
   createInitialState,
 } from "./mmss/config";
 import {
+  DEFAULT_BLOCKLY_WORKSPACE_XML,
   combinePromptBlocks,
   parsePromptImportText,
   exportPromptLibraryFile,
@@ -36,6 +38,7 @@ import {
   savePromptLibraryState,
 } from "./mmss/promptLibrary";
 import { mmssReducer } from "./mmss/reducer";
+import { DEFAULT_BLOCKLY_CONTEXT } from "./mmss/promptTypes";
 import { useAudioEngine } from "./mmss/useAudioEngine";
 import { useHotkeys } from "./mmss/useHotkeys";
 import { useOrbitMotion } from "./mmss/useOrbitMotion";
@@ -51,6 +54,7 @@ const ORBIT_SLOT_STORAGE_KEY = "mmss.orbitQuickSlots.v1";
 const PROMPT_PANEL_ORDER_STORAGE_KEY = "mmss.promptPanelOrder.v1";
 const PROMPT_PANEL_DEFAULT_ORDER = [
   "json_block_list",
+  "prompt_logic_blockly",
   "json_block_editor",
   "json_sequence_builder",
   "json_bindings_panel",
@@ -627,6 +631,20 @@ function App() {
     });
   }
 
+  function handleSetActiveCompositionFromBlockly(blockIds, mergeStrategy, meta = {}) {
+    dispatch({
+      type: "PROMPT_ACTIVE_COMPOSITION_SET_FROM_BLOCKLY",
+      blockIds,
+      mergeStrategy,
+      workspaceXml: meta.workspaceXml || "",
+      context: meta.context || null,
+    });
+    dispatch({
+      type: "append_log",
+      message: `Blockly composition applied (${blockIds.length} block(s), ${mergeStrategy}).`,
+    });
+  }
+
   function handleMovePromptPanel(panelId, direction) {
     const currentIndex = promptPanelOrder.indexOf(panelId);
     if (currentIndex < 0) return;
@@ -981,6 +999,41 @@ function App() {
                             block={selectedBlock}
                             onSave={handlePromptBlockSave}
                             onExport={(payload, name) => handleExportPayload(payload, `${name || "block"}_payload`)}
+                          />
+                        </SectionCard>
+                      );
+                    }
+
+                    if (panelId === "prompt_logic_blockly") {
+                      return (
+                        <SectionCard
+                          key={panelId}
+                          className="prompt-fixed-panel blockly-panel-shell"
+                          title="PromptLogicBlocklyPanel"
+                          subtitle="Visual DSL for selecting blocks/sequences and merge strategy"
+                          actions={panelActions}
+                        >
+                          <PromptLogicBlocklyPanel
+                            blocks={state.promptLibrary.blocks}
+                            sequences={state.promptLibrary.sequences}
+                            initialContext={state.promptLibrary.activeComposition.context || DEFAULT_BLOCKLY_CONTEXT}
+                            initialWorkspaceXml={
+                              state.promptLibrary.activeComposition.blocklyWorkspaceXml ||
+                              DEFAULT_BLOCKLY_WORKSPACE_XML
+                            }
+                            onWorkspaceXmlChange={(workspaceXml) =>
+                              dispatch({
+                                type: "PROMPT_ACTIVE_COMPOSITION_SET_FROM_BLOCKLY",
+                                blockIds: state.promptLibrary.activeComposition.blockIds,
+                                mergeStrategy: state.promptLibrary.activeComposition.mergeStrategy,
+                                workspaceXml,
+                                context: state.promptLibrary.activeComposition.context || DEFAULT_BLOCKLY_CONTEXT,
+                              })
+                            }
+                            onSetActiveComposition={handleSetActiveCompositionFromBlockly}
+                            onClearActiveComposition={() =>
+                              dispatch({ type: "PROMPT_ACTIVE_COMPOSITION_CLEAR" })
+                            }
                           />
                         </SectionCard>
                       );
