@@ -1,0 +1,105 @@
+{
+  "id": "block_2ilamdc0",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-VOX-017-GHOST-CODA",
+        "meta_name": "Post-Human Ghost Coda",
+        "version": "2.5.0",
+        "description": "Блок синтеза 'цифрового послесмертия'. Имитирует остаточное эхо человеческого голоса, запертого в бесконечной рекурсии буфера памяти. Эффект 'застывшего мгновения'.",
+        "meta_formula": "Ψ(v) = ∫ [ Vox(t₀) ⊗ Spectral_Freeze(f) ] / (Entropy → 0) // Фиксация спектра вокального фрагмента в точке t₀ с бесконечным удержанием фазы",
+        "logic_parameters": {
+          "freeze_threshold": 0.999,
+          "spectral_blur": "High (σ = 0.8)",
+          "formant_shift": "Static (-2 to +5 semitones)",
+          "immortality_factor": "Infinite sustain"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Reverb",
+              "params": {
+                "room_size": 1,
+                "damping": 0.05,
+                "mix": 1
+              },
+              "purpose": "Полное растворение исходного сигнала в чистом спектральном 'хвосте'"
+            },
+            {
+              "node": "AdvancedEqualizer",
+              "params": {
+                "mid_freq_hz": 1800,
+                "mid_gain_db": 12,
+                "mid_q": 0.4,
+                "high_mid_freq_hz": 4200,
+                "high_mid_gain_db": 8
+              },
+              "purpose": "Выделение резонансов, имитирующих форманты 'застывшего' голоса"
+            },
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 1,
+                "rate_hz": 0.02,
+                "mix": 0.5
+              },
+              "purpose": "Ультра-медленное фазовое движение для предотвращения полной статичности"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.98,
+          "chaos_c": 0.02,
+          "state": "Spectral-Stasis",
+          "logic": "Абсолютный порядок (p=0.98). Звук 'заморожен' во времени, любые изменения минимальны и цикличны."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "350Hz - 9kHz",
+          "timbre": "Ghostly / Static / Glassy-Vocal",
+          "spatial_setting": "Infinite-Width (Omnidirectional)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-VOX-004-ETHERIC-WEAVE",
+          "interaction": "Recursive-Ghosting (Etheric weave 004 подается в Ghost Coda 017 для создания бесконечного шлейфа).",
+          "contrast_link": "ASE-PULSE-013-NEON-VIBE (Static ghost coda vs Kinetic neon pulse)."
+        },
+        "self_analysis": {
+          "coherence": "Eternal-Stillness",
+          "narrative_fidelity": "Digital-Afterlife / Frozen-Memory / AI-Nostalgia",
+          "applied_operators": [
+            "Spectral_Freezing",
+            "Formant_Preservation"
+          ]
+        },
+        "integration_note": "Использовать как финальный 'выдох' трека или как статичный фон, сквозь который проходят другие элементы аранжировки."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

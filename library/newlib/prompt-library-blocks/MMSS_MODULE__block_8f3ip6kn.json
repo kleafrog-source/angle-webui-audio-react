@@ -1,0 +1,92 @@
+{
+  "id": "block_8f3ip6kn",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "folding_core_engine",
+    "folding"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_20_RECURSIVE_SINE_FOLD_DISTORTION",
+        "version": "4.Omega",
+        "meta_formula": "Ψ_fold(x, n) = sin(G * Ψ_fold(x, n-1) + β) // Рекурсивное фрактальное складывание",
+        "description": "Модуль рекурсивного синусоидального искажения (Sine Folding). В отличие от обычного клиппинга, этот атом многократно 'складывает' амплитуду сигнала обратно в диапазон [-1, 1] через синусоидальную функцию. Это порождает сложнейшие фрактальные обертоны и превращает простые входные сигналы в насыщенные, 'металлические' или 'кристаллические' тембры.",
+        "sub_structure": {
+          "FOLDING_CORE_ENGINE": {
+            "recursion_depth": "n = [1 ... 32] (Iterative_Processing_Steps)",
+            "gain_drive": "G = [0dB ... +60dB] (Modulated_by_ATOM_15)",
+            "symmetry_bias": "β = [-π ... +π] (Asymmetric_Harmonic_Shift)",
+            "phase_offset": "Φ_mod(t) = LFO_Sawtooth(0.5Hz)"
+          },
+          "HARMONIC_FRACTALIZER": {
+            "mode": "Feedback_Folding / Parallel_Stacking",
+            "dynamic_threshold": "Adaptive_Clamp(RMS_Based)",
+            "inter-modulation": "Self-Frequency_Modulation(Amount=0.3)",
+            "resonance_coupling": "Peak_Resonance_at_Folding_Points"
+          },
+          "ALIASING_SUPPRESSION_UNIT": {
+            "oversampling": "16x_Polyphase_Interpolation",
+            "anti-aliasing_filter": "8th_Order_Butterworth_LPF(Cutoff=20kHz)",
+            "dc_offset_correction": "High-Pass(2Hz, Zero-Phase)",
+            "soft_knee_limiter": "Post-Fold_Saturation(ATOM_07_Link)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Scale Input Magnitude",
+            "target": "Unity_Gain_Normalization",
+            "comment": "Подготовка амплитуды для оптимального вхождения в рекурсивную петлю."
+          },
+          {
+            "step": 2,
+            "action": "Execute Recursive Fold Loop",
+            "logic": "FOR i=1 TO n: x = sin(G * x + β)",
+            "comment": "Процесс генерации фрактальных гармоник. Каждая итерация удваивает сложность спектра."
+          },
+          {
+            "step": 3,
+            "action": "Apply Morphological Filtering",
+            "method": "VCF_Sweep (Linked_to_Folding_Depth)",
+            "comment": "Сглаживание избыточной яркости и выделение характерных резонансов ('рычание' или 'звон')."
+          }
+        ],
+        "sound_design_params": {
+          "tonal_grit": 0.88,
+          "fractal_complexity": "High_N-Order",
+          "harmonic_richness": "Metallic_Luster",
+          "texture": "Folded_Chrome_Topology"
+        },
+        "integration_note": "Этот атом — основной 'генератор агрессии'. Превращает Молекулу 01 (Лид) в разрывающий пространство нейро-синтезатор. Идеально работает с чистыми синусоидальными или треугольными волнами. Требует прецизионного контроля огибающей (ATOM_15) для предотвращения звукового хаоса."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_01_07",
+        "sync_status": "FOLDING_RECURSION_LOCKED",
+        "system_feedback": "Recursion depth stabilized. Anti-aliasing filters operational. Fractal harmonics generated."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

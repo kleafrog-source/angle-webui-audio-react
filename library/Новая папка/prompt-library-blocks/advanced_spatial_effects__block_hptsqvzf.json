@@ -1,0 +1,58 @@
+{
+  "id": "block_hptsqvzf",
+  "name": "advanced spatial effects",
+  "description": "Imported from mixed JSON/text document",
+  "category": "metadata",
+  "tags": [
+    "import",
+    "advanced_spatial_effects",
+    "advanced",
+    "spatial",
+    "effects",
+    "haas_effect_widener",
+    "haas",
+    "effect",
+    "widener",
+    "left_channel",
+    "left",
+    "channel",
+    "right_channel",
+    "right",
+    "result"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "advanced_spatial_effects": {
+        "haas_effect_widener": {
+          "left_channel": "Gain(0dB), Delay(0ms)",
+          "right_channel": "Gain(-1dB), Delay(15ms)",
+          "result": "Psychoacoustic stereo width for lead plucks"
+        },
+        "doppler_sim_logic": {
+          "input": "Moving point source (X, Y, Z)",
+          "processing": "PitchShift(f_shifted) ⊗ Gain(1/r²)",
+          "automation": "Linear ramp from +50 cents to -50 cents over 2 bars"
+        }
+      },
+      "metadata_user_preferences": {
+        "favorite_scales": [
+          "Phrygian",
+          "Locrian",
+          "Double Harmonic Minor"
+        ],
+        "mixing_priorities": [
+          "Kick-Bass clarity",
+          "Spectral separation",
+          "Sub-low impact"
+        ]
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

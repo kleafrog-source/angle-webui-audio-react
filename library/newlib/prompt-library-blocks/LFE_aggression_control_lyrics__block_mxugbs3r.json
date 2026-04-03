@@ -1,0 +1,56 @@
+{
+  "id": "block_mxugbs3r",
+  "name": "LFE aggression control lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "lfe_aggression_control_lyrics",
+    "lfe",
+    "aggression",
+    "control",
+    "lyrics",
+    "the_razor_edge_set",
+    "the",
+    "razor",
+    "edge",
+    "set",
+    "the_containment_set",
+    "containment",
+    "the_aggression_dialogue",
+    "dialogue"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_aggression_control_lyrics": {
+        "the_razor_edge_set": [
+          "Sharp as a digital blade, cutting the air / Logic of madness, the architect's prayer",
+          "Clip the peaks, release the heat / Hard-clipped soul and a soft-clipped beat",
+          "Aggression is order, chaos is dead / Follow the signals inside of your head"
+        ],
+        "the_containment_set": [
+          "Monster 7, locked in a cage / Synthesizing beauty, synthesizing rage",
+          "Limit the void, boost the gain / Pumping the pressure through every vein",
+          "Surgical precision, the final strike / Everything I am and everything you like"
+        ],
+        "the_aggression_dialogue": [
+          "Tame the beast / Feed the machine",
+          "The greatest feast / That you've ever seen",
+          "Result: Controlled-Fury / Status: CLIP_LOCK_ACTIVE"
+        ]
+      },
+      "spectral_aggression_v4": {
+        "high_mid_boost": "+4.5dB @ 3.5kHz (Phrygian Lead bite)",
+        "low_mid_notch": "-2.0dB @ 250Hz (Clarity hole for the Kick-punch)",
+        "sub_fundamental_sine": "Pure 51.9Hz (G#) - The unclipped core"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

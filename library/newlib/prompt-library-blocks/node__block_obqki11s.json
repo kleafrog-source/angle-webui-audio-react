@@ -1,0 +1,28 @@
+{
+  "id": "block_obqki11s",
+  "name": "node",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "node",
+    "drive_db",
+    "drive",
+    "db",
+    "type"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "node": "Distortion",
+      "drive_db": 35,
+      "type": "HardClip"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

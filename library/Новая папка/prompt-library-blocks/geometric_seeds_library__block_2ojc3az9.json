@@ -1,0 +1,41 @@
+{
+  "id": "block_2ojc3az9",
+  "name": "geometric seeds library",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "geometric_seeds_library",
+    "geometric",
+    "seeds",
+    "library",
+    "code_fractal_01",
+    "code",
+    "fractal",
+    "01",
+    "code_spherical_02",
+    "spherical",
+    "02",
+    "code_toroid_03",
+    "toroid",
+    "03"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "geometric_seeds_library": {
+        "code_fractal_01": "Recursive-Sierpinski: Sharp, angular, repetitive, 8-bit artifacts",
+        "code_spherical_02": "Euclidean-Flow: Smooth, circular, deep-bass, liquid-textures",
+        "code_toroid_03": "Infinite-Loop: Modulating delays, circular-panning (Block 17), phasing",
+        "code_vector_04": "Aggressive-Linear: Direct transients, hard-clipping, mono-focus, dry"
+      },
+      "usage": "Append code to the start of a sound-prompt to 'force' the ASE-Internal-Logic."
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

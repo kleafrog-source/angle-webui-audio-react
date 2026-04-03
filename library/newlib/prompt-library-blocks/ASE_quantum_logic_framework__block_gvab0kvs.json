@@ -1,0 +1,54 @@
+{
+  "id": "block_gvab0kvs",
+  "name": "ASE quantum logic framework",
+  "description": "Imported from mixed JSON/text document",
+  "category": "metadata",
+  "tags": [
+    "import",
+    "ase_quantum_logic_framework",
+    "ase",
+    "quantum",
+    "logic",
+    "framework",
+    "superposition_states",
+    "superposition",
+    "states",
+    "state_a_industrial",
+    "state",
+    "a",
+    "industrial",
+    "state_b_organic",
+    "b"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_quantum_logic_framework": {
+        "superposition_states": {
+          "state_A_industrial": "High probability (0.75) if H(p) > 0.6",
+          "state_B_organic": "Low probability (0.25) as a 'glitch' injection",
+          "wave_function_collapse": "Triggered by Seed_n input at T=0"
+        },
+        "entanglement_rules": {
+          "kick_bass_entanglement": "Any change in Kick-transient (δt) instantly affects Bass-phase (Φ)",
+          "lyric_texture_entanglement": "Syllable weight affects Granular_Delay spray density",
+          "entropy_observation_effect": "User-feedback (v1->v2) reduces chaotic state (c) in favor of order (p)"
+        },
+        "uncertainty_principle_v4": "Δ_Pitch * Δ_Time ≥ 1/2π (The limit of surgical precision vs analog warmth)"
+      },
+      "deep_process_metadata_LFE": {
+        "semantic_superposition_lyrics": [
+          "I am the observer and the observed / The logic is twisted, the signals are curved",
+          "Probability waves in the Phrygian sea / Collapsing the void into reality",
+          "Entangled in shadows, entangled in light / The code is the day and the silence is night"
+        ]
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

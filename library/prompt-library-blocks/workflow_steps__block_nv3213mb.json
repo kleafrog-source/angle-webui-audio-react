@@ -1,0 +1,44 @@
+{
+  "id": "block_nv3213mb",
+  "name": "workflow steps",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "workflow_steps",
+    "workflow",
+    "steps",
+    "1_seed_initiation",
+    "1",
+    "seed",
+    "initiation",
+    "2_l1_triad_lock",
+    "2",
+    "l1",
+    "triad",
+    "lock",
+    "3_parallel_generation",
+    "3"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "workflow_steps": {
+        "1_seed_initiation": "Input conceptual seed (Text or Image)",
+        "2_l1_triad_lock": "Fixing Emotion, Concept, Soundscape in instructions",
+        "3_parallel_generation": "audio__create_song x2 (comparing A and B)",
+        "4_iterative_mutation": "audio__modify_song with G-Inversion logic",
+        "5_stem_separation": "audio__split_stems for surgical reconstruction",
+        "6_final_vectoring": "audio__apply_effect (reverb/delay/pan) for 4D-depth",
+        "7_qc_check": "Validation against Entropy Law H(p,c)"
+      },
+      "automation": "ASE can bypass steps 3-5 in Fast-Gen mode."
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

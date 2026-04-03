@@ -1,0 +1,103 @@
+{
+  "id": "block_b6gfoy2t",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-GRID-015-QUANTUM-LATTICE",
+        "meta_name": "Quantum Grid Overdrive",
+        "version": "2.3.0",
+        "description": "Блок управления 'квантовым разрешением'. Имитирует процесс перехода звуковой волны через сетку дискретизации с переменным шагом, создавая эффект 'цифрового кристалла'.",
+        "meta_formula": "Q(s) = Σ [ Floor(s(t) * 2^n) / 2^n ] ⊗ Fold(sin(f)) // Квантование амплитуды с последующим синусоидальным сворачиванием фазы",
+        "logic_parameters": {
+          "quantization_bits": "1.5bit - 4bit (Dynamic)",
+          "aliasing_factor": 0.85,
+          "grid_snapping_hz": "Project-Sync (1/128th)",
+          "harmonic_glitch_rate": "Stochastic"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Bitcrusher",
+              "params": {
+                "bit_depth": 3,
+                "mix": 0.65
+              },
+              "purpose": "Создание жесткой ступенчатой формы волны для максимального алиасинга"
+            },
+            {
+              "node": "AdvancedEqualizer",
+              "params": {
+                "high_mid_freq_hz": 8200,
+                "high_mid_gain_db": 14,
+                "high_mid_q": 8,
+                "treble_freq_hz": 12000,
+                "treble_gain_db": 10
+              },
+              "purpose": "Выделение гармоник квантования (Quantization Noise) как декоративного элемента"
+            },
+            {
+              "node": "Limiter",
+              "params": {
+                "threshold_db": -1,
+                "release_ms": 5
+              },
+              "purpose": "Удержание экстремальных пиков, возникающих при цифровом резонансе"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.2,
+          "chaos_c": 0.8,
+          "state": "Discrete-Chaos",
+          "logic": "Высокий хаос (c=0.8) на микро-уровне при сохранении макро-структуры за счет привязки к сетке темпа."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "2kHz - 19kHz",
+          "timbre": "Cold / Pixelated / Electric",
+          "spatial_setting": "Precision-Mono (Hard-Center)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-BONE-007-ORGANIC-CLICK",
+          "interaction": "Hybrid-Texture (Organic click 007 + Quantum grid 015 = Cyber-Organics).",
+          "contrast_link": "ASE-MORPH-010-LIQUID-METAL (Liquid 010 smoothness vs Grid 015 pixelation)."
+        },
+        "self_analysis": {
+          "coherence": "Ultra-Sharp",
+          "narrative_fidelity": "Virtual-Reality-Artifacts / Error-404 / CPU-Overload",
+          "applied_operators": [
+            "Amplitude_Quantization",
+            "Aliasing_Injection"
+          ]
+        },
+        "integration_note": "Использовать как высокочастотный 'блеск' поверх басовых партий или для радикальной обработки перкуссии."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

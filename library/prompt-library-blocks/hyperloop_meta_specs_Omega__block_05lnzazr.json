@@ -1,0 +1,45 @@
+{
+  "id": "block_05lnzazr",
+  "name": "hyperloop meta specs Omega",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "hyperloop_meta_specs_omega",
+    "hyperloop",
+    "meta",
+    "specs",
+    "omega",
+    "automated_workflow",
+    "automated",
+    "workflow",
+    "conflict_resolution_mode",
+    "conflict",
+    "resolution",
+    "mode",
+    "innovation_injection",
+    "innovation"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "hyperloop_meta_specs_Omega": {
+        "automated_workflow": "Input(Seed) → L1_Analysis → LFE_Gen → MLGS_Vectoring → Output(ASE_Artifact)",
+        "conflict_resolution_mode": "Auto-annihilation (priority: Bass > Kick > Snare > Vocals)",
+        "innovation_injection": "Fractal-Seed-Evolution (Step = 0.05 per iteration)",
+        "final_mastering_logic": "Limiter(Threshold=-0.3dB, Release=100ms) ⊗ Gain(+2dB Makeup)"
+      },
+      "LFE_fusion_engine_rare_vocal_chain": {
+        "pre_processing": "De-esser(Threshold=-25dB) ⊗ HighPass(180Hz)",
+        "main_processing": "Saturator(Drive 12dB) ⊗ Chorus(Mix 0.15) ⊗ Delay(Mix 0.2, 1/4 feedback)",
+        "post_processing": "Spatial_Node_2 (Front-Right) ⊗ Gain(-3dB)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

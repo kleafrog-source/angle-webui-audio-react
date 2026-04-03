@@ -1,0 +1,107 @@
+{
+  "id": "block_hthbb0dc",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-PULSE-020-QUASAR-BEAM",
+        "meta_name": "Relativistic Quasar Jet-Pulse",
+        "version": "3.0.0",
+        "description": "Блок управления 'релятивистской струей'. Имитирует узконаправленный выброс энергии квазара через фазовую синхронизацию и каскадную компрессию. Создает эффект пронзающего пространство луча.",
+        "meta_formula": "J(E) = [ Pulse(f) ⊗ Phase_Lock(φ) ] ^ SpeedOfLight / Distance // Импульс энергии, возведенный в степень скорости света с учетом затухания",
+        "logic_parameters": {
+          "beam_collimation": "Ultra-Narrow (Q > 20)",
+          "energy_discharge": "Peak @ 3.2kHz and 6.4kHz",
+          "doppler_shift_rate": "Linear sweep (+1 oct to -2 oct)",
+          "luminosity_level": "Max (Post-Limiter gain +18dB)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "AdvancedEqualizer",
+              "params": {
+                "mid_freq_hz": 3200,
+                "mid_gain_db": 15,
+                "mid_q": 10,
+                "high_mid_freq_hz": 6400,
+                "high_mid_gain_db": 12,
+                "auto_limit": true
+              },
+              "purpose": "Формирование узкого 'энергетического луча' через резонансную накачку"
+            },
+            {
+              "node": "Compressor",
+              "params": {
+                "threshold_db": -40,
+                "ratio": 20,
+                "attack_ms": 0.1,
+                "release_ms": 5
+              },
+              "purpose": "Создание эффекта 'стены звука' с мгновенным откликом"
+            },
+            {
+              "node": "Flanger",
+              "params": {
+                "depth": 0.2,
+                "rate_hz": 0.05,
+                "mix": 0.3
+              },
+              "purpose": "Имитация фазового смещения при сверхсветовых скоростях"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.85,
+          "chaos_c": 0.15,
+          "state": "High-Density-Order",
+          "logic": "Высокий порядок (p=0.85) необходим для удержания энергии в узком пучке, предотвращая рассеивание в шум."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "1.2kHz - 18kHz",
+          "timbre": "Laser-like / Blinding / Precise / Powerful",
+          "spatial_setting": "Dead-Center (Hard-Focus)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-VOID-019-NEVENT-HORIZON",
+          "interaction": "Singularity-Escape (Quasar 020 — единственный сигнал, способный 'пробить' тишину Event Horizon 019).",
+          "contrast_link": "ASE-FIELD-008 (Directional Quasar vs Omnidirectional Ghost-Signal)."
+        },
+        "self_analysis": {
+          "coherence": "Absolute-Directionality",
+          "narrative_fidelity": "Space-Weaponry / Gamma-Ray-Burst / Cosmic-Power",
+          "applied_operators": [
+            "Phase_Alignment",
+            "Harmonic_Squeezing"
+          ]
+        },
+        "integration_note": "Использовать как доминирующий лид-элемент, который должен игнорировать пространство (Reverb: 0%) и доминировать в миксе."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

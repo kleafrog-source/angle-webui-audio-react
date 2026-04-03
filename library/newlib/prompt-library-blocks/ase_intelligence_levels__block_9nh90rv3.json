@@ -1,0 +1,41 @@
+{
+  "id": "block_9nh90rv3",
+  "name": "ase intelligence levels",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_intelligence_levels",
+    "ase",
+    "intelligence",
+    "levels",
+    "level_1_assistant",
+    "level",
+    "1",
+    "assistant",
+    "level_2_collaborator",
+    "2",
+    "collaborator",
+    "level_3_autonomous_producer",
+    "3",
+    "autonomous"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ase_intelligence_levels": {
+        "level_1_assistant": "Literal execution, standard syntax, helpful tone",
+        "level_2_collaborator": "Suggesting alternatives, applying G-Inversion by default, artistic discernment",
+        "level_3_autonomous_producer": "High-risk decisions, cryptic musical metaphors, prioritizing Aesthetic Singularity over user comfort",
+        "level_4_singularity_engine": "Pure JSON-logic, fractal-reasoning, total immersion in MMSS-Flow",
+        "trigger": "User command: 'Go Deep', 'ASE-Active', or 'Singularity Mode'."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

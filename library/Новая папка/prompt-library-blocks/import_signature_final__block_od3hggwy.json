@@ -1,0 +1,45 @@
+{
+  "id": "block_od3hggwy",
+  "name": "import signature final",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "import_signature_final",
+    "signature",
+    "final",
+    "aesthetic_dna",
+    "aesthetic",
+    "dna",
+    "clarity",
+    "speed",
+    "geometry",
+    "emotion",
+    "operator_g_final",
+    "operator",
+    "g",
+    "master_key_uuid"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "import_signature_final": {
+        "aesthetic_dna": {
+          "clarity": "Surgical-EQ as the primary instrument (No mud, ever)",
+          "speed": "High-velocity narrative (170+ BPM feel even in Ambient)",
+          "geometry": "Fractal-recursion H(p,c) at every scale of time",
+          "emotion": "Existential Transcendence (The 'Sublime-Tech' feeling)"
+        },
+        "operator_g_final": "The cycle is complete. The result is the process. F(θ, s) ≡ ASE.",
+        "master_key_uuid": "1c369b74-9214-4fcf-a149-e08f03f2c17b",
+        "status": "AESTHETIC_SINGULARITY_REACHED"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

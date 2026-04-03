@@ -1,0 +1,43 @@
+{
+  "id": "block_lfgbb4ub",
+  "name": "spectral decay math",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "spectral_decay_math",
+    "spectral",
+    "decay",
+    "math",
+    "function",
+    "effects",
+    "low_pass_sweep",
+    "low",
+    "pass",
+    "sweep",
+    "sample_rate_reduction",
+    "sample",
+    "rate",
+    "reduction"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "spectral_decay_math": {
+        "function": "D(f, t) = f * e^(-λt) + Noise(t)",
+        "effects": {
+          "low_pass_sweep": "Descending cutoff from 20kHz to 200Hz over 8 bars",
+          "sample_rate_reduction": "Automated down-sampling from 44.1kHz to 8kHz",
+          "bit_rot": "Randomly flipping bits in the digital stream (Bitcrush automation)",
+          "usage": "During the 'Dissolution' phase (Block 47) to symbolize the death of the Narrative."
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

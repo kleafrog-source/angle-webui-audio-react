@@ -1,0 +1,88 @@
+{
+  "id": "block_g8tceoni",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "oscillator_topology",
+    "oscillator"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_01_NEUROSYNTHETIC_GEOMETRY",
+        "version": "4.Omega",
+        "meta_formula": "G(f) = [Phase_Shift(δ) ⊗ Harmonic_Entropy(H)] / Fractal_Resonance(R)",
+        "description": "Базовый блок для формирования сложной, 'живой' текстуры звука через управление фазовыми искажениями и фрактальным резонансом.",
+        "sub_structure": {
+          "OSCILLATOR_TOPOLOGY": {
+            "waveforms": [
+              "complex_wavetable",
+              "fractal_fm",
+              "spectral_noise"
+            ],
+            "geometric_mapping": "HYPERCUBE_FOLDING",
+            "dynamic_drift": "0.00314Hz_LFO_Triangle"
+          },
+          "FILTER_DYNAMICS": {
+            "type": "MORPHING_LADDER_v2",
+            "cutoff_modulation": "S_curve(Random_Walk)",
+            "resonance_peak": "A(q) = log(1 + q^2) // динамический контроль обратной связи"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Isolate Core Frequency",
+            "target": "20-250 Hz",
+            "comment": "Очистка фундамента для наложения нейросинтетической сетки."
+          },
+          {
+            "step": 2,
+            "action": "Apply G-Operator-Inversion",
+            "logic": "Invert(Spectral_Envelope) ⊗ Reverse_Gain_Envelope",
+            "comment": "Создание эффекта 'всасывания' звука перед основным ударом."
+          },
+          {
+            "step": 3,
+            "action": "Fractalize High-Mid Band",
+            "target": "2k - 8k Hz",
+            "algorithm": "Recursive_Delay_Line_v3(Feedback=0.618, Jitter=True)"
+          }
+        ],
+        "sound_design_params": {
+          "timbral_brightness": 0.85,
+          "stereo_width": "Hyper-Expander (Correlation < 0.2)",
+          "grain_density": "120_Grains/Sec",
+          "texture": "Metallic_Viscosity"
+        },
+        "integration_note": "Данный блок рекомендуется использовать как 'Fill' или 'Transition' элемент при H(c) > 0.6. При низком хаосе служит как фоновый текстурный пласт (Atmospheric_Base)."
+      },
+      "SEED_STATE": {
+        "session_id": "148a059c-9983-429c-b7f8-35f44e4b1a90",
+        "random_vector": 295151,
+        "system_clock": "2026-04-02T12:00:00Z"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

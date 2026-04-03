@@ -1,0 +1,56 @@
+{
+  "id": "block_dtbyzavl",
+  "name": "LFE expansion logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_expansion_logic_lyrics",
+    "lfe",
+    "expansion",
+    "logic",
+    "lyrics",
+    "the_explosion_set",
+    "the",
+    "explosion",
+    "set",
+    "the_kinetic_set",
+    "kinetic",
+    "the_expansion_dialogue",
+    "dialogue",
+    "psychoacoustic_expansion_v4"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_expansion_logic_lyrics": {
+        "the_explosion_set": [
+          "Breaking the ceiling, breaking the wall / Higher than ever, ready to fall",
+          "Expanding the energy, faster than light / Striking the center of the digital night",
+          "Burst of the logic, burst of the soul / Taking the moment, taking control"
+        ],
+        "the_kinetic_set": [
+          "Movement is life, static is death / Speed of the transient, speed of the breath",
+          "Accelerate the signals, accelerate the mind / Leaving the linear far behind",
+          "Zero to one in a millionth of a second / The power of numbers is what I have reckoned"
+        ],
+        "the_expansion_dialogue": [
+          "Release the force / Ignite the spark",
+          "Stay on the course / Inside the dark",
+          "Result: Kinetic-Singularity / Status: EXPANSION_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_expansion_v4": {
+        "the_snap_factor": "Parallel Expansion @ 5kHz (+4dB boost on transients only)",
+        "the_depth_bounce": "Increasing expansion range on reverb-tails during drum-fills",
+        "transient_masking_fix": "Expander on the high-hats triggered by the snare (ducking then fast-recovery)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

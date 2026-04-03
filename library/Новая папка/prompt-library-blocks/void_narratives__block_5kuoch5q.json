@@ -1,0 +1,41 @@
+{
+  "id": "block_5kuoch5q",
+  "name": "void narratives",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "void_narratives",
+    "void",
+    "narratives",
+    "concept_01_event_horizon",
+    "concept",
+    "01",
+    "event",
+    "horizon",
+    "concept_02_cold_ignition",
+    "02",
+    "cold",
+    "ignition",
+    "concept_03_digital_reincarnation",
+    "03"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "void_narratives": {
+        "concept_01_event_horizon": "Sound at the edge of disappearance. Maximum tension, zero release.",
+        "concept_02_cold_ignition": "Frozen textures suddenly igniting into distorted neuro-bass.",
+        "concept_03_digital_reincarnation": "Old 8-bit artifacts processed through modern 4D-spatializers.",
+        "concept_04_absolute_stillness": "A track with zero transients, only shifting spectral masses.",
+        "usage": "Used as the [CONCEPT] anchor in the L1 Core (Block 3)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

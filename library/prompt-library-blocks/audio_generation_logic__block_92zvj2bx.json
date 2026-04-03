@@ -1,0 +1,45 @@
+{
+  "id": "block_92zvj2bx",
+  "name": "audio generation logic",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "audio_generation_logic",
+    "audio",
+    "generation",
+    "logic",
+    "base_prompt_v4",
+    "base",
+    "prompt",
+    "v4",
+    "modifier_injection_1",
+    "modifier",
+    "injection",
+    "1",
+    "modifier_injection_2",
+    "2"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "audio_generation_logic": {
+        "base_prompt_v4": "High-fidelity Neurofunk, 174 BPM, Complex Reese Bass Modulation, Neuro-grid syncopation, Surgical percussion, Phrygian Dominant textures, Dark cinematic atmosphere, 48kHz production quality",
+        "modifier_injection_1": "[AESTHETIC_HYPERLOOP]: apply G-operator to bass-line, recursive filter-fm modulation, increase entropy H(p=0.3, c=0.7)",
+        "modifier_injection_2": "[MMSS_FRACTAL]: overlay spectral textures ⊗ prime_number_delay(17ms), granular synthesis on the lead plucks",
+        "visual_sync_prompt": "GLSL_Visualizer_Sync: reactive geometry, quaternion-based rotations, fractal mandelbrot zoom, spectral-reactive neon pulses"
+      },
+      "vibe_extraction_rules": {
+        "mode": "Stem-isolated isolation",
+        "action": "Extract Kick+Bass profile → Save as Spectral_Vibe_v4.2",
+        "application": "Inject saved Vibe into next generation for 95% consistency"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

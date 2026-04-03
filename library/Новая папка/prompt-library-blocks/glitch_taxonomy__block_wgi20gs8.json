@@ -1,0 +1,42 @@
+{
+  "id": "block_wgi20gs8",
+  "name": "glitch taxonomy",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "glitch_taxonomy",
+    "glitch",
+    "taxonomy",
+    "stutter_freeze",
+    "stutter",
+    "freeze",
+    "spectral_smear",
+    "spectral",
+    "smear",
+    "bit_reduction",
+    "bit",
+    "reduction",
+    "sample_rate_jitter",
+    "sample"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "glitch_taxonomy": {
+        "stutter_freeze": "Repeating a 10ms-50ms grain with accelerating rate",
+        "spectral_smear": "FFT-based stretching of transients into metallic tails",
+        "bit_reduction": "Automating bit-depth from 16 to 4 during high-entropy peaks",
+        "sample_rate_jitter": "Simulating clock-sync failure for 'sea-sick' pitch wobbles",
+        "digital_clipping": "Intentionally exceeding 0dB on Layer 3 for 'Hard-Tech' bite"
+      },
+      "placement_rule": "Glitch must occur on the 4th or 8th bar as a Narrative-Reset."
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

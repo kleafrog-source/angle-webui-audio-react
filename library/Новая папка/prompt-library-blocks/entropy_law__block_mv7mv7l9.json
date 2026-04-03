@@ -1,0 +1,45 @@
+{
+  "id": "block_mv7mv7l9",
+  "name": "entropy law",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "entropy_law",
+    "entropy",
+    "law",
+    "variables",
+    "p_order",
+    "p",
+    "order",
+    "c_chaos",
+    "c",
+    "chaos",
+    "target_balance",
+    "target",
+    "balance",
+    "ambient_mode"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "entropy_law": "H(p,c) = Σ(p_i * log(1/p_i)) + Δc",
+      "variables": {
+        "p_order": "Rhythmic stability, Harmonic coherence, Narrative fidelity",
+        "c_chaos": "Glitch injection, Spectral smearing, Random seed variance",
+        "target_balance": {
+          "ambient_mode": "p:0.8, c:0.2",
+          "neuro_mode": "p:0.4, c:0.6",
+          "singularity_mode": "p:0.5, c:0.5 (Ideal Symmetry)"
+        }
+      },
+      "stabilizer_logic": "If H > 0.9, apply low-pass filter and rhythmic quantization. If H < 0.3, apply bitcrush and tempo-shift."
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

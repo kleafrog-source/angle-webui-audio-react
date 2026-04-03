@@ -1,0 +1,45 @@
+{
+  "id": "block_le0w9n0y",
+  "name": "fractal hats spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "fractal_hats_spec",
+    "fractal",
+    "hats",
+    "spec",
+    "rhythm",
+    "micro_timing",
+    "micro",
+    "timing",
+    "timbre",
+    "layer_1_metallic",
+    "layer",
+    "1",
+    "metallic",
+    "layer_2_digital"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "fractal_hats_spec": {
+        "rhythm": "Velocity-sensitive 16th notes + 32nd note 'ratchets'",
+        "micro_timing": "Random humanize (±3-7ms) + Swing (55%)",
+        "timbre": {
+          "layer_1_metallic": "FM-noise transient, ultra-short decay",
+          "layer_2_digital": "8-bit high-passed (8kHz) sizzle",
+          "modulation": "Filter-cutoff LFO (Random) + Decay-time jitter"
+        },
+        "spatial": "Auto-panning (LFO 2Hz) moving from -15% to +15% center",
+        "rule": "Hats must never be static. Each hit is a unique G(s_n) iteration."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

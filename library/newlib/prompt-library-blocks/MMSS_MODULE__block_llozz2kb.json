@@ -1,0 +1,103 @@
+{
+  "id": "block_llozz2kb",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "spectral_dynamics_processor",
+    "spectral"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_19_SPECTRAL_CONTRAST_ENHANCER",
+        "version": "4.Omega",
+        "meta_formula": "C(f, Δ) = [FFT(x) ⊗ (Magnitude[i]^γ / Σ Magnitude_avg)] ⊗ iFFT(y) // Спектральный контраст",
+        "description": "Модуль управления спектральным контрастом. Работает в частотной области как 'HDR для звука'. Позволяет либо радикально подчеркивать доминирующие частоты (делая звук сверхчетким, кристаллическим), либо нивелировать разницу между ними (создавая плотный, гомогенный 'стену-шум').",
+        "sub_structure": {
+          "SPECTRAL_DYNAMICS_PROCESSOR": {
+            "bin_resolution": 2048,
+            "contrast_gamma": "γ = [0.1 ... 10.0] (1.0 = Linear, >1.0 = High_Contrast)",
+            "adaptive_thresholding": "Noise_Floor_Masking(Dynamic_Tracking)",
+            "smoothing_time": "Attack=0.5ms, Release=150ms (Bin-Independent)"
+          },
+          "FREQUENCY_BAND_PARTITIONING": {
+            "bands": [
+              {
+                "range": "20Hz - 250Hz",
+                "mode": "Solidify_Punch"
+              },
+              {
+                "range": "250Hz - 4kHz",
+                "mode": "Detail_Enhancement"
+              },
+              {
+                "range": "4kHz - 20kHz",
+                "mode": "Spectral_Air_Focus"
+              }
+            ],
+            "crossover_type": "Linear_Phase_FFT_Link",
+            "gain_compensation": "RMS_Matched_Normalization"
+          },
+          "TEXTURE_SHAPING_LOGIC": {
+            "sharpening_algorithm": "Magnitude_Peak_Narrowing // сужение пиков гармоник",
+            "blur_algorithm": "Spectral_Convolution_with_Pink_Noise",
+            "transient_preservation": "Temporal_Envelope_Follower (Link_to_ATOM_02)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Analyze Spectral Distribution",
+            "target": "FFT_Real-time_Capture",
+            "comment": "Определение текущего профиля частот для вычисления среднего значения энергии."
+          },
+          {
+            "step": 2,
+            "action": "Apply Gamma-Correction to Magnitudes",
+            "logic": "Magnitude_new[i] = Magnitude[i]^γ",
+            "comment": "Трансформация амплитуд: доминирующие гармоники становятся ярче, слабые — тише (при γ > 1)."
+          },
+          {
+            "step": 3,
+            "action": "Execute iFFT Reconstruction",
+            "method": "Over-Lap-Add with Phase_Correction",
+            "comment": "Синтез аудио с обновленным спектральным профилем (Ultra-Definition_Aesthetic)."
+          }
+        ],
+        "sound_design_params": {
+          "spectral_clarity": 0.95,
+          "harmonic_definition": "Variable_by_Gamma",
+          "aliasing_suppression": "High-Res_FFT_Padding",
+          "texture": "Polished_Chrome_to_Dense_Fog"
+        },
+        "integration_note": "Этот атом — финальный 'полировщик' для Молекулы 01 (Лид) или всей мастер-шины. Позволяет вытащить детали из самого сложного и перегруженного микса. При γ < 1.0 идеально подходит для создания плотных 'стен' в Dark Ambient и Drone музыке."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_07_13",
+        "sync_status": "CONTRAST_READY",
+        "system_feedback": "Spectral profile analyzed. Contrast-gamma values within safe G-range."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

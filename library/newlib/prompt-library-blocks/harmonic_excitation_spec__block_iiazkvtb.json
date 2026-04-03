@@ -1,0 +1,44 @@
+{
+  "id": "block_iiazkvtb",
+  "name": "harmonic excitation spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "harmonic_excitation_spec",
+    "harmonic",
+    "excitation",
+    "spec",
+    "target_freqs",
+    "target",
+    "freqs",
+    "methods",
+    "spectral_shaper",
+    "spectral",
+    "shaper",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "harmonic_excitation_spec": {
+        "target_freqs": [
+          "3kHz (The Presence)",
+          "12kHz (The Fractal-Air)",
+          "400Hz (The Warmth)"
+        ],
+        "methods": {
+          "excitation": "Parallel saturation (Tube-style) at high-frequencies",
+          "spectral_shaper": "Dynamic EQ boosting only transient peaks",
+          "rule": "Avoid 2kHz boost (to prevent 'ear-fatigue')."
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "block_zjv95wc4",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-MORPH-010-LIQUID-METAL",
+        "meta_name": "Non-Newtonian Liquid Metal Morph",
+        "version": "1.8.0",
+        "description": "Блок управления фазовой текучестью. Имитирует поведение неньютоновской жидкости или ртути через динамическое смещение резонансных пиков и фазовую инверсию.",
+        "meta_formula": "M_liq(t) = ∫ [ S(f) ⊗ PhaseShift(sin(ωt)) ] ⊕ Reson(f_peak, Q_env) // Интеграл спектра, промодулированный синусоидальным фазовым сдвигом с плавающим резонансом",
+        "logic_parameters": {
+          "viscosity_rate": "0.1Hz - 2Hz (Variable)",
+          "surface_tension": "High (Strict Bandwidth)",
+          "metallic_glint": "Resonant spikes at 2.8kHz, 4.5kHz, 7.2kHz",
+          "flow_direction": "Bi-directional Stereo"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 0.85,
+                "rate_hz": 0.4,
+                "mix": 0.7
+              },
+              "purpose": "Создание 'вязкости' звука и эффекта размытия границ источника"
+            },
+            {
+              "node": "AdvancedEqualizer",
+              "params": {
+                "high_mid_freq_hz": 4500,
+                "high_mid_gain_db": 15,
+                "high_mid_q": 6,
+                "mid_freq_hz": 1200,
+                "mid_gain_db": -10
+              },
+              "purpose": "Имитация металлического блеска через узкие резонансные пики"
+            },
+            {
+              "node": "Pan",
+              "params": {
+                "pan": -0.5
+              },
+              "purpose": "Авто-панорамирование (модулируемое) для имитации 'перетекания' массы звука"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.35,
+          "chaos_c": 0.65,
+          "state": "Viscous-Flow",
+          "logic": "Хаос доминирует (c=0.65) для имитации непредсказуемых деформаций 'жидкого металла', сохраняя 35% структуры для узнаваемости тембра."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "250Hz - 16kHz",
+          "timbre": "Metallic / Fluid / Resonant",
+          "transient_profile": "Slurred / Smeared"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-LEAD-009-PLASMA-STRIKE",
+          "interaction": "Phase-Interference (Liquid 010 поглощает и деформирует резкие атаки Plasma 009).",
+          "contrast_link": "ASE-BONE-007 (Brittle bone clicks vs Fluid liquid metal)."
+        },
+        "self_analysis": {
+          "coherence": "Amorphous-Solid",
+          "narrative_fidelity": "T-1000 / Ferrofluid-Dance / Mercury-Mirror",
+          "applied_operators": [
+            "Phase_Viscosity",
+            "Resonant_Sculpting"
+          ]
+        },
+        "integration_note": "Использовать для создания эффекта 'плавления' аранжировки или как связующий элемент между жесткими цифровыми паттернами."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

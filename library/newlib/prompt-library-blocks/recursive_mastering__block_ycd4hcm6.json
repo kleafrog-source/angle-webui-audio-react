@@ -1,0 +1,41 @@
+{
+  "id": "block_ycd4hcm6",
+  "name": "recursive mastering",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "recursive_mastering",
+    "recursive",
+    "mastering",
+    "pass_1_leveling",
+    "pass",
+    "1",
+    "leveling",
+    "pass_2_compression",
+    "2",
+    "compression",
+    "pass_3_spectral_color",
+    "3",
+    "spectral",
+    "color"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "recursive_mastering": {
+        "pass_1_leveling": "Standard Peak-Normalization + Mid-Side Balance (Block 50)",
+        "pass_2_compression": "Multiband-Compression (OTT) + Soft-Clipping (The 'Density-Injection')",
+        "pass_3_spectral_color": "Applying 'Analog-Hiss' at -60dB + Static-Saturation (Block 43)",
+        "logic": "The second pass 'glues' the fractal layers into a single coherent Vector.",
+        "safety": "Check for Inter-Sample-Peaks (ISP) after Pass 3."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

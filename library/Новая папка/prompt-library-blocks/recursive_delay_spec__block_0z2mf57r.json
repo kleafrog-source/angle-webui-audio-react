@@ -1,0 +1,44 @@
+{
+  "id": "block_0z2mf57r",
+  "name": "recursive delay spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "recursive_delay_spec",
+    "recursive",
+    "delay",
+    "spec",
+    "time_setting",
+    "time",
+    "setting",
+    "feedback_loop",
+    "feedback",
+    "loop",
+    "level",
+    "internal_fx",
+    "internal",
+    "fx"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "recursive_delay_spec": {
+        "time_setting": "Dotted 1/8 note + 1.618ms offset (The Golden Offset)",
+        "feedback_loop": {
+          "level": "95% (Near-infinite oscillation)",
+          "internal_fx": "Band-pass filter (500Hz-2kHz) + Distortion + Phaser",
+          "result": "The echo evolves and changes color with every repetition."
+        },
+        "panning": "MLGS_QUATERNION spiral rotation (W-axis sync)",
+        "rule": "Delay tails must be sidechained to the Lead-Main to maintain clarity."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "block_hda7hik8",
+  "name": "playlist curation logic",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "playlist_curation_logic",
+    "playlist",
+    "curation",
+    "logic",
+    "structure",
+    "track_order_rules",
+    "track",
+    "order",
+    "rules",
+    "metadata_link",
+    "metadata",
+    "link"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "playlist_curation_logic": {
+        "structure": "Binary (Order / Chaos split)",
+        "track_order_rules": [
+          "1. Initiation (Void-Tech, Low BPM)",
+          "2. Acceleration (Fractal-IDM, Ramping BPM)",
+          "3. The Peak (Neuro-Aggression, 195 BPM)",
+          "4. The Collapse (Dark-Ambient, Entropy H=0.9)",
+          "5. Singularity (Silent G-Inversion)"
+        ],
+        "metadata_link": "All tracks in a playlist must share at least one W-axis Quaternion coefficient."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

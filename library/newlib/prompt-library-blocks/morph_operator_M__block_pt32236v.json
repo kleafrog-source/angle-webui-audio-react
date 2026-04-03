@@ -1,0 +1,43 @@
+{
+  "id": "block_pt32236v",
+  "name": "morph operator M",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "morph_operator_m",
+    "morph",
+    "operator",
+    "m",
+    "source_a_organic",
+    "source",
+    "a",
+    "organic",
+    "source_b_synthetic",
+    "b",
+    "synthetic",
+    "interpolation_logic",
+    "interpolation",
+    "logic"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "morph_operator_M": "M(t) = FFT_A(t) ⊗ (1 - α) + FFT_B(t) ⊗ α",
+      "source_A_organic": "Cello-pluck / Human-vocal-formant (Phrygian)",
+      "source_B_synthetic": "Monster_7_Wavetable / Industrial_Noise (8-bit)",
+      "interpolation_logic": {
+        "linear": "Smooth transition over 4 bars",
+        "fractal_jitter": "Rapid switching based on Seed_v4_Entropy",
+        "transient_sync": "Morph to Source_B only on Snare-hit (Instant aggression)"
+      },
+      "spectral_centroid_shift": "Shift brightness from 2kHz to 8kHz during Morph-ramp"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

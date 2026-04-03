@@ -1,0 +1,56 @@
+{
+  "id": "block_gtohrnpp",
+  "name": "LFE harmonic control lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "lfe_harmonic_control_lyrics",
+    "lfe",
+    "harmonic",
+    "control",
+    "lyrics",
+    "the_tuning_set",
+    "the",
+    "tuning",
+    "set",
+    "the_resonance_set",
+    "resonance",
+    "the_final_alignment",
+    "final",
+    "alignment"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_harmonic_control_lyrics": {
+        "the_tuning_set": [
+          "Lock the root to the G-sharp stone / Building a temple of frequencies alone",
+          "Shift the fifth to the Locrian blur / Making the digital boundaries purr",
+          "Minor-Phrygian, the scale of the void / Healing the logic that the noise destroyed"
+        ],
+        "the_resonance_set": [
+          "Peak the filter @ the harmonic node / Driving the signals down the fractal road",
+          "Resonance screaming in the high-shelf light / Cutting the shadows of the digital night",
+          "Feedback loop @ 51.9Hz / The secret frequency that the soul prefers"
+        ],
+        "the_final_alignment": [
+          "Phase-locked sub, the foundation is deep / Waking the rhythms that the systems keep",
+          "Alignment achieved: zero-point-one / We are the many, moving as one"
+        ]
+      },
+      "harmonic_weight_distribution_v4": {
+        "root_G#": "45% energy focus",
+        "fifth_D#": "25% energy focus",
+        "minor_third_B": "15% energy focus",
+        "dissonant_tensions": "15% (Fractal-dust layer)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

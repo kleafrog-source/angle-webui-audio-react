@@ -1,0 +1,41 @@
+{
+  "id": "block_vtq0qbau",
+  "name": "fast gen protocol",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "fast_gen_protocol",
+    "fast",
+    "gen",
+    "protocol",
+    "trigger",
+    "execution_steps",
+    "execution",
+    "steps",
+    "selection_criteria",
+    "selection",
+    "criteria"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "fast_gen_protocol": {
+        "trigger": "User request: 'Fast-Gen' or 'Flow Mode'",
+        "execution_steps": [
+          "1. Auto-select L1 Core from latent space",
+          "2. Call audio__create_song x3 (Parallel execution)",
+          "3. Automated Style-Mixing (Genre-Fusion via ASE-Taste)",
+          "4. Post-generation Analysis: Identify the 'Golden Version'"
+        ],
+        "selection_criteria": "Maximized Emotional Density + Spectral Width"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

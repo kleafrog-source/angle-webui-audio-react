@@ -1,0 +1,47 @@
+{
+  "id": "block_wc3fnveo",
+  "name": "macro name",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "macro_name",
+    "macro",
+    "name",
+    "engine_type",
+    "engine",
+    "type",
+    "coordinates",
+    "x_axis",
+    "x",
+    "axis",
+    "y_axis",
+    "y",
+    "z_axis",
+    "z"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "macro_name": "MLGS_QUATERNION_GEOMETRIC_UNITY_v3.0",
+      "engine_type": "4D_Vector_Spatializer",
+      "coordinates": {
+        "x_axis": "Frequency_Distribution",
+        "y_axis": "Amplitude_Modulation",
+        "z_axis": "Temporal_Phase_Shift",
+        "w_axis": "Aesthetic_Singularity_Index"
+      },
+      "processing_rules": {
+        "rotation_matrix": "Apply Quaternion rotation to audio__apply_effect(Pan) at δt intervals",
+        "phase_coherence": "Maintain > 0.95 during 4D-translations",
+        "spatial_fractal": "Recursive delay lines at Golden Ratio intervals (1.618)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

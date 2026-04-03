@@ -1,0 +1,55 @@
+{
+  "id": "block_al7j1txa",
+  "name": "stereo field spec v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "stereo_field_spec_v4",
+    "stereo",
+    "field",
+    "spec",
+    "v4",
+    "mid_channel_focus",
+    "mid",
+    "channel",
+    "focus",
+    "elements",
+    "rule",
+    "side_channel_spread",
+    "side",
+    "spread"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "stereo_field_spec_v4": {
+        "mid_channel_focus": {
+          "elements": [
+            "Kick (Sub)",
+            "Snare (Fundamental)",
+            "Lead-Main (Mono-compatible)",
+            "Sub-Bass"
+          ],
+          "rule": "100% Mono-summed below 150Hz. Absolute phase coherence."
+        },
+        "side_channel_spread": {
+          "elements": [
+            "Ambient-Shield (Pads)",
+            "Reverb-Trails",
+            "Hi-hats (Jitter-panning)",
+            "Fractal-Noise"
+          ],
+          "rule": "Apply Haas-Effect (15-30ms) for ultra-width. Subtract -6dB at 250Hz in Sides to remove mud."
+        },
+        "m_s_balance": "Mid: 65%, Side: 35% (The Golden Ratio balance for 'Big' sound)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

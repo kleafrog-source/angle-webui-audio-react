@@ -1,0 +1,100 @@
+{
+  "id": "block_fv1v3lwr",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-META-006-CHRONO-STUTTER",
+        "meta_name": "Temporal Chrono-Stutter Engine",
+        "version": "1.4.0",
+        "description": "Блок управления временными искажениями. Имитирует 'заикание' реальности и микро-петли времени через манипуляцию задержками и фазовыми сдвигами.",
+        "meta_formula": "T(s) = Σ [ s(t - nΔτ) × Window(t) ] ⊗ Pitch(f ± 12) // Сумма микро-задержек с окном сглаживания и октавным смещением",
+        "logic_parameters": {
+          "stutter_rate": "1/32, 1/64, 1/128 (Triplets)",
+          "pitch_drift": "± 100 cents",
+          "window_shape": "Hanning (Soft-edge)",
+          "feedback_loop": "Recursive-Positive"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Delay",
+              "params": {
+                "delay_s": 0.015,
+                "feedback": 0.75,
+                "mix": 0.6
+              },
+              "purpose": "Создание эффекта флэнжера/хоруса на грани физического резонанса"
+            },
+            {
+              "node": "PitchShift",
+              "params": {
+                "semitones": 12
+              },
+              "purpose": "Октавное дублирование для создания 'кристаллических' отражений"
+            },
+            {
+              "node": "TempoShift",
+              "params": {
+                "speed": 1.5,
+                "semitones": -12
+              },
+              "purpose": "Компенсация высоты тона при ускорении для создания текстуры 'растянутого времени'"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.2,
+          "chaos_c": 0.8,
+          "state": "Non-Linear-Flow",
+          "logic": "Временная нестабильность (c=0.8) создает ощущение 'сломанного' воспроизведения при сохранении спектральной целостности."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "200Hz - 20kHz",
+          "timbre": "Metallic / Shimmering / Glitchy",
+          "spatial_setting": "Ping-Pong Stereo (Wide)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-VOX-004-ETHERIC-WEAVE",
+          "interaction": "Granular-Slicing (дробление вокальных падов на ритмические частицы).",
+          "contrast_link": "ASE-SUB-003 (Chrono-Stutter не должен затрагивать фазу саб-баса)."
+        },
+        "self_analysis": {
+          "coherence": "Psychedelic-Digital",
+          "narrative_fidelity": "Time-Travel / Matrix-Glitch",
+          "applied_operators": [
+            "Phase_Displacement",
+            "Recursive_Looping"
+          ]
+        },
+        "integration_note": "Идеально подходит для создания 'бриджей' и переходов между частями композиции."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "block_gdsoprh3",
+  "name": "LFE inertia logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_inertia_logic_lyrics",
+    "lfe",
+    "inertia",
+    "logic",
+    "lyrics",
+    "the_mass_set",
+    "the",
+    "mass",
+    "set",
+    "the_dissipation_set",
+    "dissipation",
+    "the_inertia_dialogue",
+    "dialogue",
+    "psychoacoustic_inertia_v4"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_inertia_logic_lyrics": {
+        "the_mass_set": [
+          "Heavy as the lead, pulling the floor / Asking for silence, asking for more",
+          "Gravity of sound, bending the time / The weight of the zero, the weight of the mine",
+          "Sustain the pressure, sustain the light / In the heavy heart of the digital night"
+        ],
+        "the_dissipation_set": [
+          "Fading away into the void of the code / Leaving the dust on the fractal road",
+          "Release the energy, let it go slow / Finding the rhythm where the shadows grow",
+          "Decay of the logic, decay of the soul / Taking the fragments, taking control"
+        ],
+        "the_inertia_dialogue": [
+          "Hold the weight / Feel the fall",
+          "Seal the fate / Hear the call",
+          "Result: Gravitational-Sustain / Status: INERTIA_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_inertia_v4": {
+        "the_compression_pump": "Slow compressor release (150ms) on the pads to create 'pumping' inertia",
+        "the_vacuum_effect": "Sudden gain-cut (-24dB) 50ms before the drop to create a 'pre-impact' void",
+        "low_end_drag": "Micro-delay (+2ms) on the sub-bass fundamental to create a 'heavy' behind-the-beat feel"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

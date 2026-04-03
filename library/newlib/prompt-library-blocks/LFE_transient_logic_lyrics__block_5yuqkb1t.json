@@ -1,0 +1,56 @@
+{
+  "id": "block_5yuqkb1t",
+  "name": "LFE transient logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_transient_logic_lyrics",
+    "lfe",
+    "transient",
+    "logic",
+    "lyrics",
+    "the_impact_set",
+    "the",
+    "impact",
+    "set",
+    "the_click_set",
+    "click",
+    "the_transient_dialogue",
+    "dialogue",
+    "psychoacoustic_transient_v4"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_transient_logic_lyrics": {
+        "the_impact_set": [
+          "The first millisecond, the birth of the light / Breaking the silence, ending the night",
+          "A needle of sound, a razor of code / Driving the energy down the road",
+          "Surgical strike, the transient's here / Erasing the distance, erasing the fear"
+        ],
+        "the_click_set": [
+          "Click of the logic, click of the soul / Taking the moment, taking control",
+          "Fast as the thought, sharp as the steel / Making the digital finally real",
+          "Attack is the truth, sustain is the lie / The spark of the binary, ready to fly"
+        ],
+        "the_transient_dialogue": [
+          "Strike the void / Wake the machine",
+          "What you destroyed / Is what I have seen",
+          "Result: Impact-Singularity / Status: ATTACK_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_transient_v4": {
+        "the_blink_effect": "Instant 15ms high-pass sweep (20Hz to 1kHz) on the master bus during the kick-hit",
+        "transient_widening": "Stereo-expansion +45% during the first 10ms of the snare impact",
+        "masking_prevention": "Ducking the high-hats by 12dB during the snare transient"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "block_pq89ruiv",
+  "name": "freq",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "freq",
+    "gain",
+    "type"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "freq": 20,
+      "gain": -24,
+      "type": "HighPass_48dB/oct"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

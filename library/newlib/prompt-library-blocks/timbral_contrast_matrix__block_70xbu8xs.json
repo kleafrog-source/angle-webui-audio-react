@@ -1,0 +1,38 @@
+{
+  "id": "block_70xbu8xs",
+  "name": "timbral contrast matrix",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "timbral_contrast_matrix",
+    "timbral",
+    "contrast",
+    "matrix",
+    "pairings",
+    "rule_of_opposition",
+    "rule",
+    "of",
+    "opposition"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "timbral_contrast_matrix": {
+        "pairings": [
+          "Smooth_Sine_Bass vs Gritty_Noise_Lead",
+          "Dry_Percussion vs Wet_Atmospheric_Pads",
+          "Analog_Warmth vs Digital_Cold_Artifacts",
+          "Fast_Arpeggios vs Slow_Drone_Foundations"
+        ],
+        "rule_of_opposition": "If Layer 2 is complex and fast, Layer 3 must be simple and slow to maintain Narrative Fidelity."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

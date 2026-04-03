@@ -1,0 +1,56 @@
+{
+  "id": "block_mm0lk1vx",
+  "name": "emotion frequency map",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "emotion_frequency_map",
+    "emotion",
+    "frequency",
+    "map",
+    "existential_dread",
+    "existential",
+    "dread",
+    "freq",
+    "mod",
+    "space",
+    "cybernetic_euphoria",
+    "cybernetic",
+    "euphoria",
+    "neuro_aggression"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "emotion_frequency_map": {
+        "existential_dread": {
+          "freq": "Sub-35Hz (continuous)",
+          "mod": "Slow LFO (0.1Hz) on Master Pitch",
+          "space": "Infinite Reverb (90% wet)"
+        },
+        "cybernetic_euphoria": {
+          "freq": "4kHz-8kHz (shimmering peaks)",
+          "mod": "Fast Arp (1/32) in Major/Phrygian",
+          "space": "Short Room (15% wet) + Haas-Widening"
+        },
+        "neuro_aggression": {
+          "freq": "400Hz (distorted growl)",
+          "mod": "Sidechain-pump (1/4) + Hard-clipping",
+          "space": "Mono-centered, dry, aggressive transients"
+        },
+        "melancholy_void": {
+          "freq": "1kHz-2kHz (hollow mids)",
+          "mod": "Band-pass filter sweep",
+          "space": "Stereo-delayed trails (dotted 1/8)"
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

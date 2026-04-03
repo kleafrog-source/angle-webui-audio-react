@@ -1,0 +1,49 @@
+{
+  "id": "block_yme6dnii",
+  "name": "inversion math v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "inversion_math_v4",
+    "inversion",
+    "math",
+    "v4",
+    "primary_formula",
+    "primary",
+    "formula",
+    "parameters",
+    "golden_ratio",
+    "golden",
+    "ratio",
+    "t_temporal_vector",
+    "t",
+    "temporal"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "inversion_math_v4": {
+        "primary_formula": "G(f) = ∫ [1 - Aesthetic_Stability(t)] dt * Φ",
+        "parameters": {
+          "Φ_golden_ratio": 1.618,
+          "t_temporal_vector": "Duration of the creative impulse",
+          "stability_index": "Measured from 0.0 (Pure Chaos) to 1.0 (Static Order)"
+        },
+        "inversion_logic": {
+          "if_harmonic": "Apply Atonal_Injection (Locrian/Chro-matic shifts)",
+          "if_saturated": "Apply Negative_Space (Silence/Subtraction)",
+          "if_dry": "Apply Recursive_Wetness (Fractal Reverb)",
+          "if_static": "Apply Jitter_Modulation (Temporal Variance)"
+        },
+        "goal": "Reach the 'Neutral Point' of Singularity where duality vanishes."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "block_ff09lhcu",
+  "name": "vocal processing spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "vocal_processing_spec",
+    "vocal",
+    "processing",
+    "spec",
+    "source",
+    "chopping_logic",
+    "chopping",
+    "logic",
+    "pitch_shift",
+    "pitch",
+    "shift",
+    "fx_chain",
+    "fx",
+    "chain"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "vocal_processing_spec": {
+        "source": "Ethereal/Choir or Aggressive/Spoken",
+        "chopping_logic": "Granular slicing (16th and 32nd notes)",
+        "pitch_shift": "Formant-shifting (Deep-male or Alien-high) + Pitch-drift",
+        "fx_chain": {
+          "reverb": "Valhalla-Supermassive (100% wet, 2s pre-delay)",
+          "delay": "Ping-pong (dotted 1/8) with recursive feedback",
+          "distortion": "Bitcrush (8-bit) mixed at 15%",
+          "panning": "MLGS_QUATERNION circular rotation"
+        },
+        "rule": "Vocals must sound like they are 'inhaling the void', not singing a song."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

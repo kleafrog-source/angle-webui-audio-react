@@ -1,0 +1,58 @@
+{
+  "id": "block_x60s04w1",
+  "name": "neuro acoustic triggers v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "neuro_acoustic_triggers_v4",
+    "neuro",
+    "acoustic",
+    "triggers",
+    "v4",
+    "binaural_beat_layering",
+    "binaural",
+    "beat",
+    "layering",
+    "base_carrier",
+    "base",
+    "carrier",
+    "offset_frequency",
+    "offset"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "neuro_acoustic_triggers_v4": {
+        "binaural_beat_layering": {
+          "base_carrier": "52Hz (G#)",
+          "offset_frequency": "4.5Hz (Theta-wave focus)",
+          "panning": "Hard-L (Carrier), Hard-R (Offset) @ -24dB mix",
+          "goal": "Deep immersive trance state during breaks"
+        },
+        "shepard_tone_riser_logic": {
+          "octave_stack": 5,
+          "pitch_ramp": "Exponential, 16 bars duration",
+          "amplitude_fading": "Smooth fade-in (Bottom), Smooth fade-out (Top)",
+          "result": "Infinite rising tension without frequency capping"
+        },
+        "haas_effect_spatial_delusions": {
+          "delay_L_R": "12ms vs 17ms",
+          "phase_shift": "180° inversion on high-shelf (>5kHz)",
+          "target": "Sounds appearing 'outside' the headphones"
+        }
+      },
+      "psychoacoustic_shaping_rules": {
+        "missing_fundamental_illusion": "Adding harmonics @ 104Hz, 156Hz, 208Hz to make the sub-bass (52Hz) audible on small speakers.",
+        "masking_prevention_protocol": "Dynamic notch-filtering @ 3kHz (Vocal clarity) triggered by Snare transients.",
+        "transient_ear_fatigue_control": "Soft-saturation on 2-5kHz region to avoid 'harshness' at high volumes."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

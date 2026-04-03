@@ -1,0 +1,42 @@
+{
+  "id": "block_z0r0y6fq",
+  "name": "extended lyrics archive",
+  "description": "Imported from mixed JSON/text document",
+  "category": "archive",
+  "tags": [
+    "import",
+    "extended_lyrics_archive",
+    "extended",
+    "lyrics",
+    "archive",
+    "semantic_variables",
+    "semantic",
+    "variables",
+    "variable_x",
+    "variable",
+    "x",
+    "variable_y",
+    "y"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "extended_lyrics_archive": [
+        "Syllables mapped to the drum-kit events / Logic collapses, the silence relents",
+        "4:3 polyrhythm, the heart of the machine / Breathing in spaces that no one has seen",
+        "G-Inversion active, the process is done / Result is the zero, the many are one",
+        "Wavetable shifting, the Monster 7 grows / Through the Phrygian darkness the frequency flows"
+      ],
+      "semantic_variables": {
+        "variable_x": "Dynamic slot for user-injected themes (Cybernetics, Singularity, Recursive Chaos)",
+        "variable_y": "Soundscape anchor (Cold Industrial, Organic Shamanic, Dystopian Precision)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

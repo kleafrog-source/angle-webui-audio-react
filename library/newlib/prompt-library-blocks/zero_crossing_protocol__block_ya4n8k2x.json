@@ -1,0 +1,41 @@
+{
+  "id": "block_ya4n8k2x",
+  "name": "zero crossing protocol",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "zero_crossing_protocol",
+    "zero",
+    "crossing",
+    "protocol",
+    "fade_shape",
+    "fade",
+    "shape",
+    "phase_alignment",
+    "phase",
+    "alignment",
+    "tail_injection",
+    "tail",
+    "injection",
+    "echo_ghosting"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "zero_crossing_protocol": {
+        "fade_shape": "Exponential (Logarithmic decay) for natural feel",
+        "phase_alignment": "Cutting audio exactly at the 0V crossing to avoid clicks",
+        "tail_injection": "Adding a 2ms burst of high-freq noise (8kHz+) at the cut point",
+        "echo_ghosting": "Last 50ms of audio sent to a 100% feedback delay at -48dB",
+        "rule": "Every absolute silence must be preceded by a 'Spectral Breath' (Block 26)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "block_pc3xge08",
+  "name": "drum tuning protocol",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "drum_tuning_protocol",
+    "drum",
+    "tuning",
+    "protocol",
+    "kick",
+    "snare",
+    "percussion",
+    "fine_tune",
+    "fine",
+    "tune",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "drum_tuning_protocol": {
+        "kick": "Root note of the scale (e.g., F1 at 43.65Hz)",
+        "snare": "Perfect Fifth or Fourth relative to Root (e.g., C2 or Bb1)",
+        "percussion": "Tied to specific scale degrees (Phrygian-b2 for 'The Bite')",
+        "fine_tune": "±5 cents offset to create 'Beating-Frequency' (Aesthetic Friction)",
+        "rule": "Always check tuning after applying Bitcrush or Distortion."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

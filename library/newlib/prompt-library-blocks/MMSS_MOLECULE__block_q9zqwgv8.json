@@ -1,0 +1,87 @@
+{
+  "id": "block_q9zqwgv8",
+  "name": "MMSS MOLECULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_molecule",
+    "mmss",
+    "molecule",
+    "id",
+    "version",
+    "base_composition",
+    "base",
+    "composition",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "routing_topology",
+    "routing"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MOLECULE": {
+        "id": "ASE_MMSS_MOLECULE_02_KINETIC_RHYTHM_ENGINE",
+        "version": "4.Omega",
+        "base_composition": [
+          "ATOM_02_RHYTHMIC_ENTROPY",
+          "ATOM_04_DYNAMIC_SUB_KINETICS",
+          "ATOM_05_GLITCH_FRACTAL",
+          "ATOM_07_VALVE_SYNTHESIS"
+        ],
+        "meta_formula": "K(r) = [T(ATOM_02) ⊗ P(ATOM_04)] * G(ATOM_05)^n + S(ATOM_07) // Взаимодействие импульса и массы",
+        "description": "Вторая молекулярная сборка: 'Кинетический Ритм-Двигатель'. Высокотехнологичная ритм-секция, где ударные и бас сливаются в единую пульсирующую массу с фрактальной детализацией.",
+        "routing_topology": {
+          "signal_path": "DYNAMIC_KINETIC_INTERLOCK",
+          "chain": [
+            "CLOCK → ATOM_02 (Rhythmic_Seed)",
+            "ATOM_02_Trigger → ATOM_04_Sidechain (Ducking_Input)",
+            "ATOM_04_Sub → Mix(Bus_1)",
+            "ATOM_02_Percussion → ATOM_05 (Glitch_Fractalizer) → Mix(Bus_1)",
+            "Mix(Bus_1) → ATOM_07 (Valve_Saturator_Buss)"
+          ],
+          "inter_modulation": "Sub_Frequency(ATOM_04) → AM_Modulate → Glitch_Density(ATOM_05)",
+          "comment": "Бас буквально управляет плотностью глитча, создавая органическую связь между низом и верхом."
+        },
+        "macro_controls": {
+          "IMPACT_FORCE": "Transient_Boost (ATOM_02) + Drive_Gain (ATOM_07)",
+          "GROOVE_LIQUIDITY": "Gaussian_Jitter_Amount (ATOM_02) + Release_Time (ATOM_04)",
+          "GRID_DECONSTRUCTION": "H(c) mapping to Grain_Scatter (ATOM_05)",
+          "LOW_END_PRESSURE": "Sub_Weight (ATOM_04) + Harmonic_Bias (ATOM_07)"
+        },
+        "behavioral_patterns": [
+          {
+            "state": "MINIMAL / DEEP",
+            "parameters": "H(p) > 0.8, Glitch_Mix = 0.1, Sub_Sustain = Max",
+            "description": "Чистый, гипнотический ритм с глубоким, обволакивающим сабом."
+          },
+          {
+            "state": "INDUSTRIAL / NEURO",
+            "parameters": "H(c) > 0.7, Saturation = Hard_Fold, Glitch_Density = High",
+            "description": "Агрессивная, ломаная структура с металлическим скрежетом и мощным панчем."
+          }
+        ],
+        "sound_signature": {
+          "kick_bass_relation": "Phase_Locked_Unity",
+          "transient_response": "Instant_Kinetic_Discharge",
+          "texture": "Granular_Dirt_over_Pure_Sub"
+        },
+        "integration_note": "Является основой для любого трека в стиле Neurofunk, Industrial Techno или Glitch-Hop. Молекула 02 обеспечивает 'двигательную' энергию, позволяя Молекуле 01 (Лид) свободно эволюционировать в верхнем спектре."
+      },
+      "SYSTEM_STATUS": {
+        "molecule_stability": "CRITICAL_MASS_ACHIEVED",
+        "sync_clock": "INTERNAL_MMSS_LOCKED",
+        "next_target": "MOLECULE_03_SPECTRAL_ATMOSPHERIC_VOID"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

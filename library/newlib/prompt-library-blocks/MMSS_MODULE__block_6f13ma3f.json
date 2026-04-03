@@ -1,0 +1,92 @@
+{
+  "id": "block_6f13ma3f",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "fft_analysis_engine",
+    "fft"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_13_SPECTRAL_RESYNTHESIS_GATE",
+        "version": "4.Omega",
+        "meta_formula": "G_spec(f) = [FFT(x) ⊗ Mask(H, ε)] ⊗ iFFT(y) // Спектральная сепарация",
+        "description": "Модуль спектрального гейтирования и ресинтеза. Позволяет деконструировать сигнал в частотной области и применять 'маски' на основе гармонической значимости и энтропии. Создает эффект 'спектрального кружева', где звук становится полупрозрачным, сохраняя только ключевые обертоны.",
+        "sub_structure": {
+          "FFT_ANALYSIS_ENGINE": {
+            "bin_size": "1024 - 4096 (Trade-off: Time vs Frequency Resolution)",
+            "window_function": "Hann / Blackman-Harris (Min_Side-Lobe_Leakage)",
+            "overlap_factor": "4x - 8x (Smooth_Phase_Reconstruction)",
+            "spectral_centroid_tracking": "Adaptive_Filter_Center"
+          },
+          "HARMONIC_MASKING_LOGIC": {
+            "threshold_algorithm": "Dynamic_Noise_Floor_Estimation",
+            "mask_type": "Sparse_Comb / Harmonic_Series_Only / Inharmonic_Noise_Extraction",
+            "gate_slope": "Linear_to_Exponential (Soft_Knee_Spectral)",
+            "ε_blur": "Frequency_Domain_Smearing // размытие границ между бинами"
+          },
+          "RESYNTHESIS_OSCILLATOR_BANK": {
+            "mode": "Additive_Sine_Synthesis (n=512_bins)",
+            "phase_randomization": "H(c) mapping to Bin_Phase_Offset",
+            "magnitude_smoothing": "Time_Constant(1ms - 100ms)",
+            "spectral_tilt": "Post-Resynthesis_Eq (-3dB/Oct)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "FFT Decomposition",
+            "target": "Real-time_Signal_Capture",
+            "comment": "Перевод аудио-сигнала из временной области в частотную для побинового анализа."
+          },
+          {
+            "step": 2,
+            "action": "Apply Harmonic Mask",
+            "logic": "Keep(Bins[i]) IF Magnitude[i] > Threshold * Dynamic_Floor",
+            "comment": "Удаление всех 'малозначимых' частот, оставляя только скелет звука."
+          },
+          {
+            "step": 3,
+            "action": "iFFT / Additive Reconstruction",
+            "method": "Over-Lap-Add (OLA) / Oscillator_Re-trigger",
+            "comment": "Сборка звука обратно с наложением эффекта 'спектрального мерцания'."
+          }
+        ],
+        "sound_design_params": {
+          "spectral_sparsity": 0.9,
+          "harmonic_purity": "Pure_Sine_Tones",
+          "aliasing_purity": "Anti-Aliased_Resynthesis",
+          "texture": "Crystalline_Lace_Mesh"
+        },
+        "integration_note": "Модуль предназначен для экстремального звукового дизайна. Превращает любой шум в чистые гармонические структуры. Идеально работает на посылах (Send) от ATOM_08 (Вокал) или ATOM_01 (Лид), создавая призрачные, 'стеклянные' отзвуки."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_03_08",
+        "sync_status": "SPECTRAL_LACE_GENERATED",
+        "system_feedback": "FFT buffer stable. Harmonic mask applied with high fidelity."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

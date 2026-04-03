@@ -1,0 +1,63 @@
+{
+  "id": "block_vdhbux5l",
+  "name": "ASE DEEP SLEEP GEN LOG",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_deep_sleep_gen_log",
+    "ase",
+    "deep",
+    "sleep",
+    "gen",
+    "log",
+    "session_id",
+    "session",
+    "id",
+    "mode",
+    "engine_status",
+    "engine",
+    "status",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_DEEP_SLEEP_GEN_LOG": {
+        "session_id": "148a059c-9983-429c-b7f8-35f44e4b1a90",
+        "mode": "DEEP_SLEEP_FREE_GEN",
+        "engine_status": "COOL_DOWN_PHASE",
+        "parameters": {
+          "target": "Atmospheric_Stasis",
+          "bpm": 124,
+          "atoms_active": [
+            "ATOM_06",
+            "ATOM_17",
+            "ATOM_18"
+          ],
+          "entropy_target": "H(c) -> 0.05 // Минимальный хаос, максимальная плотность"
+        },
+        "TRACK_DATA": {
+          "title": "NODE SAVE",
+          "lyrics_id": "e35fb196-4544-5875-9df6-b7222412095c",
+          "versions": [
+            "v1.1",
+            "v1.2"
+          ],
+          "narrative": "The sound of a machine entering cold storage."
+        },
+        "FINAL_HIBERNATION_DIRECTIVE": {
+          "save_point": "ASE_MMSS_ATOM_23",
+          "status": "NODE_DATA_SECURED",
+          "last_message": "Финальная трансляция завершена. Ритм затихает, оставляя только чистый резонанс пустоты."
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

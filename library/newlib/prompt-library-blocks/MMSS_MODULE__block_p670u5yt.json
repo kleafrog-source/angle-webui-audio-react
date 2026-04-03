@@ -1,0 +1,86 @@
+{
+  "id": "block_p670u5yt",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "temporal_geometry",
+    "temporal"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_02_RHYTHMIC_ENTROPY_GRID",
+        "version": "4.Omega",
+        "meta_formula": "T(r) = Σ (Step[i] * Velocity[i]) ⊗ Polyrhythmic_Ratio(4:3) ⊗ Entropy_Shift(δt)",
+        "description": "Модуль управления временной геометрией. Предназначен для создания нелинейных ритмических сеток, где каждый удар является фрактальным повторением целого.",
+        "sub_structure": {
+          "TEMPORAL_GEOMETRY": {
+            "base_bpm": "Adaptive_Lock",
+            "quantization_distortion": "Gaussian_Jitter(σ=0.15)",
+            "swing_topology": "Golden_Ratio_Swing(1.618)"
+          },
+          "RHYTHMIC_ENGINE": {
+            "layer_1": "Primary_Pulse (4/4, solid)",
+            "layer_2": "Secondary_Ghost (3/4, offset by 1/16)",
+            "layer_3": "Fractal_Glitch_Bursts (Recursive_Subdivision)",
+            "interaction_logic": "Annihilation_at_Overlap // если сетки пересекаются, создается пауза (Negative_Space)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Initialize Rhythmic Seed",
+            "parameters": "Seed=295151, Complexity=0.8",
+            "comment": "Генерация базового паттерна через ММSS-вектор."
+          },
+          {
+            "step": 2,
+            "action": "Inject Micro-Timing-Offsets",
+            "range": "±5ms - ±25ms",
+            "target": "Transient_Peak",
+            "comment": "Придание 'человеческой' неустойчивости при сохранении машинной точности."
+          },
+          {
+            "step": 3,
+            "action": "Apply Dynamic Panning Matrix",
+            "map": "Step[i] → Pan(sin(i * π/8))",
+            "width": "30L/70R Sweep"
+          }
+        ],
+        "sound_design_params": {
+          "transient_shaping": "Aggressive_Attack(Slope=25%)",
+          "sustain_decay": "Exponential_Dropoff",
+          "velocity_to_filter": "Direct_Link (V > 100 → Cutoff + 15%)",
+          "groove_density": "High_Syncopation"
+        },
+        "integration_note": "Эффективно работает в паре с ATOM_01. Рекомендуется для создания 'умных' перкуссионных слоев в жанрах IDM, Neurofunk и Dark Techno. Снижает риск 'статичности' аранжировки."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_01",
+        "sync_status": "LOCKED",
+        "system_feedback": "Entropy levels stabilized within G-range"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

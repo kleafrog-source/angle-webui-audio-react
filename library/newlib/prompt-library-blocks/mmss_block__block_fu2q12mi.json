@@ -1,0 +1,103 @@
+{
+  "id": "block_fu2q12mi",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-PULSE-023-BIOMETRIC-SYNC",
+        "meta_name": "Biometric Heart-Rate Sync Engine",
+        "version": "3.3.0",
+        "description": "Блок управления 'биологическим темпом'. Синхронизирует музыкальные события с ритмами человеческого тела (пульс, дыхание), создавая эффект психоакустического резонанса и глубокого вовлечения.",
+        "meta_formula": "B(t) = Σ [ Kick(f₀) ⊗ Comp(Sidechain) ] ⊕ Mod(Sin(0.2Hz)) // Синкопированный ритм пульса (72-120 bpm) с модуляцией дыхательного цикла (0.2Гц)",
+        "logic_parameters": {
+          "heart_rate_bpm": "60 - 140 (Dynamic-Drift)",
+          "ventilation_rate": "12-18 cycles/min",
+          "systolic_accent": "1.0",
+          "diastolic_ghost": "0.65 (Delayed peak)",
+          "variability_index": 0.15
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Compressor",
+              "params": {
+                "threshold_db": -24,
+                "ratio": 6,
+                "attack_ms": 10,
+                "release_ms": 200
+              },
+              "purpose": "Создание эффекта 'накачки' (pumping), имитирующего движение крови"
+            },
+            {
+              "node": "Equalizer",
+              "params": {
+                "bass_db": 8,
+                "mid_db": -6,
+                "treble_db": -12
+              },
+              "purpose": "Акцент на низкочастотном 'телесном' ударе и удаление 'стерильных' верхов"
+            },
+            {
+              "node": "LowPass",
+              "params": {
+                "cutoff_frequency_hz": 450
+              },
+              "purpose": "Имитация звука, слышимого 'изнутри' организма"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.8,
+          "chaos_c": 0.2,
+          "state": "Vital-Stability",
+          "logic": "Высокий порядок (p=0.8) необходим для поддержания жизнеобеспечивающего ритма, хаос (c=0.2) имитирует естественную аритмию."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "30Hz - 800Hz",
+          "timbre": "Muffled / Thumping / Organic / Warm",
+          "spatial_setting": "Internal-Center (Bone-conduction feel)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-SUB-003-VOID-GRAVITY",
+          "interaction": "Bio-Sub-Bond (Sub 003 обеспечивает массу, Biometric 023 — пульсацию).",
+          "contrast_link": "ASE-GRID-015 (Organic pulse vs Cold digital grid)."
+        },
+        "self_analysis": {
+          "coherence": "Visceral-Impact",
+          "narrative_fidelity": "Human-Inside / Life-Support / Techno-Organism",
+          "applied_operators": [
+            "Amplitude_Pumping",
+            "Rhythmic_Bio-mimicry"
+          ]
+        },
+        "integration_note": "Использовать как скрытый фундамент (Sub-layer) для вызова у слушателя непроизвольного чувства тревоги или, наоборот, глубокого спокойствия."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

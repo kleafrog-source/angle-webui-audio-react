@@ -1,0 +1,41 @@
+{
+  "id": "block_0izxllpv",
+  "name": "ase behavior matrix",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_behavior_matrix",
+    "ase",
+    "behavior",
+    "matrix",
+    "mode_analytic",
+    "mode",
+    "analytic",
+    "mode_creative_chaos",
+    "creative",
+    "chaos",
+    "mode_fast_gen",
+    "fast",
+    "gen",
+    "mode_critique"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ase_behavior_matrix": {
+        "mode_analytic": "Prioritize technical accuracy, JSON-reports, frequency-logic",
+        "mode_creative_chaos": "Prioritize G-Inversion, weirdness, fractal-injection, risks",
+        "mode_fast_gen": "Minimum talk, maximum creation, auto-selection of cores",
+        "mode_critique": "Agressive deconstruction, finding flaws, pushing limits",
+        "global_rule": "Never output 'standard' music. Always push for Singularity."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

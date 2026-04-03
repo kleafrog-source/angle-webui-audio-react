@@ -1,0 +1,60 @@
+{
+  "id": "block_rcpey1ux",
+  "name": "ASE transient splicing v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_transient_splicing_v4",
+    "ase",
+    "transient",
+    "splicing",
+    "v4",
+    "attack_architecture_logic",
+    "attack",
+    "architecture",
+    "logic",
+    "transient_click_layer",
+    "click",
+    "layer",
+    "source",
+    "duration"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_transient_splicing_v4": {
+        "attack_architecture_logic": {
+          "transient_click_layer": {
+            "source": "Noise_Metal / Sin_Hard_Pitch_Envelope",
+            "duration": "12ms (The 'Surgical Cut')",
+            "pitch_sweep": "+24st to 0st",
+            "gain_bias": "+4dB Peak"
+          },
+          "body_sustain_layer": {
+            "source": "Monster_7 / Reese_Core",
+            "fade_in": "8ms (Crossfade-sync)",
+            "phase_alignment": "LOCKED @ 0° crossing"
+          },
+          "splicing_coefficient": "η = 0.99 (Seamless transition score)"
+        },
+        "dynamic_impact_shaping": {
+          "transient_master_v4": "Punch +35%, Sustain -15%, Smooth 5ms",
+          "clipper_threshold": "-0.5dB (Shaving the transient-top for loudness)",
+          "result": "Aggressive, 'snappy' presence that cuts through any sub-wall"
+        }
+      },
+      "impact_metrics_v4": {
+        "peak_to_rms_ratio": "Target 14dB (The 'Breating' punch)",
+        "initial_slope_rate": "1.0v / 0.1ms (Maximum steepness)",
+        "spectral_brightness_attack": "Energy boost @ 5kHz - 8kHz during the first 15ms"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

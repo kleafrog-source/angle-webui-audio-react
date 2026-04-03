@@ -1,0 +1,51 @@
+{
+  "id": "block_qxvvdlmo",
+  "name": "fractal seed evolution logic",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "fractal_seed_evolution_logic",
+    "fractal",
+    "seed",
+    "evolution",
+    "logic",
+    "evolution_operator_e",
+    "operator",
+    "e",
+    "inheritance_rules",
+    "inheritance",
+    "rules",
+    "low_freq_retention",
+    "low",
+    "freq"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "fractal_seed_evolution_logic": {
+        "evolution_operator_E": "Seed_n+1 = Hash(Seed_n ⊗ Δ_Entropy) // Step=0.05",
+        "inheritance_rules": {
+          "low_freq_retention": "Carry over Kick-Bass phase-alignment (±2°)",
+          "high_freq_mutation": "Shift Granular_Spray parameters by ±15% per iteration",
+          "rhythmic_drift": "Offset snare-position by δt = prime_number / 1000"
+        },
+        "selection_criteria_AFS": {
+          "min_score": "0.85 (Discard if Aesthetic Fidelity Score is low)",
+          "max_novelty": "0.3 (Avoid total pattern dissolution / chaos collapse)"
+        },
+        "recursive_depth_OMEGA": "Limit = 13 iterations (The Fibonacci anchor)"
+      },
+      "MMSS_purity_protocols_v4": {
+        "conflict_annihilation_v3": "Dynamic spectral ducking @ 180Hz (Snare body vs Bass transient)",
+        "phase_correction": "Auto-align @ 51.9Hz (G# fundamental) for every new seed"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

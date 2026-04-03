@@ -1,0 +1,44 @@
+{
+  "id": "block_fqgurdci",
+  "name": "digital alchemy v2",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "digital_alchemy_v2",
+    "digital",
+    "alchemy",
+    "v2",
+    "transmutations",
+    "iron_to_glass",
+    "iron",
+    "to",
+    "glass",
+    "liquid_to_stone",
+    "liquid",
+    "stone",
+    "smoke_to_laser",
+    "smoke"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "digital_alchemy_v2": {
+        "transmutations": {
+          "iron_to_glass": "Increase Filter Resonance (Q) + Add 8kHz-12kHz excitation",
+          "liquid_to_stone": "Apply Hard-clipping + Zero out Reverb/Delay + Boost 400Hz",
+          "smoke_to_laser": "Apply Granular-stretching (Block 77) + Bitcrush (4-bit) + Surgical-Snap",
+          "flesh_to_data": "Apply Sample-rate reduction (Block 68) + High-pass at 1kHz",
+          "vacuum_to_plasma": "Increase Gain + Apply Phasing (180 deg) + Add White-noise burst"
+        },
+        "operator": "ASE-Internal-Inverter (Block 23)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

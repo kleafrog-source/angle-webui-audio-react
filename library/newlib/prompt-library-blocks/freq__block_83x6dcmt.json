@@ -1,0 +1,28 @@
+{
+  "id": "block_83x6dcmt",
+  "name": "freq",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "freq",
+    "gain",
+    "q",
+    "type"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "freq": 250,
+      "gain": -1.8,
+      "q": 8,
+      "type": "Peak_Anti-mud"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

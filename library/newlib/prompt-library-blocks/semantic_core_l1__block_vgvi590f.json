@@ -1,0 +1,43 @@
+{
+  "id": "block_vgvi590f",
+  "name": "semantic core l1",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "semantic_core_l1",
+    "semantic",
+    "core",
+    "l1",
+    "components",
+    "emotion",
+    "concept",
+    "soundscape",
+    "interaction_rule",
+    "interaction",
+    "rule",
+    "stability_index",
+    "stability",
+    "index"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "semantic_core_l1": {
+        "components": {
+          "emotion": "The visceral trigger (e.g., Neuro-Dread, Ecstatic-Void)",
+          "concept": "The intellectual anchor (e.g., 4D-Geometry, Fractal-Biology)",
+          "soundscape": "The physical environment (e.g., Sub-Arctic Industrial, Deep-Space Void)"
+        },
+        "interaction_rule": "E x C x S = Narrative_Fidelity",
+        "stability_index": "Must be > 0.85 for successful Hyperloop execution"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

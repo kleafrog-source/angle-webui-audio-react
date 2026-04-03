@@ -1,0 +1,59 @@
+{
+  "id": "block_1tvkvkk2",
+  "name": "semantic tag cloud",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "semantic_tag_cloud",
+    "semantic",
+    "tag",
+    "cloud",
+    "vibe_tags",
+    "vibe",
+    "tags",
+    "technical_tags",
+    "technical",
+    "process_tags",
+    "process",
+    "user_workflow_checkpoints",
+    "user",
+    "workflow"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "semantic_tag_cloud": {
+        "vibe_tags": [
+          "Neuro-Aggression",
+          "Psy-Fractal",
+          "Industrial-Minimal",
+          "Cyber-Gothic"
+        ],
+        "technical_tags": [
+          "Sidechain-Compression",
+          "Phase-Alignment",
+          "Surgical-EQ",
+          "Multiband-OTT"
+        ],
+        "process_tags": [
+          "Iterative-Gen",
+          "Hyperloop-Active",
+          "ASE-Controlled",
+          "MMSS-Optimized"
+        ]
+      },
+      "user_workflow_checkpoints": [
+        "Always start with audio__create_song (2 versions, no seed)",
+        "Refine via audio__modify_song using JSON-specifications",
+        "Finalize with audio__apply_effect for spatial 4D-Vectoring"
+      ]
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

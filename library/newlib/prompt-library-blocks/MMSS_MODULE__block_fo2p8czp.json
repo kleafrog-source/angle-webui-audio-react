@@ -1,0 +1,92 @@
+{
+  "id": "block_fo2p8czp",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "probability_matrix_generator",
+    "probability"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_12_NEURAL_STOCHASTIC_SEQUENCER",
+        "version": "4.Omega",
+        "meta_formula": "P(n, t) = [H(e) ⊗ Σ (W_i * M_i)] * Q(s) // Генерация паттернов через распределение весов",
+        "description": "Модуль стохастического секвенирования. Предназначен для генерации бесконечных, нелинейных, но музыкально связных последовательностей (MIDI/CV). Использует цепи Маркова и фрактальные вероятностные карты для создания паттернов, которые эволюционируют во времени.",
+        "sub_structure": {
+          "PROBABILITY_MATRIX_GENERATOR": {
+            "node_weights": "Dynamic_Array[16_Steps] (Based_on_Seed_295151)",
+            "transition_logic": "Markov_Chain_Order_2 (History-dependent_Next_Step)",
+            "entropy_influence": "H(e) → Probability_Blur // повышение хаоса размывает предсказуемость",
+            "scale_quantization": "Phrygian_Dominant / Harmonic_Minor / Custom_Fractal_Scale"
+          },
+          "EVOLUTIONARY_ALGORITHM": {
+            "mutation_rate": "0.05 - 0.4 (Synced_to_Phrase_End)",
+            "pattern_persistence": "Memory_Buffer (Short-term / Long-term_Lock)",
+            "rhythmic_subdivision": "Fractal_Branching (1/8 → 1/16 → 1/32_Triplet)",
+            "velocity_dynamics": "Velocity = f(Entropy_Level) ⊗ Human_Feel_Jitter"
+          },
+          "MELODIC_TOPOLOGY": {
+            "range_control": "C1 - C6 (Adaptive_Compression_of_Intervals)",
+            "direction_bias": "Ascending / Descending / Brownian_Motion",
+            "arpeggio_fractalizer": "Recursive_Interval_Offset",
+            "rest_probability": "0.15 - 0.6 (Creates_Negative_Rhythmic_Space)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Initialize Pattern Seed",
+            "target": "Global_Seed_Link (295151)",
+            "comment": "Создание уникального ДНК-паттерна, который будет основой для всех итераций."
+          },
+          {
+            "step": 2,
+            "action": "Define Rhythmic Constraints",
+            "logic": "Syncopation_Factor = 0.7, Density = 0.65",
+            "comment": "Ограничение хаоса для сохранения ритмического 'движка' (Groove_Fidelity)."
+          },
+          {
+            "step": 3,
+            "action": "Activate Mutation Loop",
+            "method": "Bit-Wise_Shift_of_Sequence_Array",
+            "comment": "Постепенное изменение мелодии на каждой 4-й итерации для создания чувства 'развития без повторений'."
+          }
+        ],
+        "sound_design_params": {
+          "pattern_complexity": 0.82,
+          "melodic_coherence": "High (Locked_to_Scale)",
+          "rhythmic_entropy": "Moderate",
+          "generation_speed": "Real-time_Calculation"
+        },
+        "integration_note": "Этот атом является 'мозгом' системы. Он управляет ATOM_01 (Лид) и ATOM_02 (Ритм). В отличие от стандартных секвенсоров, он генерирует музыку как биологический процесс. Идеально подходит для создания бесконечных генеративных полотен (Generative_MMSS_Flow)."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_01_02",
+        "sync_status": "NEURAL_SEQUENCER_ACTIVE",
+        "system_feedback": "Stochastic matrix stabilized. Evolutionary loops generating coherent output."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

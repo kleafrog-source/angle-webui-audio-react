@@ -1,0 +1,85 @@
+{
+  "id": "block_drlmd90m",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "low_end_topology",
+    "low"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_04_DYNAMIC_SUB_KINETICS",
+        "version": "4.Omega",
+        "meta_formula": "P(s) = [Mass(m) * Velocity(v)] ⊗ Sidechain_Ducking(S) ⊗ Low_End_Displacement(D)",
+        "description": "Модуль управления физическим давлением и кинетикой низких частот. Фокусируется на создании 'фундамента' трека через прецизионное формирование саб-баса и его динамическое взаимодействие с ритмической сеткой.",
+        "sub_structure": {
+          "LOW_END_TOPOLOGY": {
+            "core_oscillator": "Pure_Sine_v2 + 1st_Harmonic_Saturation",
+            "sub_weight": "Fixed_at_45Hz (Physical_Resonance)",
+            "harmonic_content": "Warm_Tube_Distortion (Drive=12dB, Mix=0.2)"
+          },
+          "KINETIC_SIDECHAIN": {
+            "source_link": "ATOM_02_PRIMARY_PULSE",
+            "ducking_curve": "Inverse_Logarithmic (Ultra-Fast_Release)",
+            "look_ahead": "2.5ms",
+            "pressure_valve": "Dynamic_Gain_Compensation // предотвращает потерю RMS при подавлении"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Calibrate Sub-Anchor",
+            "target": "30-80 Hz",
+            "comment": "Удаление всех фазовых конфликтов. Моно-совместимость 100%."
+          },
+          {
+            "step": 2,
+            "action": "Inject Kinetic Impulse",
+            "logic": "VCA_Compression(Ratio=8:1, Attack=0.1ms)",
+            "comment": "Создание 'щелчка' (Transient) для лучшей читаемости на малых системах."
+          },
+          {
+            "step": 3,
+            "action": "Apply Spatial Displacement",
+            "method": "Phased_Sub_Alignment",
+            "comment": "Микро-смещение фазы для ощущения 'обволакивающего' баса без потери центра."
+          }
+        ],
+        "sound_design_params": {
+          "pressure_index": "High_Density",
+          "sustain_behavior": "Constant_Energy_Flow",
+          "sub_cutoff": "Hard_Clip_at_25Hz (Anti-Rumble)",
+          "impact_factor": "Force_Multiplier(x1.5)"
+        },
+        "integration_note": "Является 'двигателем' системы. Жестко синхронизирован с ATOM_02. При использовании с ATOM_03 (Гармония) требует тщательной эквализации в районе 200-400 Гц для избежания 'мутности' (Mud_Annihilation)."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_03",
+        "sync_status": "SUB_LOCKED",
+        "system_feedback": "Kinetic energy within safety limits of the Aesthetic-Singularity"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

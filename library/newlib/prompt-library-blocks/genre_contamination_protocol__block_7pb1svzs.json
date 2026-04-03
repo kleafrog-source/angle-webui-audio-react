@@ -1,0 +1,50 @@
+{
+  "id": "block_7pb1svzs",
+  "name": "genre contamination protocol",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "genre_contamination_protocol",
+    "genre",
+    "contamination",
+    "protocol",
+    "method",
+    "base_styles",
+    "base",
+    "styles",
+    "contamination_rules",
+    "rules",
+    "techno_into_jazz",
+    "techno",
+    "into",
+    "jazz"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "genre_contamination_protocol": {
+        "method": "Aesthetic-Injection",
+        "base_styles": [
+          "Psy-Trance",
+          "Gothic-Techno",
+          "Jazz-Metal",
+          "Dark-Ambient"
+        ],
+        "contamination_rules": {
+          "techno_into_jazz": "Replace drums with 909-kick, keep saxophone in Phrygian",
+          "metal_into_ambient": "Apply ultra-reverb to distorted guitars, remove transients",
+          "psy_into_gothic": "Use 170 BPM rolling bass, but use pipe-organ as Lead",
+          "minimal_into_fractal": "Keep silence gaps, but fill them with recursive granular noise"
+        },
+        "synergy_check": "Final track must be unclassifiable by standard tags."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

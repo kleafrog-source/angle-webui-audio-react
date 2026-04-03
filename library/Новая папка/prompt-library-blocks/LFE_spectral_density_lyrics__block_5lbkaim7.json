@@ -1,0 +1,56 @@
+{
+  "id": "block_5lbkaim7",
+  "name": "LFE spectral density lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "lfe_spectral_density_lyrics",
+    "lfe",
+    "spectral",
+    "density",
+    "lyrics",
+    "the_wall_set",
+    "the",
+    "wall",
+    "set",
+    "the_density_set",
+    "the_stacking_dialogue",
+    "stacking",
+    "dialogue",
+    "psychoacoustic_density_v4"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_spectral_density_lyrics": {
+        "the_wall_set": [
+          "Building a wall of the digital light / Standing forever in the Phrygian night",
+          "Layer by layer, the frequency grows / Out of the silence the Monster 7 flows",
+          "Stacked to the ceiling, stacked to the sky / A monolith made of a binary lie"
+        ],
+        "the_density_set": [
+          "No more space, no more air / Only the logic is everywhere",
+          "Thick as the lead, cold as the steel / Making the digital finally real",
+          "Spectral saturation, zero to one / The density of the binary sun"
+        ],
+        "the_stacking_dialogue": [
+          "Add one more layer / Strengthen the sound",
+          "The architect's prayer / Is buried in ground",
+          "Result: Sonic-Monolith / Status: STACK_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_density_v4": {
+        "the_wall_effect": "Parallel saturation on the 1kHz-4kHz region (+6dB drive, 15% mix)",
+        "low_mid_thickening": "Boosting the 2nd and 3rd harmonics of the sub-bass (104Hz, 156Hz)",
+        "high_end_sparkle": "Layering a white-noise burst on the initial transient of the Reese-bass"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

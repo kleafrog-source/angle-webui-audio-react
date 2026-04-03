@@ -1,0 +1,41 @@
+{
+  "id": "block_a6cwcdov",
+  "name": "void trails spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "void_trails_spec",
+    "void",
+    "trails",
+    "spec",
+    "logic",
+    "processing",
+    "stretching",
+    "filtering",
+    "panning",
+    "mixing",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "void_trails_spec": {
+        "logic": "Spectral-Freeze at the moment of Release-envelope",
+        "processing": {
+          "stretching": "Time-expansion x8.0 on the last 100ms of the signal",
+          "filtering": "Resonant Band-pass (Q=12.0) sweeping from 10kHz to 2kHz",
+          "panning": "MLGS_QUATERNION random-jump (W-axis sync)"
+        },
+        "mixing": "Mix at -28dB (The 'Ghostly-Presence' level)",
+        "rule": "Trails must contain the 'Inverted Harmonic' of the original note."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

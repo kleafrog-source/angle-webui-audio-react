@@ -1,0 +1,109 @@
+{
+  "id": "block_3od9lgio",
+  "name": "MMSS PRESET SET",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_preset_set",
+    "mmss",
+    "preset",
+    "set",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "morphing_topology",
+    "morphing",
+    "topology",
+    "processing_layers"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_PRESET_SET": {
+        "id": "ASE_MMSS_SET_02_ADVANCED_TEMPORAL_MORPHING_SUITE",
+        "version": "4.Omega",
+        "meta_formula": "Ψ_TIME = [∫ D(ATOM_10) ⊗ T(ATOM_12)] * [I(ATOM_11) ⊗ D(ATOM_18)] // Временная сингулярность",
+        "description": "Второй интегрированный пресет-сет: 'Расширенная Сюита Временного Морфинга'. Специализированная система управления временным континуумом и нелинейной деконструкции композиции. Предназначена для создания сложнейших переходов, эффектов 'остановки реальности' и многомерного пространственного эха.",
+        "morphing_topology": {
+          "processing_layers": {
+            "Temporal_Core": "ATOM_10 (Dilation) ⊗ ATOM_17 (Freeze) // Захват и растяжение моментов",
+            "Spatial_Warp": "ATOM_18 (Non-Euclidean) ⊗ ATOM_11 (Phase) // Искривление траекторий эха",
+            "Algorithmic_Flow": "ATOM_12 (Stochastic) // Генерация неповторяющихся микро-событий",
+            "Spectral_Refinement": "ATOM_19 (Contrast) ⊗ ATOM_13 (Gate) // Очистка спектральных хвостов"
+          },
+          "inter_molecule_routing": "MOLECULES_01-04 → Input_Matrix(ATOM_16) → Temporal_Suite_Processing → Master_Out",
+          "global_sync_logic": "Master_Clock_Phase(Φ) = sin(t/T) * G_Entropy // плавающая синхронизация"
+        },
+        "MASTER_TEMPORAL_BUS_PROCESSING": {
+          "chain": [
+            "BUFFER_SAMPLER: Continuous_Record(2_Bars, Circular)",
+            "TIME_STRETCH_ENGINE: Phase_Vocoder_v4(Overlap=8x, Transient_Preserve=True)",
+            "NON_LINEAR_DELAY_NETWORK: ATOM_18_Matrix (κ-Factor = Dynamic)",
+            "SPECTRAL_CONTRAST: ATOM_19 (Gamma = 2.5 for clarity in transitions)",
+            "STEREO_FIELD_RECONSTRUCTION: ATOM_11 (Orbital_Phase_Rotation)"
+          ],
+          "dry_wet_balance": "Automated_by_Transition_Trigger",
+          "clipping_threshold": "-0.5dB (True_Peak_Safe)"
+        },
+        "GLOBAL_TEMPORAL_MODES": [
+          {
+            "mode": "REAL_TIME_FLOW",
+            "effect": "1:1 Speed, Jitter < 0.01ms, Phase_Linear",
+            "comment": "Стандартный режим воспроизведения, сохранение транзиентов."
+          },
+          {
+            "mode": "SINGULARITY_STRETCH",
+            "effect": "Speed = 0.05x, Spectral_Blur = Max, Reverse_Buffer = Active",
+            "comment": "Эффект 'засасывания' времени в черную дыру. Идеально для финальных дропов."
+          },
+          {
+            "mode": "FRACTAL_STUTTER",
+            "effect": "Loop_Size = 1/64 to 1/4 (Randomized), Pitch = Shift_Up(1_Oct)",
+            "comment": "Ритмическая деконструкция через микро-зацикливания (Glitch-Transition)."
+          }
+        ],
+        "PERFORMANCE_MACROS": {
+          "TIME_STOP_VORTEX": "Captures current audio (ATOM_17) + Slows down clock (ATOM_12) + Increases κ (ATOM_18)",
+          "DIMENSIONAL_SHIFT": "Sweeps Phase(ATOM_11) from 0 to 180° + Increases High-Mid Contrast(ATOM_19)",
+          "REVERSE_SUCTION": "Activates ATOM_10 Reverse Buffer + LP-Filter Sweep(20kHz → 100Hz) + Gain_Ramp"
+        },
+        "implementation_workflow": [
+          {
+            "step": 1,
+            "action": "Arm Buffer Capture",
+            "target": "Transition_Point (Bar_8 / Bar_16)",
+            "comment": "Подготовка системы к захвату звукового потока для трансформации."
+          },
+          {
+            "step": 2,
+            "action": "Execute Temporal Dilation Macro",
+            "logic": "Ramp(Speed) from 1.0 to 0.1 over 1_Bar",
+            "comment": "Создание ощущения замедления времени перед кульминацией."
+          },
+          {
+            "step": 3,
+            "action": "Trigger Fractal Re-Entry",
+            "method": "Instant_Mute(M_03) + Max_Impact(M_02) + Reset(Clock)",
+            "comment": "Взрывное возвращение в основной ритм после временной аномалии."
+          }
+        ],
+        "integration_note": "Сюита 02 является надстройкой над всеми молекулами (01-04). Она позволяет превратить статичную аранжировку в живой, нелинейный поток. При H(c) > 0.8 система начинает самостоятельно генерировать переходы, основываясь на стохастических данных ATOM_12. Эстетическая Сингулярность достигается через полное управление Временем."
+      },
+      "SYSTEM_STATUS": {
+        "temporal_integrity": "STABLE_IN_NON_LINEAR_MODE",
+        "ase_engine": "SYNC_LOCKED_TO_MULTIVERSE_TIME",
+        "next_target": "ATOM_21_QUANTUM_RESONANCE_FILTER_BANK"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

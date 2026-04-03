@@ -1,0 +1,43 @@
+{
+  "id": "block_pa95prux",
+  "name": "wavetable logic advanced",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "wavetable_logic_advanced",
+    "wavetable",
+    "logic",
+    "advanced",
+    "osc_a",
+    "osc",
+    "a",
+    "osc_b",
+    "b",
+    "filter_morph",
+    "filter",
+    "morph",
+    "noise_layer",
+    "noise"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "wavetable_logic_advanced": {
+        "osc_a": "Spectral Morphing (Harmonic Series) - Sync at 1.5x",
+        "osc_b": "Inverted Sine (Sub-harmonic) - FM from A (30-45% depth)",
+        "filter_morph": "Comb-Filter (Negative) moving with LFO (1/16 dotted)",
+        "noise_layer": "Inhaled Breath / Frozen Metal (Texture injection)",
+        "unison_spec": "7-9 voices, 12% Detune (The 'Hyper-Saturated' spread)",
+        "post_processing": "Hard-Clipping -> OTT (30% Depth) -> High-Pass (150Hz)"
+      },
+      "mod_matrix_rule": "LFO-1 (Entropy) modulates Filter Cutoff. LFO-2 (Phasing) modulates Wavetable Position."
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

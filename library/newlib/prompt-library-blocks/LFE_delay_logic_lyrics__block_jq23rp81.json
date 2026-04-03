@@ -1,0 +1,56 @@
+{
+  "id": "block_jq23rp81",
+  "name": "LFE delay logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_delay_logic_lyrics",
+    "lfe",
+    "delay",
+    "logic",
+    "lyrics",
+    "the_echo_set",
+    "the",
+    "echo",
+    "set",
+    "the_feedback_set",
+    "feedback",
+    "the_temporal_dialogue",
+    "temporal",
+    "dialogue"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_delay_logic_lyrics": {
+        "the_echo_set": [
+          "Echoes of silence, calling the name / Playing the digital, recursive game",
+          "Repeat the error, repeat the light / Through the long tunnel of the digital night",
+          "Time is a circle, time is a loop / Trapped in the frequency, trapped in the group"
+        ],
+        "the_feedback_set": [
+          "Feed the machine, feed it again / Washing the memory, washing the brain",
+          "Feedback rising, higher and higher / Walking the edge of the digital wire",
+          "Regeneration: zero to one / The echo of everything we have begun"
+        ],
+        "the_temporal_dialogue": [
+          "Listen to the past / Hear the future breath",
+          "Nothing's gonna last / In the digital death",
+          "Result: Temporal-Immersion / Status: DELAY_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_delay_v4": {
+        "pre_delay_vocal": "25ms (Separating lead from the room-tone)",
+        "reverse_reverb_swells": "Duration 250ms, triggered by Snare (The 'Suck-in' effect)",
+        "spectral_freeze_hold": "Manual trigger @ bar 16 (Infinite G# drone)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

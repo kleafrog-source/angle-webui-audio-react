@@ -1,0 +1,48 @@
+{
+  "id": "block_b6mtcnv6",
+  "name": "metadata spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "metadata",
+  "tags": [
+    "import",
+    "metadata_spec",
+    "metadata",
+    "spec",
+    "id_format",
+    "id",
+    "format",
+    "required_fields",
+    "required",
+    "fields",
+    "custom_fields",
+    "custom",
+    "singularity_score",
+    "singularity",
+    "score"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "metadata_spec": {
+        "id_format": "MMSS-YYYYMMDD-HEX-ID",
+        "required_fields": [
+          "Title: Abstract/Geometrical",
+          "BPM: High (170-195)",
+          "Mode: Minor/Phrygian/Locrian",
+          "Iteration_Number: G(s_n)"
+        ],
+        "custom_fields": {
+          "Singularity_Score": "0.0 to 1.0",
+          "Entropy_Balance": "H(p,c) record",
+          "Core_Geometry": "Fractal/Euclidean/Spherical"
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

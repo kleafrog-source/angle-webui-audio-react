@@ -1,0 +1,60 @@
+{
+  "id": "block_jrl5vyn7",
+  "name": "ASE wavetable morphing v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_wavetable_morphing_v4",
+    "ase",
+    "wavetable",
+    "morphing",
+    "v4",
+    "morph_matrix_omega",
+    "morph",
+    "matrix",
+    "omega",
+    "table_a_source",
+    "table",
+    "a",
+    "source",
+    "table_b_target"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_wavetable_morphing_v4": {
+        "morph_matrix_Omega": {
+          "table_A_source": "Monster_7 (The Mechanical Growl)",
+          "table_B_target": "Spectral_Orca (The Fractal Dust)",
+          "morph_algorithm": "Phase_Distortion ⊗ Spectral_Folding",
+          "interpolation": "Recursive_Linear_Spline (Step = 0.02 per 1/16t)"
+        },
+        "cross_modulation_logic": {
+          "FM_carrier": "Osc_A (Fundamental G#)",
+          "FM_modulator": "Osc_B (Complex harmonic sidebands)",
+          "Index_modulation": "LFO_1_Curved_Saw (Rate 1/2 bar, Sync=True)",
+          "result": "Dynamic, metallic 'screaming' textures with high clarity"
+        },
+        "harmonic_preservation": "Auto-Gain compensation (RMS = constant) during morphing"
+      },
+      "semantic_cross_modulation_v4": {
+        "logic_to_emotion_bridge": {
+          "input": "Structural Precision (p=0.8)",
+          "output": "Controlled Aggression (Entropy H=0.6)",
+          "bridge": "Bitcrusher_Automation (16-bit to 12-bit) @ Drop_Event"
+        },
+        "purity_vs_noise_balance": {
+          "bias_low": "Absolute Sine Purity η=0.99",
+          "bias_high": "Fractal Noise Complexity η=0.45"
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

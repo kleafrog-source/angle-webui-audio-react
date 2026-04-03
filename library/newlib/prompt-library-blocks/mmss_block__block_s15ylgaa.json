@@ -1,0 +1,102 @@
+{
+  "id": "block_s15ylgaa",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-PULSE-013-NEON-VIBE",
+        "meta_name": "Kinetic Neon Pulse Engine",
+        "version": "2.1.0",
+        "description": "Блок управления 'кинетической энергией'. Имитирует пульсацию неонового газа и высокоскоростное движение в киберпанк-эстетике через ритмическую фильтрацию и фазовую накачку.",
+        "meta_formula": "P_neon(t) = [ Saw(f) ⊗ StepFilter(f_c, 16th) ] ⊕ Mod(Env_follower(v)) // Пилообразная волна, модулированная шаговым фильтром и амплитудным огибающим",
+        "logic_parameters": {
+          "pulse_rate": "1/8, 1/16 (Dotted)",
+          "resonance_spike_hz": 2400,
+          "energy_bias": "Positive (Drive ∝ t)",
+          "saturation_slope": "Soft-Knee (Tube-like)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "LowPass",
+              "params": {
+                "cutoff_frequency_hz": 1200,
+                "input_ids": [
+                  "input_track"
+                ]
+              },
+              "purpose": "Основа для динамического 'открытия' фильтра (Wah-effect)"
+            },
+            {
+              "node": "Distortion",
+              "params": {
+                "drive_db": 14
+              },
+              "purpose": "Добавление 'электрического' тепла и агрессии в пульсацию"
+            },
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 0.45,
+                "rate_hz": 1.2,
+                "mix": 0.35
+              },
+              "purpose": "Создание стерео-ширины и 'неонового свечения' звука"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.75,
+          "chaos_c": 0.25,
+          "state": "Rhythmic-Momentum",
+          "logic": "Высокий порядок (p=0.75) необходим для удержания танцевального грува и стабильного энергетического потока."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "100Hz - 6kHz",
+          "timbre": "Synthetic / Saturated / Bouncy",
+          "transient_profile": "Snappy / Rubber-like"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-RHYTHM-002-ENTROPY-ENGINE",
+          "interaction": "Grid-Alignment (Pulse 013 синхронизирует хаотичные глитчи 002 в единый поток).",
+          "contrast_link": "ASE-FIELD-008 (Ghost-Signal static vs Neon pulse clarity)."
+        },
+        "self_analysis": {
+          "coherence": "High-Energy",
+          "narrative_fidelity": "Akira-Chase / Tokyo-Night / Cyber-Drive",
+          "applied_operators": [
+            "Step_Modulation",
+            "Harmonic_Pump"
+          ]
+        },
+        "integration_note": "Идеально подходит для создания 'движка' трека (Arpeggio/Bassline), задающего темп всей композиции."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

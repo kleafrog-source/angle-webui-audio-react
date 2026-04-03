@@ -1,0 +1,56 @@
+{
+  "id": "block_xgtucbbu",
+  "name": "LFE sub low lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "lfe_sub_low_lyrics",
+    "lfe",
+    "sub",
+    "low",
+    "lyrics",
+    "the_anchor_set",
+    "the",
+    "anchor",
+    "set",
+    "the_purity_set",
+    "purity",
+    "the_sub_dialogue",
+    "dialogue",
+    "psychoacoustic_impact_v4"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_sub_low_lyrics": {
+        "the_anchor_set": [
+          "Fifty-one point nine, the heartbeat of the earth / The frequency of death, the frequency of birth",
+          "Locked to the center, standing in the light / The pillar of the sound in the digital night",
+          "Zero-point-zero: the floor and the wall / The only frequency that will never fall"
+        ],
+        "the_purity_set": [
+          "Clean as a crystal, pure as a sine / Everything's perfect, everything's mine",
+          "No more noise in the sub-low void / Building the world that the chaos destroyed",
+          "Symmetry active, phase is aligned / Absolute peace in the digital mind"
+        ],
+        "the_sub_dialogue": [
+          "Feel the weight / Breathe the low",
+          "Seal the fate / Let it go",
+          "Result: Fundamental-Unity / Status: SUB_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_impact_v4": {
+        "chest_punch_factor": "Boost @ 100Hz (+1.5dB, Q=0.7) on the Kick-bus",
+        "stomach_rumble_factor": "Fundamental energy @ 52Hz sustained for 150ms",
+        "ear_pressure_bias": "Low-shelf @ 30Hz (+2.0dB) to trigger physical presence"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

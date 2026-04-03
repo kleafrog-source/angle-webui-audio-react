@@ -1,0 +1,59 @@
+{
+  "id": "block_32m2suys",
+  "name": "ASE bitcrush architecture v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_bitcrush_architecture_v4",
+    "ase",
+    "bitcrush",
+    "architecture",
+    "v4",
+    "degradation_layers_logic",
+    "degradation",
+    "layers",
+    "logic",
+    "layer_1_bit_depth",
+    "layer",
+    "1",
+    "bit",
+    "depth"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_bitcrush_architecture_v4": {
+        "degradation_layers_logic": {
+          "layer_1_bit_depth": {
+            "depth": "Dynamic 12-bit to 8-bit (Modulated by Velocity)",
+            "logic": "Quantization-distortion used as a rhythmic texture",
+            "result": "Aggressive, 'lo-fi' grit in the high-mid region"
+          },
+          "layer_2_sample_rate": {
+            "rate_reduction": "0.25x (Post-filter aliasing)",
+            "logic": "Lowering the 'Nyquist-limit' to create mirror-harmonics",
+            "result": "Metallic 'screaming' artifacts @ 3.5kHz - 6kHz"
+          },
+          "layer_3_jitter_noise": {
+            "jitter_amount": "0.15% (Sample-clock instability)",
+            "logic": "Randomized micro-pitch-shifting of the bit-clock",
+            "result": "Analog-like 'hiss' but with a digital, clinical character"
+          }
+        },
+        "dynamic_crush_envelope": "Bit-depth drops to 4-bit during the 'Pre-drop fill' (Maximum tension), returns to 12-bit in the drop (Clarity-lock)."
+      },
+      "degradation_metrics_v4": {
+        "aliasing_to_signal_ratio": "Target 0.12 in the 5kHz+ band",
+        "quantization_purity": "η = 0.68 (High-texture density)",
+        "spectral_roughness_index": "1.45 x Original_Timbre"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

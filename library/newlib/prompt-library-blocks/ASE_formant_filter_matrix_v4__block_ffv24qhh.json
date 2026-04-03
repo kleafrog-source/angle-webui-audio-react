@@ -1,0 +1,56 @@
+{
+  "id": "block_ffv24qhh",
+  "name": "ASE formant filter matrix v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_formant_filter_matrix_v4",
+    "ase",
+    "formant",
+    "filter",
+    "matrix",
+    "v4",
+    "vocal_resonator_logic",
+    "vocal",
+    "resonator",
+    "logic",
+    "f1_node",
+    "f1",
+    "node",
+    "f2_node"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_formant_filter_matrix_v4": {
+        "vocal_resonator_logic": {
+          "F1_node": "300Hz - 800Hz (The 'Body' of the vowel)",
+          "F2_node": "800Hz - 2500Hz (The 'Character' / Intelligence)",
+          "F3_node": "2500Hz - 4500Hz (The 'Screaming' / Edge)",
+          "Q_factor": "Dynamic (Q=5 to Q=15 based on Velocity)"
+        },
+        "formant_morphing_v4": {
+          "A_to_U_transition": "Cutoff_1 shifts 700->300Hz, Cutoff_2 shifts 1100->600Hz",
+          "E_to_I_transition": "Cutoff_1 shifts 500->300Hz, Cutoff_2 shifts 1800->2300Hz",
+          "interpolation": "Circular_Spline (Smooth 'wa-wa' movement)"
+        },
+        "lfo_vocal_sync": {
+          "rate": "1/4 or 1/8 note (Synced to groove)",
+          "shape": "Custom_Bezier_Curve (Human-like articulation timing)"
+        }
+      },
+      "phonetic_synthesis_metrics_v4": {
+        "vowel_purity_η": "0.85 (Balanced with industrial noise)",
+        "articulation_speed_δt": "45ms per phoneme-shift",
+        "spectral_intelligibility": "Score = 0.92 (High clarity in the 1-3.5kHz range)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

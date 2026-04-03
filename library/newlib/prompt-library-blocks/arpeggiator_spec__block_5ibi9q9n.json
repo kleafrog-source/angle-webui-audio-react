@@ -1,0 +1,57 @@
+{
+  "id": "block_5ibi9q9n",
+  "name": "arpeggiator spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "arpeggiator_spec",
+    "arpeggiator",
+    "spec",
+    "mode",
+    "scale_degrees",
+    "scale",
+    "degrees",
+    "rhythm_grid",
+    "rhythm",
+    "grid",
+    "timbre_profile",
+    "timbre",
+    "profile",
+    "oscillator"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "arpeggiator_spec": {
+        "mode": "Phrygian_Dominant",
+        "scale_degrees": [
+          1,
+          "b2",
+          3,
+          4,
+          5,
+          "b6",
+          "b7"
+        ],
+        "rhythm_grid": "Polyrhythmic (5/8 over 4/4)",
+        "timbre_profile": {
+          "oscillator": "Wavetable (Serum-style: 'Acid-Squeltch')",
+          "filter_cutoff": "Envelope-following with high Resonance (Q > 0.8)",
+          "fx_chain": [
+            "Bitcrusher(4-bit)",
+            "Chorus(wide)",
+            "Delay(dotted-eighth)"
+          ]
+        },
+        "bpm_range": "170-195 BPM (High-Velocity Flow)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

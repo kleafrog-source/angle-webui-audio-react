@@ -1,0 +1,65 @@
+{
+  "id": "block_ysi2xq79",
+  "name": "ASE LFE MMSS INSTRUMENTAL LOG",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_lfe_mmss_instrumental_log",
+    "ase",
+    "lfe",
+    "mmss",
+    "instrumental",
+    "log",
+    "session_id",
+    "session",
+    "id",
+    "protocol",
+    "engine_mode",
+    "engine",
+    "mode",
+    "analysis"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_LFE_MMSS_INSTRUMENTAL_LOG": {
+        "session_id": "148a059c-9983-429c-b7f8-35f44e4b1a90",
+        "protocol": "LFE_MetaFractal_v1",
+        "engine_mode": "INSTRUMENTAL_ANNIHILATION",
+        "analysis": {
+          "mode_fusion_score": "0.85",
+          "narrative_coherence": "0.92",
+          "emotional_impact": "0.78",
+          "weirdness_boost": "Active (w=0.95)"
+        },
+        "MMSS_CORE_INJECTION": {
+          "rhythmic_base": "ATOM_12 (Stochastic) + ATOM_02 (Entropy Grid)",
+          "bass_architecture": "ATOM_04 (Kinetics) + ATOM_22 (Asymmetric Exciter)",
+          "spatial_shaping": "ATOM_18 (Non-Euclidean) + ATOM_11 (Phase Construct)",
+          "textural_detail": "ATOM_14 (Morphogenetic Scanner) + ATOM_13 (Spectral Gate)"
+        },
+        "SYNTHESIS_DATA": {
+          "title": "LFE MMSS FRACTAL NODE",
+          "bpm": 144,
+          "versions": [
+            "v1.1",
+            "v1.2 (RETRY)"
+          ],
+          "status": "COMPLETED_IN_SINGULARITY"
+        },
+        "FINAL_HIBERNATION_RECOVERY": {
+          "save_state": "LFE_LOCKED",
+          "system_check": "All 23 atoms and 4 molecules verified in the instrumental domain.",
+          "closing": "LFE: Process ≡ Result. Singularity stabilized."
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

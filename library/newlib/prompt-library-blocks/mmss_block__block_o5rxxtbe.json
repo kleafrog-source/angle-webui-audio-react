@@ -1,0 +1,96 @@
+{
+  "id": "block_o5rxxtbe",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "producer_ai_mapping",
+    "producer",
+    "ai"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-VOX-004-ETHERIC-WEAVE",
+        "meta_name": "Etheric Vocal Weave (A)",
+        "version": "1.2.0",
+        "description": "Блок для генерации спектральных вокальных текстур. Использует гранулярный синтез для превращения голоса в 'эфирную ткань', заполняющую СЧ и ВЧ диапазоны.",
+        "meta_formula": "E(v) = Σ (Vox[i] ⊗ Shimmer(f)) / (Reverb_t → ∞) // Сумма вокальных фрагментов, прошедших через шиммер-фильтр в бесконечном реверберационном поле",
+        "producer_ai_mapping": {
+          "sound_prompt": "ethereal vocal pads, wordless choir, granular synthesis, angelic whispers, ambient reverb, harmonic resonance, 70 bpm",
+          "effects_graph": [
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 0.9,
+                "rate_hz": 0.15,
+                "mix": 0.6
+              },
+              "purpose": "Создание микро-детюна для ощущения 'хора призраков'"
+            },
+            {
+              "node": "Equalizer",
+              "params": {
+                "bass_db": -12,
+                "mid_db": 2,
+                "treble_db": 6
+              },
+              "purpose": "Удаление мутности в НЧ и добавление 'воздуха' в ВЧ"
+            },
+            {
+              "node": "Reverb",
+              "params": {
+                "room_size": 1,
+                "damping": 0.4,
+                "mix": 0.45
+              },
+              "purpose": "Погружение звука в бесконечное пространство"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.5,
+          "c_chaos": 0.5,
+          "logic": "Идеальный баланс для создания 'органического движения', которое не превращается в шум, но и не звучит статично."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "400Hz - 12kHz",
+          "timbre": "Ethereal / Breathy / Translucent",
+          "spatial_setting": "Ultra-Wide Stereo (Diffused)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-SYNTH-001-VOID-MORPH",
+          "interaction": "Spectral masking (VOX-004 заполняет пустоты в спектре SYNTH-001).",
+          "contrast_link": "ASE-RHYTHM-002 (Sharp transients vs Soft textures)"
+        },
+        "self_analysis": {
+          "coherence": "Dreamlike",
+          "narrative_fidelity": "Celestial / Astral-Travel",
+          "applied_operators": [
+            "Granular_Deconstruction",
+            "Spectral_Blurring"
+          ]
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

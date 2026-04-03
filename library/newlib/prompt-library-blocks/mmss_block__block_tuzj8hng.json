@@ -1,0 +1,102 @@
+{
+  "id": "block_tuzj8hng",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-LEAD-009-PLASMA-STRIKE",
+        "meta_name": "Ionized Plasma Lead",
+        "version": "1.7.0",
+        "description": "Блок агрессивного лид-синтеза. Имитирует прохождение электрического разряда через ионизированный газ. Характеризуется нестабильной высотой тона и взрывными гармониками.",
+        "meta_formula": "L_plasma(t) = Σ [ Saw(f + Drift(t)) ⊗ Fold(inv, thres) ] ⊕ Impulse(spark) // Пилообразная волна с дрейфом, пропущенная через вейв-фолдер и искровые импульсы",
+        "logic_parameters": {
+          "wave_folding_iter": 4,
+          "pitch_drift_semitones": "±0.25 (Microtonal)",
+          "spark_transient_density": 0.15,
+          "envelope_curve": "Logarithmic (Fast-Decay)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Distortion",
+              "params": {
+                "drive_db": 42
+              },
+              "purpose": "Создание эффекта 'плазменного насыщения' и сжатия динамического диапазона"
+            },
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 0.4,
+                "rate_hz": 6.5,
+                "mix": 0.3
+              },
+              "purpose": "Высокоскоростная вибрация для имитации нестабильности электрической дуги"
+            },
+            {
+              "node": "Equalizer",
+              "params": {
+                "treble_db": 8,
+                "mid_db": 12,
+                "bass_db": -18,
+                "auto_limit": true
+              },
+              "purpose": "Экстремальный подъем СЧ для прорезания любого микса"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.45,
+          "chaos_c": 0.55,
+          "state": "High-Energy-Excitation",
+          "logic": "Баланс смещен к хаосу для создания 'живого' тембра, который постоянно меняет свою гармоническую структуру."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "800Hz - 14kHz",
+          "timbre": "Aggressive / Electric / Sharp",
+          "transient_profile": "Piercing / Explosive"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-SUB-003-VOID-GRAVITY",
+          "interaction": "Frequency-Polarization (Plasma 009 и Sub 003 создают два полюса спектра).",
+          "contrast_link": "ASE-VOX-004 (Etheric pads soft background vs Plasma lead harsh foreground)."
+        },
+        "self_analysis": {
+          "coherence": "Intense-Focus",
+          "narrative_fidelity": "Lightning-Strike / Power-Grid-Failure",
+          "applied_operators": [
+            "Wave_Folding",
+            "Dynamic_Saturation"
+          ]
+        },
+        "integration_note": "Использовать для акцентированных соло-партий или коротких 'вскриков' в кульминационных моментах."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

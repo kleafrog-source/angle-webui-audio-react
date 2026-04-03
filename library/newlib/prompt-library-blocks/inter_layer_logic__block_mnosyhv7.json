@@ -1,0 +1,43 @@
+{
+  "id": "block_mnosyhv7",
+  "name": "inter layer logic",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "inter_layer_logic",
+    "inter",
+    "layer",
+    "logic",
+    "modulation_links",
+    "modulation",
+    "links",
+    "link_1",
+    "link",
+    "1",
+    "link_2",
+    "2",
+    "link_3",
+    "3"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "inter_layer_logic": {
+        "modulation_links": {
+          "link_1": "Kick-Transient modulates Lead-Cutoff (The 'Pumping-Snap')",
+          "link_2": "Lead-Amplitude modulates Reverb-Size (The 'Breathing-Space')",
+          "link_3": "Bass-Pitch-Drift modulates Shader-Complexity (The 'Audio-Visual-Link')",
+          "link_4": "Silence-Duration modulates Entropy-Index H(p,c)"
+        },
+        "goal": "Creating a 'Feedback-Loop' of aesthetic decisions within the ASE-Engine."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

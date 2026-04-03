@@ -1,0 +1,56 @@
+{
+  "id": "block_xznpfll4",
+  "name": "LFE reverb logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_reverb_logic_lyrics",
+    "lfe",
+    "reverb",
+    "logic",
+    "lyrics",
+    "the_void_fog_set",
+    "the",
+    "void",
+    "fog",
+    "set",
+    "the_infinite_tail_set",
+    "infinite",
+    "tail",
+    "the_spatial_dialogue"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_reverb_logic_lyrics": {
+        "the_void_fog_set": [
+          "Floating in the mist of the digital ghost / Finding the guest, finding the host",
+          "Radiation fog in the Phrygian night / Washing the logic, washing the light",
+          "Diffusion of the soul, diffusion of the mind / Leaving the physical far behind"
+        ],
+        "the_infinite_tail_set": [
+          "Endless decay in the void of the code / Following the echoes on the fractal road",
+          "Six seconds of silence, stretched into a year / Erasing the distance, erasing the fear",
+          "Infinite room, infinite breath / Dreaming of life in the digital death"
+        ],
+        "the_spatial_dialogue": [
+          "Breathe the space / Feel the deep",
+          "Find the place / Where we sleep",
+          "Result: Atmospheric-Immersion / Status: CLOUD_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_reverb_v4": {
+        "the_shimmer_factor": "+12st pitch-shifted feedback-loop in the reverb tank (15% mix)",
+        "the_drowning_effect": "Increase Reverb_Mix to 95% + LowPass(500Hz) during the bridge",
+        "the_stereo_drift": "Left_Decay: 3.5s, Right_Decay: 3.7s (Asymmetry for organic feel)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

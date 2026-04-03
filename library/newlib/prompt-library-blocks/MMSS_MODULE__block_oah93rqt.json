@@ -1,0 +1,92 @@
+{
+  "id": "block_oah93rqt",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "phase_rotation_engine",
+    "phase"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_11_PHASE_CONSTRUCT_INTERFERENCE",
+        "version": "4.Omega",
+        "meta_formula": "I(φ, ω) = Σ [A_i * sin(ωt + φ_i)] ⊗ Spatial_Vector(V) // Психоакустическая интерференция",
+        "description": "Модуль управления фазовой интерференцией. Предназначен для создания сложных психоакустических иллюзий движения и 'парения' звука. Использует контролируемое сложение и вычитание фаз для изменения воспринимаемого положения звукового объекта без использования стандартного панорамирования.",
+        "sub_structure": {
+          "PHASE_ROTATION_ENGINE": {
+            "rotation_speed": "0.05Hz - 15Hz (Synced_to_Vibrato/Tremolo)",
+            "stereo_phase_offset": "Δφ = 90° - 180° (Binaural_Focus)",
+            "all-pass_filter_stack": "8_Stages_Serial (Phase_Shifting_Center=1kHz)",
+            "motion_path": "Lissajous_Curve_v2 (X-Y_Stereo_Field)"
+          },
+          "INTERFERENCE_GRID": {
+            "comb_filtering": "Controlled_Resonant_Peaks (Q=0.5 - 20)",
+            "harmonic_reinforcement": "Boost_at_F_center ⊗ Cut_at_F_center_shifted",
+            "phase_cancellation_depth": "Variable(-60dB_Null)",
+            "dynamic_masking": "Adaptive_Frequency_Tracking"
+          },
+          "PSYCHOACOUSTIC_POSITIONING": {
+            "haas_effect_delay": "15ms - 35ms (Micro-Spatial_Expansion)",
+            "binaural_panning": "HRTF_Approximation(L/R_Differential)",
+            "depth_perception": "Early_Reflection_Pattern(Cloud_Density=0.8)",
+            "elevation_simulation": "Notch_Filter_at_8kHz (Ear_Pinna_Emulation)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Calibrate Phase Anchor",
+            "target": "Mid_Range (500Hz - 2kHz)",
+            "comment": "Определение 'центра тяжести' звука для последующего фазового вращения."
+          },
+          {
+            "step": 2,
+            "action": "Inject Counter-Phase Signal",
+            "logic": "Side_Channel = Invert(Mid_Channel) * 0.5 + Phase_Shift(90°)",
+            "comment": "Создание 'невозможной' ширины звука, выходящей за пределы динамиков (Super-Stereo)."
+          },
+          {
+            "step": 3,
+            "action": "Apply Orbital Phase Motion",
+            "method": "Dual_LFO_Sine_Cos_Modulation",
+            "comment": "Звук начинает 'вращаться' вокруг головы слушателя, создавая эффект дезориентации."
+          }
+        ],
+        "sound_design_params": {
+          "spatial_viscosity": 0.65,
+          "phase_correlation_index": "Fluctuating (-0.5 to +0.8)",
+          "movement_fluidity": "High_Orbital",
+          "texture": "Liquid_Space_Hologram"
+        },
+        "integration_note": "Этот модуль является 'пространственным клеем' для ATOM_03 и ATOM_06. При использовании с ATOM_01 (Лид) создает иллюзию 'живого' синтезатора, который физически перемещается в пространстве. Требует осторожности при моно-суммировании (контроль за Null-точками)."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_06",
+        "sync_status": "PHASE_SPACE_ALIGNED",
+        "system_feedback": "Psychoacoustic interference verified. Spatial holography stable."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

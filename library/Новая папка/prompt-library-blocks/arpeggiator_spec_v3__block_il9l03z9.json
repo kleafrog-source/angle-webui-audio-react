@@ -1,0 +1,54 @@
+{
+  "id": "block_il9l03z9",
+  "name": "arpeggiator spec v3",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "arpeggiator_spec_v3",
+    "arpeggiator",
+    "spec",
+    "v3",
+    "harmonic_lock",
+    "harmonic",
+    "lock",
+    "intervals",
+    "rhythm_grid",
+    "rhythm",
+    "grid",
+    "sound_design",
+    "sound",
+    "design"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "arpeggiator_spec_v3": {
+        "harmonic_lock": "Phrygian Dominant (The 'Dark-Middle-Eastern' feel)",
+        "intervals": [
+          1,
+          "b2",
+          3,
+          4,
+          5,
+          "b6",
+          "b7"
+        ],
+        "rhythm_grid": "Polyrhythmic: 5/16 over 4/4 kicks",
+        "sound_design": {
+          "osc_1": "Wavetable (Morphing from Saw to Square)",
+          "filter": "24dB LowPass with Acid-style Resonance (Res > 80%)",
+          "envelope": "Decay-only (Pluck), zero Sustain, 2ms Attack",
+          "fx": "Bitcrusher (Reduce to 6-bit) -> OTT-style Multiband Compression"
+        },
+        "automation": "Filter Cutoff tied to G-Inversion Index (W-axis)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

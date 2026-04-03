@@ -1,0 +1,40 @@
+{
+  "id": "block_4b7xutbo",
+  "name": "physical weight spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "physical_weight_spec",
+    "physical",
+    "weight",
+    "spec",
+    "sub_focus",
+    "sub",
+    "focus",
+    "compression_pump",
+    "compression",
+    "pump",
+    "psycho_trick",
+    "psycho",
+    "trick",
+    "mixing_rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "physical_weight_spec": {
+        "sub_focus": "35Hz - 45Hz boost (+3dB) with wide Q",
+        "compression_pump": "Slow Release (500ms+) on the Master Bus to create 'breathing' pressure",
+        "psycho_trick": "Subtracting 3dB at 300Hz (the mud) to make the Sub feel 'cleaner' and 'heavier'",
+        "mixing_rule": "The Foundation must feel like it's 'bending' the space around the Narrative Layers."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

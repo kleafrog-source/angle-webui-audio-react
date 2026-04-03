@@ -1,0 +1,39 @@
+{
+  "id": "block_skpg8pfg",
+  "name": "tool",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "tool",
+    "bands",
+    "low_0_150hz",
+    "low",
+    "0",
+    "150hz",
+    "mid_150_3khz",
+    "mid",
+    "150",
+    "3khz",
+    "high_3khz_plus",
+    "high",
+    "plus"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "tool": "Compressor_Multiband (OTT_Logic)",
+      "bands": {
+        "low_0_150Hz": "Ratio 4:1, Attack 30ms, Release 100ms, Makeup +2dB",
+        "mid_150_3kHz": "Ratio 2:1, Attack 10ms, Release 50ms, Makeup 0dB",
+        "high_3kHz_plus": "Ratio 3:1, Attack 1ms, Release 25ms, Makeup +1dB"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

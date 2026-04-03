@@ -1,0 +1,38 @@
+{
+  "id": "block_0eroz3tw",
+  "name": "ghost echo protocol",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ghost_echo_protocol",
+    "ghost",
+    "echo",
+    "protocol",
+    "action",
+    "pre_delay",
+    "pre",
+    "delay",
+    "processing",
+    "mixing",
+    "goal"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ghost_echo_protocol": {
+        "action": "Reverse-reverb on the first syllable/note of a theme",
+        "pre_delay": "Synchronized to 1/2 or 1/4 note before the hit",
+        "processing": "High-pass at 1kHz + Phaser (4-stage) + Grain-delay",
+        "mixing": "Fade-in duration: 500ms. End point: Zero cross-fade with the dry signal",
+        "goal": "Creating the sense of 'Sound pulling itself out of the Void'."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

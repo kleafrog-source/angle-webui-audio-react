@@ -1,0 +1,39 @@
+{
+  "id": "block_4yommtvi",
+  "name": "custom macros",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "custom_macros",
+    "custom",
+    "macros",
+    "inversion",
+    "fractalize",
+    "4d_vector",
+    "4d",
+    "vector",
+    "strip_noise",
+    "strip",
+    "noise",
+    "singularity"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "custom_macros": {
+        "/inversion": "Execute audio__modify_song with prompt: 'Apply G-Inversion operator, flip all aesthetic polarities, reverse phase of Layer 3'",
+        "/fractalize": "Activate A_MMSS_FRACTAL_PACKAGE for current clip. Increase complexity x1.618",
+        "/4d_vector": "Call audio__apply_effect(Pan) with MLGS_QUATERNION coefficients. Set w-axis to 0.7",
+        "/strip_noise": "Apply Surgical-EQ (HighPass at 40Hz, Notch at 250Hz and 400Hz) to all non-kick stems",
+        "/singularity": "Finalize track. Run ASE-Critique, maximize Emotional Density, set Entropy H(p=0.5, c=0.5)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

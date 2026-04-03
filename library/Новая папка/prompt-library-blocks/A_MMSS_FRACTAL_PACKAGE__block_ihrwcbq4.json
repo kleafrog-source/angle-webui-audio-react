@@ -1,0 +1,44 @@
+{
+  "id": "block_ihrwcbq4",
+  "name": "A MMSS FRACTAL PACKAGE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "a_mmss_fractal_package",
+    "a",
+    "mmss",
+    "fractal",
+    "package",
+    "mode",
+    "iteration_depth",
+    "iteration",
+    "depth",
+    "feedback_loop",
+    "feedback",
+    "loop",
+    "coefficient",
+    "delay"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "A_MMSS_FRACTAL_PACKAGE": {
+        "mode": "Recursive Texture Overlay",
+        "iteration_depth": 3,
+        "feedback_loop": {
+          "coefficient": 0.45,
+          "delay": "δt = prime_number_ms (e.g., 17ms, 31ms) to avoid phase cancellation",
+          "spectral_shaping": "Tilt-filter +3dB/octave on feedback"
+        },
+        "seed_evolution": "Seed_next = Hash(Seed_current + Rhythmic_Entropy)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "block_fx_prism",
+  "name": "Prismatic FX",
+  "description": "Adds spectral bloom, diffraction, and luminous edge treatment.",
+  "category": "fx",
+  "tags": [
+    "prism",
+    "glow",
+    "spectral"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "effects": {
+        "bloom": "high",
+        "refraction": "prismatic",
+        "edges": [
+          "glow",
+          "spectral_split"
+        ]
+      }
+    }
+  },
+  "ui": {
+    "color": "#9dff9a",
+    "icon": "spark",
+    "boundButtonId": "slot_3"
+  }
+}

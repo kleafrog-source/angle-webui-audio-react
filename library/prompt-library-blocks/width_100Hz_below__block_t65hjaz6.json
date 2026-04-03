@@ -1,0 +1,32 @@
+{
+  "id": "block_t65hjaz6",
+  "name": "width 100Hz below",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "width_100hz_below",
+    "width",
+    "100hz",
+    "below",
+    "width_100_500hz",
+    "100",
+    "500hz",
+    "width_500hz_above",
+    "above"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "width_100Hz_below": "0% (Absolute Mono)",
+      "width_100_500Hz": "110% (Slight expansion)",
+      "width_500Hz_above": "135% (Immersive fractal width)"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "block_ghdtl4p0",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "asymmetric_transfer_function",
+    "asymmetric"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_22_ASYMMETRIC_WAVE_FOLD_EXCITER",
+        "version": "4.Omega",
+        "meta_formula": "E(x, α, β) = Σ [sin(k * (x + α)) + β] * (1 - tanh(x^2)) // Асимметричное возбуждение гармоник",
+        "description": "Модуль асимметричного волнового возбуждения (Exciter). В отличие от симметричного складывания (ATOM_20), этот атом вносит управляемый DC-сдвиг (α) и вертикальное смещение (β) в функцию переноса. Это позволяет генерировать не только нечетные, но и четные гармоники, создавая уникальный 'рычащий', 'хриплый' и 'плотный' тембр, характерный для дорогого аналогового оборудования и кастомных модулярных систем.",
+        "sub_structure": {
+          "ASYMMETRIC_TRANSFER_FUNCTION": {
+            "fold_stages": "4_Stages_Parallel (Recursive_Interleave)",
+            "dc_bias_injection": "α = [-0.5 ... +0.5] (Static_or_Modulated_by_ATOM_15)",
+            "vertical_offset": "β = [-0.2 ... +0.2] (Creates_Duty_Cycle_Modulation_Effect)",
+            "gain_threshold": "Threshold = exp(-x^2) // динамическое сжатие пиков перед складыванием"
+          },
+          "HARMONIC_BALANCE_CONTROL": {
+            "even_odd_mix": "Ratio(Even/Odd) = f(α) // управление 'чистотой' vs 'грязью'",
+            "excitation_bandwidth": "1.5kHz - 12kHz (Band-Pass_Pre-Filtering)",
+            "drive_shaping": "Hard_Sine_Clip ⊗ Soft_Valve_Saturation",
+            "dry_wet_balance": "Parallel_Processing_Path (Phase_Linear)"
+          },
+          "DYNAMIC_GROWL_MODULATOR": {
+            "growl_rate": "LFO_Random_Walk(2Hz - 10Hz)",
+            "timbral_bite": "Increases_High_Frequency_Folding_Depth",
+            "transient_preservation": "Envelope_Follower_with_Hold(5ms)",
+            "output_clipping": "Safety_Clipper_at_-0.3dB"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Inject Asymmetric DC-Offset",
+            "target": "Input_Signal_Array",
+            "comment": "Смещение волновой формы относительно центральной оси для подготовки к асимметричному складыванию."
+          },
+          {
+            "step": 2,
+            "action": "Apply Multi-Stage Asymmetric Fold",
+            "logic": "Out = sin(Drive * (In + α)) + β",
+            "comment": "Генерация сложного гармонического спектра с преобладанием 'рычащих' четных обертонов."
+          },
+          {
+            "step": 3,
+            "action": "Filter and Re-Align Phase",
+            "method": "Linear_Phase_EQ + DC_Blocker",
+            "comment": "Удаление постоянной составляющей (DC) и очистка спектра от избыточного 'песка' в ВЧ."
+          }
+        ],
+        "sound_design_params": {
+          "harmonic_grit": 0.92,
+          "timbral_bite": "Aggressive_Mid-Range",
+          "texture_density": "Thick_Analog_Saturation",
+          "character": "Growling_Neuro_Organic"
+        },
+        "integration_note": "Этот атом — идеальный инструмент для придания 'характера' басовым линиям (ATOM_04) и лидам (ATOM_01). Он 'прорезает' микс намного эффективнее стандартных дисторшнов. При использовании с ATOM_21 (Квантовые фильтры) создает ощущение 'кричащего' или 'рычащего' био-синтезатора."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_ATOM_04_20_21",
+        "sync_status": "EXCITER_ENGAGED",
+        "system_feedback": "Asymmetric bias stabilized. Harmonic growl generated within optimal spectral range."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

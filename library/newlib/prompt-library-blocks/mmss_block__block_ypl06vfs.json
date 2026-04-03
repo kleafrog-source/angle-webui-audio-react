@@ -1,0 +1,100 @@
+{
+  "id": "block_ypl06vfs",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-GRAVITY-011-SINGULARITY-COLLAPSE",
+        "meta_name": "Gravitational Singularity Collapse",
+        "version": "1.9.0",
+        "description": "Блок моделирования звукового коллапса в точку бесконечной плотности. Имитирует эффект Доплера, сжатие времени и частотную аннигиляцию при приближении к горизонту событий.",
+        "meta_formula": "C(s) = Lim_{t→T} [ s(t/Δt) ⊗ HighPass(f_c → ∞) ] ⊕ Reverb(inf) // Предел функции сигнала при ускорении времени и стремлении частоты среза к бесконечности",
+        "logic_parameters": {
+          "collapse_duration": "2s - 8s (Exponential)",
+          "frequency_compression_ratio": "1:100",
+          "time_dilation_factor": "Log(t)",
+          "final_state": "Zero-point (Silent or White Noise burst)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "TempoShift",
+              "params": {
+                "speed": 4,
+                "semitones": 24
+              },
+              "purpose": "Экстремальное ускорение и повышение тона для имитации 'сжатия' материи"
+            },
+            {
+              "node": "HighPass",
+              "params": {
+                "cutoff_frequency_hz": 15000
+              },
+              "purpose": "Постепенное исчезновение звука в ультразвуковом диапазоне (аннигиляция НЧ и СЧ)"
+            },
+            {
+              "node": "Reverb",
+              "params": {
+                "room_size": 1,
+                "damping": 0,
+                "mix": 0.35
+              },
+              "purpose": "Создание 'остаточного излучения' (хокинговское излучение) после коллапса"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.95,
+          "chaos_c": 0.05,
+          "state": "Absolute-Determinism",
+          "logic": "Максимальный порядок (p=0.95). Процесс падения в сингулярность неизбежен и математически строго детерминирован."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "20Hz - 22kHz (Full Spectrum Sweep)",
+          "timbre": "Intense / Rising / Vacuum-like",
+          "spatial_setting": "Collapsing Stereo to Mono"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-META-006-CHRONO-STUTTER",
+          "interaction": "Time-Warpage (Chrono-Stutter создает турбулентность перед финальным коллапсом Singularity).",
+          "contrast_link": "ASE-FIELD-008 (Ghost-Signal остается как единственный свидетель после исчезновения основного сигнала)."
+        },
+        "self_analysis": {
+          "coherence": "Final-Point",
+          "narrative_fidelity": "Black-Hole / End-of-Session / Reset",
+          "applied_operators": [
+            "Exponential_Compression",
+            "Frequency_Ascension"
+          ]
+        },
+        "integration_note": "Идеальный блок для завершения трека или радикального перехода (Drop-to-Silence), создающего вакуум перед новым вступлением."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

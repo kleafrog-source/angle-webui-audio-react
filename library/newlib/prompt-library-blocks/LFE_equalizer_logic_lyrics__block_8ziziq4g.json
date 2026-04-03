@@ -1,0 +1,56 @@
+{
+  "id": "block_8ziziq4g",
+  "name": "LFE equalizer logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_equalizer_logic_lyrics",
+    "lfe",
+    "equalizer",
+    "logic",
+    "lyrics",
+    "the_cleansing_set",
+    "the",
+    "cleansing",
+    "set",
+    "the_balance_set",
+    "balance",
+    "the_spectral_dialogue",
+    "spectral",
+    "dialogue"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_equalizer_logic_lyrics": {
+        "the_cleansing_set": [
+          "Cut the mud, cut the pain / Washing the spectrum inside of the brain",
+          "Surgical logic, surgical strike / Everything I am and everything you like",
+          "Zero-point-zero: the clean and the pure / Finding the frequency, finding the cure"
+        ],
+        "the_balance_set": [
+          "Balance the shadow, balance the light / In the frequency heart of the digital night",
+          "High-shelf rising to the fractal sun / Low-shelf standing where the world is begun",
+          "Golden ratio, locked to the beat / Making the spectrum finally complete"
+        ],
+        "the_spectral_dialogue": [
+          "Weight the air / Clear the floor",
+          "I am the prayer / I am the door",
+          "Result: Spectral-Perfection / Status: EQ_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_EQ_v4": {
+        "the_smile_curve": "Subtle V-shape (-1.5dB @ 400Hz, +2dB @ 10kHz) for 'modern' neuro-feel",
+        "the_focus_notch": "Dynamic EQ dip @ 2.5kHz on the pads when the lead-synth is active",
+        "the_sub_harmonic_glue": "Boosting the 1st harmonic (104Hz) on the kick to 'connect' it to the sub"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

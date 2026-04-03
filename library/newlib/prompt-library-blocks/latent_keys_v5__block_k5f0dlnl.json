@@ -1,0 +1,41 @@
+{
+  "id": "block_k5f0dlnl",
+  "name": "latent keys v5",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "latent_keys_v5",
+    "latent",
+    "keys",
+    "v5",
+    "key_01_abs_zero",
+    "key",
+    "01",
+    "abs",
+    "zero",
+    "key_02_phi_spiral",
+    "02",
+    "phi",
+    "spiral",
+    "key_03_neuro_gothic"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "latent_keys_v5": {
+        "key_01_abs_zero": "Force zero reverb tail, maximum transient snap, 195 BPM (The 'Vacuum' feel)",
+        "key_02_phi_spiral": "Force Fibonacci rhythm layering (1,2,3,5,8), 172.5 BPM (The 'Natural' chaos)",
+        "key_03_neuro_gothic": "Force Phrygian-Dominant, 12-bit crush, cathedral space (The 'Mathematical' dread)",
+        "key_04_liquid_data": "Force Spectral-morphing, 4D-vectoring (Block 17), smooth transients (The 'Flow' state)",
+        "usage": "Injected into [SOUND_PROMPT] to bypass standard aesthetic filters."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

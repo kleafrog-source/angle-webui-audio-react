@@ -1,0 +1,93 @@
+{
+  "id": "block_944kmsja",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "harmony_stack",
+    "harmony"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_03_SPECTRAL_HARMONIC_ARCHITECTURE",
+        "version": "4.Omega",
+        "meta_formula": "H(s) = Σ (Vocal_Layer[i] ⊗ Harmonic_Interval[i]) * Spectral_Overlay(O)",
+        "description": "Модуль построения многослойной гармонической вертикали. Используется для трансформации монофонического источника (вокал/лид) в сложную архитектуру из 5-7 слоев с применением спектрального морфинга.",
+        "sub_structure": {
+          "HARMONY_STACK": {
+            "layers": [
+              "Lead_Center (Focus=1.0, Pan=0)",
+              "Double_Octave_Down (Focus=0.7, Pan=0)",
+              "Thirds_Upper (Focus=0.5, Pan=-30L)",
+              "Fifths_Upper (Focus=0.5, Pan=+30R)",
+              "Soprano_Air (Focus=0.3, Pan=-70L)",
+              "Bass_Sub_Foundation (Focus=0.8, Pan=+70R)"
+            ],
+            "vocal_processing": "Auto-tune_Formant_Shift(δf=-2...2)",
+            "timbral_blending": "Spectral_Crossfade"
+          },
+          "SPACE_GEOMETRY": {
+            "reverb_engine": "Cathedral_Impulse_v4",
+            "pre_delay": "Synchronized(1/16_Dotted)",
+            "decay_time": "4.5s - 12s (Infinite_Tail_Option)",
+            "diffusion": "Max_Fractal_Scattering"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Extract Source DNA",
+            "target": "Lead_Vocal / Lead_Synth",
+            "comment": "Анализ основного тона и извлечение формантных характеристик."
+          },
+          {
+            "step": 2,
+            "action": "Generate Counter-Melodies",
+            "logic": "Inverse_Melodic_Motion(Interval=Perfect_Fifth)",
+            "comment": "Создание дополнительных линий, движущихся в противовес основной мелодии."
+          },
+          {
+            "step": 3,
+            "action": "Apply Spectral_Blur",
+            "range": "1.5k - 20k Hz",
+            "technique": "FFT_Freeze_and_Smear",
+            "comment": "Создание 'эфирного' шлейфа, заполняющего пустоты между гармониками."
+          }
+        ],
+        "sound_design_params": {
+          "harmony_spread": "30L/70R (Dynamic_Motion)",
+          "formant_mod": "LFO_Sine(0.1Hz)",
+          "wet_dry_mix": "0.35 (Wet_Gain=+3dB)",
+          "spectral_purity": "High_Resolution_PCM"
+        },
+        "integration_note": "Идеально дополняет ATOM_01 (текстура) и ATOM_02 (ритм), превращая ритмические всплески в мелодические ландшафты. При H(c) > 0.8 создает эффект 'хора призраков' или 'сингулярного резонанса'."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_02",
+        "sync_status": "PHASE_ALIGNED",
+        "system_feedback": "Harmonic architecture verified for meta-consistency"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

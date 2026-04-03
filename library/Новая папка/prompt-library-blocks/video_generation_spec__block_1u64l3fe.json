@@ -1,0 +1,48 @@
+{
+  "id": "block_1u64l3fe",
+  "name": "video generation spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "video_generation_spec",
+    "video",
+    "generation",
+    "spec",
+    "aspect_ratio",
+    "aspect",
+    "ratio",
+    "aesthetic_presets",
+    "aesthetic",
+    "presets",
+    "gothic_fractal",
+    "gothic",
+    "fractal",
+    "cyber_neuro"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "video_generation_spec": {
+        "aspect_ratio": "9:16 (Vertical) for Socials or 16:9 for Cinema",
+        "aesthetic_presets": {
+          "gothic_fractal": "Black/Gold palette, recursive cathedral architecture, liquid metal",
+          "cyber_neuro": "Neon cyan/magenta, fast motion blur, glitch transitions, wireframe",
+          "bio_void": "Deep greens/blacks, organic growth patterns, macro-cinematography of cells"
+        },
+        "synchronization_logic": {
+          "kick_sync": "Flash/Scale-pump on every 1/4 note",
+          "snare_sync": "Glitch-shift/Inversion effect on every 2/4 and 4/4",
+          "theme_sync": "Color-morphing tied to Lead-synth cutoff"
+        },
+        "lyrics_rendering": "Minimalist, sans-serif, flickering opacity (85% visibility)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

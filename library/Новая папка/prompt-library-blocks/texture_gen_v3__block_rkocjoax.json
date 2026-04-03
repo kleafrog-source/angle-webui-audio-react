@@ -1,0 +1,43 @@
+{
+  "id": "block_rkocjoax",
+  "name": "texture gen v3",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "texture_gen_v3",
+    "texture",
+    "gen",
+    "v3",
+    "source_material",
+    "source",
+    "material",
+    "processing",
+    "resonance_filter",
+    "resonance",
+    "filter",
+    "bitcrush_automation",
+    "bitcrush",
+    "automation"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "texture_gen_v3": {
+        "source_material": "Quantization errors, cable hum, radio static",
+        "processing": {
+          "resonance_filter": "Boost 8kHz by 12dB with high Q (Resonance)",
+          "bitcrush_automation": "Modulate from 1-bit to 8-bit (LFO 0.5Hz)",
+          "panning": "MLGS_QUATERNION vector rotation (Block 17)"
+        },
+        "usage": "Layer 3 Background-Void fill. Mix at -32dB (Subliminal level)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

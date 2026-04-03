@@ -1,0 +1,30 @@
+{
+  "id": "block_rgox5jt8",
+  "name": "harmonic bias",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "harmonic_bias",
+    "harmonic",
+    "bias",
+    "purity_coefficient",
+    "purity",
+    "coefficient",
+    "reverb"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "harmonic_bias": "Perfect 5ths and Octaves (Pure G#)",
+      "purity_coefficient": 1,
+      "reverb": "None (Anechoic chamber effect)"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

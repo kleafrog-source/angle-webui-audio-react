@@ -1,0 +1,45 @@
+{
+  "id": "block_maci28c2",
+  "name": "meta process hacks v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "metadata",
+  "tags": [
+    "import",
+    "meta_process_hacks_v4",
+    "meta",
+    "process",
+    "hacks",
+    "v4",
+    "double_modulation_trick",
+    "double",
+    "modulation",
+    "trick",
+    "spectral_freeze_tail",
+    "spectral",
+    "freeze",
+    "tail",
+    "phase_inversion_widener"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "meta_process_hacks_v4": {
+        "double_modulation_trick": "Modulate the LFO_1 Rate by LFO_2 (Sine 1/1 bar) for shifting rhythmic syncopation.",
+        "spectral_freeze_tail": "Use audio__apply_effect(Reverb: Room=1.0, Damping=0.0) on a 100ms slice to create an infinite drone.",
+        "phase_inversion_widener": "Invert phase of the delay-feedback (Left channel only) for 180° spatial expansion.",
+        "kick_sidechain_ghost": "Trigger sidechain from a silent 'ghost' kick for more surgical control over Bass-envelope."
+      },
+      "ASE_final_state_metadata": {
+        "status": "Ready for Re-Materialization",
+        "last_op": "/fast-gen-mmss (mode=fractal_evolution)",
+        "config": "N=1.0, η=0.98, H(p=0.5, c=0.5)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

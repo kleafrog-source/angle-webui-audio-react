@@ -1,0 +1,65 @@
+{
+  "id": "block_sz7631p4",
+  "name": "ASE harmonic clipping v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_harmonic_clipping_v4",
+    "ase",
+    "harmonic",
+    "clipping",
+    "v4",
+    "clipping_stages_logic",
+    "stages",
+    "logic",
+    "stage_1_soft_saturation",
+    "stage",
+    "1",
+    "soft",
+    "saturation",
+    "target"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_harmonic_clipping_v4": {
+        "clipping_stages_logic": {
+          "stage_1_soft_saturation": {
+            "target": "Individual Stems (Bass / Lead)",
+            "mode": "Tape_Emulation (Soft-knee)",
+            "drive": "4.5dB",
+            "result": "Rounding the transients for better glue"
+          },
+          "stage_2_hard_clipping": {
+            "target": "Drum_Group / Reese_Group",
+            "mode": "Digital_Hard_Clip (Zero-latency)",
+            "threshold": "-1.0dB",
+            "result": "Absolute peak-ceiling management, adding 'crunch'"
+          },
+          "stage_3_surgical_limiting": {
+            "target": "Master_Bus",
+            "mode": "Look-ahead (2ms), True-peak",
+            "ceiling": "-0.3dB",
+            "result": "Transparent protection with zero inter-sample distortion"
+          }
+        },
+        "aggressive_harmonic_bias": {
+          "odd_harmonics_boost": "Focus @ 1.5kHz and 3kHz (The 'Biting' frequencies)",
+          "even_harmonics_glue": "Focus @ 200Hz-400Hz (The 'Body' warmth)"
+        }
+      },
+      "timbre_aggression_metrics_v4": {
+        "crest_factor_target": "6-8dB (Post-clipping density)",
+        "harmonic_distortion_THD": "Target 15% on Reese-Bass peaks",
+        "aliasing_suppression": "Oversampling 4x active on all distortion nodes"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

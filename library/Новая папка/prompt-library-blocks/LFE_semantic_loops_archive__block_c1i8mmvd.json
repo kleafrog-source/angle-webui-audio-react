@@ -1,0 +1,59 @@
+{
+  "id": "block_c1i8mmvd",
+  "name": "LFE semantic loops archive",
+  "description": "Imported from mixed JSON/text document",
+  "category": "archive",
+  "tags": [
+    "import",
+    "lfe_semantic_loops_archive",
+    "lfe",
+    "semantic",
+    "loops",
+    "archive",
+    "the_observer_loop",
+    "the",
+    "observer",
+    "loop",
+    "the_frequency_loop",
+    "frequency",
+    "the_inversion_loop",
+    "inversion",
+    "lyric_rhythmic_anchors"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_semantic_loops_archive": {
+        "the_observer_loop": [
+          "Eyes of the code, breathing the zero",
+          "Logic is cold, searching for the hero",
+          "Process is done, result is the one",
+          "Binary sun, the loop has begun"
+        ],
+        "the_frequency_loop": [
+          "51.9Hz, pulse of the soul",
+          "Recursive waves, taking control",
+          "Surgical cuts, cleaning the void",
+          "Building the world that the noise has destroyed"
+        ],
+        "the_inversion_loop": [
+          "Invert the pain, G-operator",
+          "Inside the brain, the silent creator",
+          "Ψ_conden = 1, value is found",
+          "Touching the sky, buried in sound"
+        ]
+      },
+      "lyric_rhythmic_anchors": {
+        "snare_hit_syllable": "Always a hard consonant (K, T, P, X)",
+        "kick_hit_syllable": "Always a deep vowel (U, O, A)",
+        "ghost_note_syllable": "Whispered fricatives (S, H, F)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

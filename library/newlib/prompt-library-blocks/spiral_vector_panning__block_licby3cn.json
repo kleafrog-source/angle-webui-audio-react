@@ -1,0 +1,41 @@
+{
+  "id": "block_licby3cn",
+  "name": "spiral vector panning",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "spiral_vector_panning",
+    "spiral",
+    "vector",
+    "panning",
+    "formula",
+    "radius_r",
+    "radius",
+    "r",
+    "rotation",
+    "target",
+    "result"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "spiral_vector_panning": {
+        "formula": "Pan(t) = R(t) * [cos(ωt), sin(ωt)]",
+        "radius_r": "Decreasing (Closing spiral) or Increasing (Opening spiral)",
+        "ω_rotation": "Frequency tied to BPM (e.g., 1 full rotation per 4 bars)",
+        "target": [
+          "Percussive-Glitch (Block 70)",
+          "Vocal-Chops (Block 34)"
+        ],
+        "result": "The sensation of 'Vortex-Suction' or 'Centrifugal-Explosion'."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

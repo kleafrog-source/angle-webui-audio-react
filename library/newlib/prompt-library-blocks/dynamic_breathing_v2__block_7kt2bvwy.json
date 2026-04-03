@@ -1,0 +1,41 @@
+{
+  "id": "block_7kt2bvwy",
+  "name": "dynamic breathing v2",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "dynamic_breathing_v2",
+    "dynamic",
+    "breathing",
+    "v2",
+    "technique",
+    "stage_1_leveling",
+    "stage",
+    "1",
+    "leveling",
+    "stage_2_punch",
+    "2",
+    "punch",
+    "parallel_bus",
+    "parallel"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "dynamic_breathing_v2": {
+        "technique": "Two-stage Compression (Slow/Fast)",
+        "stage_1_leveling": "Slow attack (30ms), auto-release (300ms), 2:1 ratio (Smoothing)",
+        "stage_2_punch": "Fast attack (1ms), fast release (50ms), 4:1 ratio (Transient control)",
+        "parallel_bus": "Heavy compression (10:1 ratio) mixed at 20% dry/wet for 'density'",
+        "goal": "Loudness without flattening the transients. Peak-to-RMS ratio of 8."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

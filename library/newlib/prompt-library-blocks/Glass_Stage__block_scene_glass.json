@@ -1,0 +1,27 @@
+{
+  "id": "block_scene_glass",
+  "name": "Glass Stage",
+  "description": "Cool transparent space with minimal HUD and drifting lab energy.",
+  "category": "scene",
+  "tags": [
+    "glass",
+    "lab",
+    "cool"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "prompt": "glass laboratory with soft blue highlights and suspended particles",
+      "visual": {
+        "environment": "glass_lab",
+        "lighting": "cool_refractions"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "glass",
+    "boundButtonId": null
+  }
+}

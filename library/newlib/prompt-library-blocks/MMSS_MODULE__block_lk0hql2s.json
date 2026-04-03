@@ -1,0 +1,92 @@
+{
+  "id": "block_lk0hql2s",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "curvature_mapping_engine",
+    "curvature"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_18_NON_EUCLIDEAN_DELAY_GEOMETRY",
+        "version": "4.Omega",
+        "meta_formula": "D(τ, κ) = Σ [Input(t) ⊗ Delay_Line(τ_i)] * Curvature_Factor(κ) // Искривление временных линий",
+        "description": "Модуль задержки (Delay), работающий по принципам неевклидовой геометрии. В отличие от стандартных дилеев, время задержки (τ) и коэффициент обратной связи (Feedback) здесь не являются константами, а зависят от виртуальной кривизны пространства (κ). Звук 'путешествует' по гиперболическим или сферическим траекториям, создавая невозможные акустические пространства.",
+        "sub_structure": {
+          "CURVATURE_MAPPING_ENGINE": {
+            "geometry_type": "Hyperbolic (Poincaré_Disk) / Spherical / Toroidal",
+            "curvature_coefficient": "κ = [-1.0 ... +1.0] (Modulated_by_H(c))",
+            "spatial_node_density": "12_Tap_Virtual_Array",
+            "metric_tensor": "g_ij(t) // динамическое изменение метрики пространства времени"
+          },
+          "TEMPORAL_WARP_DELAY_LINES": {
+            "base_delay": "1/16 - 1/2_Note (Synced_to_BPM)",
+            "time_dilation_per_tap": "τ_i = τ_0 * sinh(i * κ) // гиперболическое растяжение времени",
+            "pitch_drift_compensation": "Granular_Resampling_in_Loop",
+            "interpolation": "Lagrange_Polynomial (High_Fidelity_Time_Stretching)"
+          },
+          "GEOMETRIC_FEEDBACK_MATRIX": {
+            "feedback_topology": "Cross-Coupled_Network",
+            "diffusion_coefficient": "0.5 - 0.95 (Based_on_Distance_in_κ-Space)",
+            "spectral_damping": "Absorption_Model(Frequency_Dependent)",
+            "non_linear_saturation": "Hyperbolic_Tangent_Limiter"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Define Spatial Curvature",
+            "target": "H(e) ⊗ User_Parameter(κ)",
+            "comment": "Установка 'геометрии' задержки. Отрицательная кривизна создает эффект бесконечного удаления, положительная — эффект 'зацикливания' на себе."
+          },
+          {
+            "step": 2,
+            "action": "Inject Signal into Metric-Field",
+            "logic": "Input → Node[0] → Σ Node[i] * Delay(τ_i)",
+            "comment": "Распространение звукового импульса через искривленную сеть задержек."
+          },
+          {
+            "step": 3,
+            "action": "Apply Relativistic Doppler Shift",
+            "method": "Pitch_Shift = f(Δτ / Δt)",
+            "comment": "Добавление микро-изменений тональности, возникающих из-за изменения времени задержки в процессе движения звука."
+          }
+        ],
+        "sound_design_params": {
+          "spatial_unpredictability": "High",
+          "echo_density": "Sparse_to_Dense_Clusters",
+          "stereo_width": "Beyond-Stereo_Expansion",
+          "texture": "Refractive_Liquid_Crystal"
+        },
+        "integration_note": "Этот атом радикально меняет восприятие пространства. Рекомендуется использовать с ATOM_11 (Фаза) для создания голографических эхо-структур. При κ → -1.0 звук превращается в бесконечный фрактальный хвост, не забивающий микс (Negative_Space_Delay)."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_06_11",
+        "sync_status": "GEOMETRY_INITIALIZED",
+        "system_feedback": "Non-Euclidean metric verified. Temporal lines curved according to H(c) vector."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

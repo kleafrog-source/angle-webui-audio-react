@@ -1,0 +1,28 @@
+{
+  "id": "block_henn1kzf",
+  "name": "num playlists",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "num_playlists",
+    "num",
+    "playlists",
+    "sort_order",
+    "sort",
+    "order"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "num_playlists": 30,
+      "sort_order": "newest_first"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

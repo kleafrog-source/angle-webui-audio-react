@@ -1,0 +1,41 @@
+{
+  "id": "block_eje76zt1",
+  "name": "studio laws v3",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "studio_laws_v3",
+    "studio",
+    "laws",
+    "v3",
+    "law_01_no_mud",
+    "law",
+    "01",
+    "no",
+    "mud",
+    "law_02_phase_is_god",
+    "02",
+    "phase",
+    "is",
+    "god"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "studio_laws_v3": {
+        "law_01_no_mud": "Surgical cut at 250Hz on ALL non-foundation elements. No exceptions.",
+        "law_02_phase_is_god": "Check phase correlation every 16 bars. Invert if correlation < 0.5.",
+        "law_03_the_void_must_breathe": "Layer 3 must have at least one parameter modulated by a slow Fractal-LFO.",
+        "law_04_mono_sub": "Everything below 120Hz must be 100% Mono. Stereo-bass is forbidden (unless G-Inverted).",
+        "law_05_dynamic_headroom": "Final pre-master peak must not exceed -6dB (Headroom for ASE-Mastering)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

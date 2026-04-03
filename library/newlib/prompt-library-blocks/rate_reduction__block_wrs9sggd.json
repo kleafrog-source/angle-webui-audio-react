@@ -1,0 +1,28 @@
+{
+  "id": "block_wrs9sggd",
+  "name": "rate reduction",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "rate_reduction",
+    "rate",
+    "reduction",
+    "logic",
+    "result"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "rate_reduction": "0.25x (Post-filter aliasing)",
+      "logic": "Lowering the 'Nyquist-limit' to create mirror-harmonics",
+      "result": "Metallic 'screaming' artifacts @ 3.5kHz - 6kHz"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

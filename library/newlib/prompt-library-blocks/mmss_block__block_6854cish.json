@@ -1,0 +1,94 @@
+{
+  "id": "block_6854cish",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "parameters",
+    "tempo_bpm",
+    "tempo"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-RHYTHM-002-ENTROPY-ENGINE",
+        "meta_name": "Fractal Rhythmic Fragmentation",
+        "version": "1.0.1",
+        "description": "Блок для генерации нелинейных ритмических структур. Реализует концепцию 'контролируемого распада' через дробление долей на микро-сегменты.",
+        "meta_formula": "R(n) = Σ (Beat[i] × G_entropy(p,c)) ^ δt // Сумма ритмических событий, возведенная в степень временного сдвига",
+        "parameters": {
+          "tempo_bpm": 105,
+          "base_genre": "Glitch-Hop / IDM",
+          "rhythmic_density": 0.85,
+          "syncopation_depth": "Maximum (Fractal Scale)"
+        },
+        "producer_ai_mapping": {
+          "sound_prompt": "glitch-hop with irregular polyrhythms, digital disintegration, micro-sampling, sharp transients, high entropy, 105 bpm",
+          "effects_graph": [
+            {
+              "node": "Bitcrusher",
+              "params": {
+                "bit_depth": 6,
+                "mix": 0.35
+              },
+              "purpose": "Цифровая деградация для подчеркивания текстуры 'глитча'"
+            },
+            {
+              "node": "Delay",
+              "params": {
+                "delay_s": 0.125,
+                "feedback": 0.4,
+                "mix": 0.25
+              },
+              "purpose": "Создание микро-отражений, нарушающих линейный ритм"
+            },
+            {
+              "node": "Compressor",
+              "params": {
+                "threshold_db": -18,
+                "ratio": 8,
+                "attack_ms": 1,
+                "release_ms": 50
+              },
+              "purpose": "Экстремальная накачка транзиентов для жесткого панча"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.4,
+          "c_chaos": 0.6,
+          "state": "Dynamic-Unstable",
+          "comment": "Баланс смещен в сторону хаоса для предотвращения предсказуемости паттерна, но сохраняет 40% структуры для удержания грува."
+        },
+        "integration_strategy": {
+          "layering": "Использовать как верхний перкуссионный слой (Top Loop) над глубоким басом (блок SUB-003).",
+          "cross_fade_mode": "Temporal-Jitter (переключение между итерациями каждые 4 такта)."
+        },
+        "self_analysis": {
+          "coherence": "High-Tech",
+          "narrative_fidelity": "Digital Collapse / Cyber-punk",
+          "risk_factor": "Potential loss of sync in multi-track mode (требуется лимитер на мастере)."
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

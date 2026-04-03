@@ -1,0 +1,102 @@
+{
+  "id": "block_6mba76t0",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-BONE-007-ORGANIC-CLICK",
+        "meta_name": "Skeletal Organic Percussion",
+        "version": "1.5.0",
+        "description": "Блок генерации 'органического щелчка'. Имитирует звук сталкивающихся костей, камней и сухих веток через физическое моделирование переходных процессов.",
+        "meta_formula": "P_org(t) = Σ [ δ(t - τ_i) ⊗ Reson(f_i, Q_high) ] ⊕ Noise(pink, env_fast) // Импульсы, возбуждающие высокодобротные резонаторы с розовым шумом",
+        "logic_parameters": {
+          "transient_snap": "1ms - 5ms",
+          "harmonic_content": "Non-harmonic / Wood-like",
+          "velocity_mapping": "Exponential (p ∝ v²)",
+          "spatial_placement": "Point-Source (Narrow)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "HighPass",
+              "params": {
+                "cutoff_frequency_hz": 1200
+              },
+              "purpose": "Удаление 'тела' звука для концентрации на 'скелетном' щелчке"
+            },
+            {
+              "node": "Compressor",
+              "params": {
+                "threshold_db": -6,
+                "ratio": 12,
+                "attack_ms": 0.1,
+                "release_ms": 10
+              },
+              "purpose": "Максимизация начального транзиента (The Click)"
+            },
+            {
+              "node": "Equalizer",
+              "params": {
+                "treble_db": 10,
+                "mid_db": -4,
+                "bass_db": -24
+              },
+              "purpose": "Подчеркивание хрупкости и остроты текстуры"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.6,
+          "chaos_c": 0.4,
+          "state": "Iterative-Stochastic",
+          "logic": "Умеренный порядок (p=0.6) для имитации естественных, но не идеально ровных органических движений."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "1.5kHz - 18kHz",
+          "timbre": "Dry / Brittle / Percussive",
+          "transient_profile": "Ultra-Fast / High-Contrast"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-RHYTHM-002-ENTROPY-ENGINE",
+          "interaction": "Micro-Layering (наложение органических щелчков поверх цифрового глитча для 'одушевления' электроники).",
+          "contrast_link": "ASE-VOX-004 (Dry bone clicks vs Wet ethereal pads)."
+        },
+        "self_analysis": {
+          "coherence": "Tactile-Primitive",
+          "narrative_fidelity": "Ritual / Forest-Cybernetics",
+          "applied_operators": [
+            "Impulse_Excitation",
+            "Spectral_Thinning"
+          ]
+        },
+        "integration_note": "Использовать как скрытые ритмические триггеры для активации подсознательного внимания слушателя."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

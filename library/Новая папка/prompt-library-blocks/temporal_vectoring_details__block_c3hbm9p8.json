@@ -1,0 +1,48 @@
+{
+  "id": "block_c3hbm9p8",
+  "name": "temporal vectoring details",
+  "description": "Imported from mixed JSON/text document",
+  "category": "metadata",
+  "tags": [
+    "import",
+    "temporal_vectoring_details",
+    "temporal",
+    "vectoring",
+    "details",
+    "protocol",
+    "parameters",
+    "future_lead",
+    "future",
+    "lead",
+    "past_echo",
+    "past",
+    "echo",
+    "phase_rotation",
+    "phase"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "temporal_vectoring_details": {
+        "protocol": "ASE_Temporal_Shift_v4",
+        "parameters": {
+          "future_lead": "Pre-delay -5ms (Vocal appears slightly before the beat for urgency)",
+          "past_echo": "Post-delay + prime_number (Organic feedback tails)",
+          "phase_rotation": "360° rotation over 16 bars using Quaternion-L' logic"
+        },
+        "application": "Creating a sense of 'future-entropy' in transition sweeps"
+      },
+      "metadata_user_checkpoints": {
+        "last_successful_prompt": "Fast-gen-mmss activate: fusion_mode=fractal, theme=x, x=neuro-shamanism",
+        "preferred_aspect_ratio_video": "9:16 (Vertical for social-media display)",
+        "video_style_reference": "Cyberpunk-Dystopian-Neon-Fractal-Geometry"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

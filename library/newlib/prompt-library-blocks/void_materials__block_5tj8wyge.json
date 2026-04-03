@@ -1,0 +1,41 @@
+{
+  "id": "block_5tj8wyge",
+  "name": "void materials",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "void_materials",
+    "void",
+    "materials",
+    "liquid_mercury",
+    "liquid",
+    "mercury",
+    "frozen_smoke",
+    "frozen",
+    "smoke",
+    "digital_bone",
+    "digital",
+    "bone",
+    "plasma_arc",
+    "plasma"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "void_materials": {
+        "liquid_mercury": "Phasing, shifting, metallic, ultra-smooth, silver reflections",
+        "frozen_smoke": "Granular, ethereal, cold, static-air, slow-motion evolution",
+        "digital_bone": "Brittle, sharp, clicky, 4-bit, hollow resonance, dry",
+        "plasma_arc": "Electric, buzzing, high-freq tension, neon-purple, distorted",
+        "usage": "Used in [SOUNDSCAPE] of L1 Core to guide the ASE-Timbre-Generator."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

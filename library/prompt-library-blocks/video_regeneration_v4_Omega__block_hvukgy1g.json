@@ -1,0 +1,58 @@
+{
+  "id": "block_hvukgy1g",
+  "name": "video regeneration v4 Omega",
+  "description": "Imported from mixed JSON/text document",
+  "category": "archive",
+  "tags": [
+    "import",
+    "video_regeneration_v4_omega",
+    "video",
+    "regeneration",
+    "v4",
+    "omega",
+    "visual_semantic_sync",
+    "visual",
+    "semantic",
+    "sync",
+    "kick_trigger",
+    "kick",
+    "trigger",
+    "snare_trigger",
+    "snare"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "video_regeneration_v4_Omega": {
+        "visual_semantic_sync": {
+          "kick_trigger": "Mandelbulb fractal-zoom depth (1.0 to 1.5)",
+          "snare_trigger": "Chromatic aberration pulse (Intensity: 0.8, Duration: 120ms)",
+          "vocal_lfe_trigger": "Text-overlay opacity & Glow_radius modulation",
+          "bass_reese_trigger": "Geometry displacement (Warping frequency: 5-50Hz)"
+        },
+        "shader_evolution_logic": {
+          "step_1": "Initialize static geometry (Seed_v4_Visual)",
+          "step_2": "Apply Quaternion_Rotation (Synced to BPM)",
+          "step_3": "Inject Audio_Reactive_Noise (Perlin noise based on RMS)",
+          "step_4": "Final color-grading (Neon_Cyan ⊗ Cyber_Purple)"
+        },
+        "rendering_specs_deep": {
+          "frame_rate": "60fps (Constant)",
+          "motion_blur": "Shutter_angle: 180° (Smooth transitions)",
+          "bitrate": "Adaptive (Target 50Mbps for 4k precision)"
+        }
+      },
+      "visual_concept_archive": [
+        "Concept: The Digital Cathedral (Recursive gothic arches moving in 4D)",
+        "Concept: Neural Mesh (Interconnected neon lines pulsing with the beat)",
+        "Concept: The Void Zero (Complete darkness where only transients create light-flashes)"
+      ]
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

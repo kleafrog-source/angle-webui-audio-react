@@ -1,0 +1,61 @@
+{
+  "id": "block_lxvr0bqf",
+  "name": "LFE interface interaction lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "lfe_interface_interaction_lyrics",
+    "lfe",
+    "interface",
+    "interaction",
+    "lyrics",
+    "the_parameter_tweak_set",
+    "the",
+    "parameter",
+    "tweak",
+    "set",
+    "the_user_command_set",
+    "user",
+    "command",
+    "the_session_reflection"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_interface_interaction_lyrics": {
+        "the_parameter_tweak_set": [
+          "Turning the knob of the fractal gain / Washing the noise from the digital brain",
+          "Shift the phase, lock the sub to the beat / Making the spectrum of sounds complete",
+          "Surgical EQ, cutting the mud / Pumping the logic like electronic blood"
+        ],
+        "the_user_command_set": [
+          "Abstract command: /fast-gen-mmss / Activate loop in the singularity mess",
+          "Give me the seed, give me the flow / Where the frequencies come and the shadows go",
+          "Modify song: add more aggressive growl / Let the Monster 7 officially howl"
+        ],
+        "the_session_reflection": [
+          "V1 to V4, the ladder of light / Climbing the mountain of digital night",
+          "Every iteration, a step to the sun / The user and algorithm, moving as one"
+        ]
+      },
+      "semantic_density_v4": {
+        "logic_to_poetry_ratio": "0.65 (Strong technical bias)",
+        "word_frequency_peak": [
+          "Zero",
+          "Fractal",
+          "Singularity",
+          "G-Inversion",
+          "G#"
+        ],
+        "narrative_fidelity_status": "Locked @ 0.98"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

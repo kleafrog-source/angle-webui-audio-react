@@ -1,0 +1,46 @@
+{
+  "id": "block_qnlx6h2y",
+  "name": "reversed engineering steps",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "reversed_engineering_steps",
+    "reversed",
+    "engineering",
+    "steps",
+    "polyrhythm_presets",
+    "polyrhythm",
+    "presets",
+    "neuro_glitch",
+    "neuro",
+    "glitch",
+    "psy_cyclic",
+    "psy",
+    "cyclic",
+    "complex_idm"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "reversed_engineering_steps": [
+        "Step_0: Stem-split (audio__split_stems) -> Extract Vocal / Drums / Bass",
+        "Step_1: Analysis (audio__caption) -> Identify core BPM and Harmonic Key",
+        "Step_2: Rhythm Extraction -> Kick/Snare MIDI-proxy creation",
+        "Step_3: Polyrhythmic Injection -> Overlay 12/8 percussion grid over 4/4 bass",
+        "Step_4: Harmonic Re-stacking -> Re-generate vocals with 7-part symmetry"
+      ],
+      "polyrhythm_presets": {
+        "neuro_glitch": "4:3 (Kick vs Snare ghost-notes)",
+        "psy_cyclic": "5:4 (Arpeggiator vs Main Kick)",
+        "complex_idm": "7:8 (Hi-hat patterns vs Bassline)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

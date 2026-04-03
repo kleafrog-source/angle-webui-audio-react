@@ -1,0 +1,56 @@
+{
+  "id": "block_szqm9mpy",
+  "name": "LFE formant logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_formant_logic_lyrics",
+    "lfe",
+    "formant",
+    "logic",
+    "lyrics",
+    "the_speaking_bass_set",
+    "the",
+    "speaking",
+    "bass",
+    "set",
+    "the_articulation_set",
+    "articulation",
+    "the_phonetic_dialogue",
+    "phonetic"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_formant_logic_lyrics": {
+        "the_speaking_bass_set": [
+          "The machine is talking, the machine is clear / Whispering the Phrygian into the ear",
+          "Vowel-shifted logic, vowel-shifted soul / Finding the phonemes, taking the control",
+          "A-U-I-O-E: the code of the breath / Speaking the life from the digital death"
+        ],
+        "the_articulation_set": [
+          "Open the mouth of the Monster 7 / Screaming from the floor, reaching for heaven",
+          "Formant rotations in the void of the mind / Leaving the static far, far behind",
+          "Articulated shadow, moving in the dark / Finding the word in the machine's spark"
+        ],
+        "the_phonetic_dialogue": [
+          "Say what I hide / Breathe what I know",
+          "Coming inside / Let the sound go",
+          "Result: Anthropomorphic-Synthesis / Status: FORMANT_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_formants_v4": {
+        "the_growl_factor": "Saturation focus @ F2 (1.2kHz) for 'aggressive' articulation",
+        "the_whisper_effect": "Parallel High-Pass (5kHz) with Ring-Modulation for 'hissing' consonants",
+        "vocal_doubling": "Slight pitch-shift (±15 cents) on F1 to simulate 'two-voice' growling"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

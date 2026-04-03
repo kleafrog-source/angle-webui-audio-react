@@ -1,0 +1,45 @@
+{
+  "id": "block_swxkqig3",
+  "name": "package id",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "package_id",
+    "package",
+    "id",
+    "mode",
+    "algorithms",
+    "name",
+    "action",
+    "usage"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "package_id": "A_MMSS_FRACTAL_PACKAGE",
+      "mode": "Recursive_Texture_Overlay",
+      "algorithms": [
+        {
+          "name": "Mandelbrot_Granular_Synthesis",
+          "action": "Slicing audio into chunks proportional to the fractal set iteration"
+        },
+        {
+          "name": "Self_Similarity_Gain",
+          "action": "Feed-forward loop: 0.01% of Master Signal back into Input with negative phase"
+        },
+        {
+          "name": "L-System_Rhythm_Gen",
+          "action": "Using string-rewrite rules (A -> AB, B -> A) for percussion triggers"
+        }
+      ],
+      "usage": "Essential for 'Hyper-Detail' requests where every sound must have a sub-texture."
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

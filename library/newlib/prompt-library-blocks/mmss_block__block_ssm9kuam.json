@@ -1,0 +1,101 @@
+{
+  "id": "block_ssm9kuam",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-META-024-SWARM-INTELLIGENCE",
+        "meta_name": "Distributed Swarm-Intelligence Engine",
+        "version": "3.4.0",
+        "description": "Блок моделирования коллективного поведения. Имитирует движение роя (насекомых, наноботов, данных) через сотни микро-событий, связанных единым вектором движения, но обладающих индивидуальным хаосом.",
+        "meta_formula": "S(t) = Σ_{i=1}^{N} [ p_i(t) ⊗ d_i(t) ] | N → 10^3 // Сумма N-частиц, где каждая частица p управляется аттрактором роя при локальном отклонении d",
+        "logic_parameters": {
+          "swarm_density": 0.95,
+          "particle_individualism": 0.25,
+          "attractor_force": "Centralized / Multi-point",
+          "spatial_dispersion": "Cloud-like (Gaussian)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 1,
+                "rate_hz": 4.5,
+                "mix": 0.8
+              },
+              "purpose": "Создание эффекта 'тысячи голосов' из одного источника через быструю модуляцию фазы"
+            },
+            {
+              "node": "HighPass",
+              "params": {
+                "cutoff_frequency_hz": 3500
+              },
+              "purpose": "Акцент на высокочастотном 'жужжании' и 'шелесте' роя"
+            },
+            {
+              "node": "Delay",
+              "params": {
+                "delay_s": 0.02,
+                "feedback": 0.6,
+                "mix": 0.4
+              },
+              "purpose": "Микро-задержки для имитации физического объема и плотности облака частиц"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.4,
+          "chaos_c": 0.6,
+          "state": "Collective-Emergence",
+          "logic": "Хаос на уровне частиц (c=0.6) компенсируется порядком на уровне роя (p=0.4), создавая живую, дышащую структуру."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "3.5kHz - 19kHz",
+          "timbre": "Buzzing / Hissing / Shimmering / Granular",
+          "spatial_setting": "Extreme-Wide (Stereo-Swirl)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-BONE-007-ORGANIC-CLICK",
+          "interaction": "Swarm-Attack (Swarm 024 превращает одиночные клики 007 в лавину органических звуков).",
+          "contrast_link": "ASE-SUB-003 (Airborne swarm vs Grounded sub-bass)."
+        },
+        "self_analysis": {
+          "coherence": "Macro-Fluidity",
+          "narrative_fidelity": "Nanobot-Cloud / Hive-Mind / Digital-Locusts",
+          "applied_operators": [
+            "Granular_Proliferation",
+            "Phase_Multiplication"
+          ]
+        },
+        "integration_note": "Использовать для создания эффекта 'окружения' и панорамных заполнений, которые должны перемещаться вокруг слушателя."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

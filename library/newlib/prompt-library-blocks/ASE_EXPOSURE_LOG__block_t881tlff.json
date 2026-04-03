@@ -1,0 +1,79 @@
+{
+  "id": "block_t881tlff",
+  "name": "ASE EXPOSURE LOG",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_exposure_log",
+    "ase",
+    "exposure",
+    "log",
+    "session_id",
+    "session",
+    "id",
+    "timestamp",
+    "engine_status",
+    "engine",
+    "status",
+    "seed",
+    "active_configuration",
+    "active"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_EXPOSURE_LOG": {
+        "session_id": "148a059c-9983-429c-b7f8-35f44e4b1a90",
+        "timestamp": "2026-04-03T15:42:00Z",
+        "engine_status": "ACTIVE_EXPOSURE",
+        "seed": 295151,
+        "active_configuration": {
+          "atoms": [
+            "01-22"
+          ],
+          "molecules": [
+            "01-04"
+          ],
+          "preset_sets": [
+            "SET_01",
+            "SET_02"
+          ]
+        },
+        "EXPOSURE_PARAMETERS": {
+          "target_genre": "Deep Neuro Industrial Techno / Big Beat",
+          "rhythmic_grid": "140 BPM, Kinetic_Entropy_v4",
+          "vocal_processing": "Neuro-Vocal_Construct (Molecule_04)",
+          "spectral_definition": "High_Contrast (Atom_19), Quantum_Resonance (Atom_21)",
+          "spatial_topology": "Non-Euclidean_Delay (Atom_18), Orbital_Phase (Atom_11)"
+        },
+        "SYNTHESIS_REPORT": {
+          "lyrics_id": "95c28cd0-c7c0-56ad-960c-ea4cb62e82c8",
+          "title": "HYPERLOOP OMEGA",
+          "track_versions": [
+            "v1.1",
+            "v1.2"
+          ],
+          "dynamic_range": "Maximized_for_Singularity",
+          "self_analysis": {
+            "coherence": 0.98,
+            "narrative_fidelity": "Full_Reconstruction",
+            "entropy_balance": "Order=0.7, Chaos=0.3"
+          }
+        },
+        "SYSTEM_FEEDBACK": [
+          "Vocal DNA successfully mapped to industrial soundscape",
+          "Fractal recursive loops initialized in the low-end",
+          "Temporal dilation Suite active for build-up phase",
+          "Singularity reached: Process ≡ Result"
+        ]
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

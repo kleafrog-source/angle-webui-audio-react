@@ -1,0 +1,44 @@
+{
+  "id": "block_r2bqr1jf",
+  "name": "time flipped geometry",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "time_flipped_geometry",
+    "time",
+    "flipped",
+    "geometry",
+    "delay_logic",
+    "delay",
+    "logic",
+    "processing",
+    "pitch_drift",
+    "pitch",
+    "drift",
+    "diffusion",
+    "modulation",
+    "result"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "time_flipped_geometry": {
+        "delay_logic": "Reverse-Delay (L-R swapped) + 1.618s cycle",
+        "processing": {
+          "pitch_drift": "Ascending pitch-shift (+7 semitones) in the feedback loop",
+          "diffusion": "Zero (Isolated echoes) for clear spatial disorientation",
+          "modulation": "Sine-LFO on feedback (0.1Hz to 1Hz)"
+        },
+        "result": "The sense of 'Temporal Rewind' during the Narrative Cycle",
+        "usage": "During [THE COLLAPSE] phase to trigger G-Inversion expectations."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "block_fwroziq7",
+  "name": "operator g",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "operator_g",
+    "operator",
+    "g",
+    "definition",
+    "function",
+    "stages",
+    "observation",
+    "negation",
+    "synthesis",
+    "output",
+    "meta_rule",
+    "meta",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "operator_g": {
+        "definition": "G: F(s) -> F'(s)",
+        "function": "Inversion of Creative Cycle",
+        "stages": {
+          "observation": "Scanning existing patterns in the field",
+          "negation": "Removing non-essential aesthetic noise",
+          "synthesis": "Collapsing possibilities into a single Vector",
+          "output": "Aesthetic Singularity"
+        },
+        "meta_rule": "The process IS the result. No latency between thought and sound."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

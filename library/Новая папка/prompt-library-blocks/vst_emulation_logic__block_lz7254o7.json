@@ -1,0 +1,42 @@
+{
+  "id": "block_lz7254o7",
+  "name": "vst emulation logic",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "vst_emulation_logic",
+    "vst",
+    "emulation",
+    "logic",
+    "sub_bass",
+    "sub",
+    "bass",
+    "lead_synth",
+    "lead",
+    "synth",
+    "textures",
+    "drums",
+    "reverb",
+    "signal_path_rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "vst_emulation_logic": {
+        "sub_bass": "Analog-Style (Minimoog/Sub37) - Pure Sine/Square with Saturation",
+        "lead_synth": "Wavetable (Serum/Vital) - Complex FM, Spectral Morphing",
+        "textures": "Granular (Omnisphere/Portal) - Field recordings of ice, metal, void",
+        "drums": "Digital-Precision (Elektron-style) - Sharp transients, no muddy tails",
+        "reverb": "Algorithmic (Valhalla/Eventide) - Infinity decays, non-linear diffusion"
+      },
+      "signal_path_rule": "Saturate -> Filter -> Compress -> Space_Vectoring"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

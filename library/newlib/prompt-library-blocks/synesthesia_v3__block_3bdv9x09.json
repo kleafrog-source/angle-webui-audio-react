@@ -1,0 +1,43 @@
+{
+  "id": "block_3bdv9x09",
+  "name": "synesthesia v3",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "synesthesia_v3",
+    "synesthesia",
+    "v3",
+    "color_mappings",
+    "color",
+    "mappings",
+    "deep_void_black",
+    "deep",
+    "void",
+    "black",
+    "neon_cyan",
+    "neon",
+    "cyan",
+    "industrial_rust"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "synesthesia_v3": {
+        "color_mappings": {
+          "deep_void_black": "Sub-60Hz sine, zero reverb, absolute silence gaps",
+          "neon_cyan": "High-freq FM, fast LFO, shimmering delays",
+          "industrial_rust": "Bitcrushed noise, distortion at 400Hz, metallic resonance",
+          "ultraviolet_purple": "Phrygian melodies, deep cathedral reverb, spectral smearing"
+        },
+        "visual_prompting": "When using image__create_image, match hex-codes to frequency bands."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

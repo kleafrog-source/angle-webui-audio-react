@@ -1,0 +1,40 @@
+{
+  "id": "block_yxvs9taf",
+  "name": "pad architecture v2",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "pad_architecture_v2",
+    "pad",
+    "architecture",
+    "v2",
+    "timbre",
+    "spectral_carving",
+    "spectral",
+    "carving",
+    "movement",
+    "envelope",
+    "mixing_rule",
+    "mixing",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "pad_architecture_v2": {
+        "timbre": "Evolving Granular / Spectral-Freeze / Slow-Attack Strings",
+        "spectral_carving": "Notch-cut at 1kHz-2kHz (to let the Lead breathe)",
+        "movement": "Auto-panning (LFO 0.2Hz) + Phase-shifting (180 deg offset)",
+        "envelope": "Attack: 2s-5s, Decay: 10s, Sustain: 50%, Release: 5s (Tail infinity)",
+        "mixing_rule": "Mix at -12dB. Must occupy the 'Sides' (Mid-Side processing: Side 100%, Mid 0%)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

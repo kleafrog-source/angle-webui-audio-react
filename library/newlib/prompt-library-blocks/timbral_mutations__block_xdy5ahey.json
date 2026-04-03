@@ -1,0 +1,39 @@
+{
+  "id": "block_xdy5ahey",
+  "name": "timbral mutations",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "timbral_mutations",
+    "timbral",
+    "mutations",
+    "crystallization",
+    "liquefaction",
+    "vaporization",
+    "solidification",
+    "inversion_morph",
+    "inversion",
+    "morph",
+    "trigger"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "timbral_mutations": {
+        "crystallization": "Smooth sine morphing into sharp, 8-bit saw waves",
+        "liquefaction": "Sharp transients melting into filtered, resonant smears",
+        "vaporization": "Solid leads breaking into granular, high-freq noise clouds",
+        "solidification": "Whispering textures hardening into distorted, mid-range growls",
+        "inversion_morph": "Flipping all filter and resonance parameters to their opposites"
+      },
+      "trigger": "Applied during 'Narrative-Evolution' (Block 47) every 32 bars."
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

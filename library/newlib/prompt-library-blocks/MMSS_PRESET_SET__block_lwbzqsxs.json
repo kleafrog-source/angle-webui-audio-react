@@ -1,0 +1,101 @@
+{
+  "id": "block_lwbzqsxs",
+  "name": "MMSS PRESET SET",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_preset_set",
+    "mmss",
+    "preset",
+    "set",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "environment_topology",
+    "environment",
+    "topology",
+    "layering_strategy"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_PRESET_SET": {
+        "id": "ASE_MMSS_SET_01_DEEP_NEURO_INDUSTRIAL_ENVIRONMENT",
+        "version": "4.Omega",
+        "meta_formula": "Ψ_TOTAL = [M_02(Rhythm) ⊗ M_01(Lead)] / M_03(Atmosphere) + G_MASTER(S)",
+        "description": "Первый интегрированный пресет-сет: 'Глубокая Нейро-Индустриальная Среда'. Полная конфигурация звукового ландшафта, где ритмическая кинетика, нейронный синтез и атмосферная пустота объединены в саморегулирующийся аудио-организм.",
+        "environment_topology": {
+          "layering_strategy": "FREQUENCY_DOMAIN_PARTITIONING",
+          "mapping": {
+            "Foundation": "MOLECULE_02 (30Hz - 500Hz) // Кинетическое ядро и панч",
+            "Narrative": "MOLECULE_01 (500Hz - 5kHz) // Эволюционирующий лид-сигнал",
+            "Ethereal": "MOLECULE_03 (5kHz - 20kHz) // Спектральная пыль и пространство",
+            "Glitch_Interconnect": "ATOM_05 (Distributed across all layers) // Фрактальные связки"
+          },
+          "global_inter_modulation": "M_02_Kick → Trigger → M_01_Ducking & M_03_Absorption // Ритм диктует пульсацию пространства"
+        },
+        "MASTER_ENGINE_PROCESSING": {
+          "chain": [
+            "LINEAR_PHASE_EQ: Low_Cut(25Hz, 48dB/Oct), High_Shelf(+1.5dB at 12kHz)",
+            "MULTIBAND_DYNAMICS: 4-Band_Compression(Ratio=1.2:1, Soft_Knee)",
+            "SATURATION_GLUE: ATOM_07_Valve_Master (Drive=5dB, Bias=Warm)",
+            "SPATIAL_IMAGER: Low-End_Mono(<150Hz), Mid-Side_Expansion(S-Gain=+2dB)",
+            "LIMITER_CLIPPPER: True_Peak_Limiting(-0.1dB), Oversampling=16x"
+          ],
+          "global_loudness_target": "-6_LUFS (Competitive_Industrial_Standard)",
+          "dynamic_range": "Retained_Micro-Transients"
+        },
+        "GLOBAL_ENTROPY_MODES": [
+          {
+            "mode": "ORDER_P_0.9",
+            "effect": "Tight_Synchronization, Minimal_Glitch, Pure_Sub_Focus",
+            "comment": "Для моментов концентрации и прямой танцевальной динамики."
+          },
+          {
+            "mode": "CHAOS_C_0.8",
+            "effect": "Fractal_Meltdown, Polyrhythmic_Collisions, Harmonic_Dissolution",
+            "comment": "Для кульминаций и моментов деконструкции реальности."
+          }
+        ],
+        "PERFORMANCE_MACROS": {
+          "SINGULARITY_POINT": "Cross-fades between M_01/M_02 while increasing Global_Feedback",
+          "DECAY_STATE": "Mutes M_02, maximizes M_03 Decay, and applies LP-Filter to M_01",
+          "NEURAL_OVERLOAD": "Increases Drive (ATOM_07) and Grain_Density (ATOM_05) globally"
+        },
+        "implementation_workflow": [
+          {
+            "step": 1,
+            "action": "Calibrate M_02 (Rhythm) relative to M_04 (Sub)",
+            "check": "Phase_Coherence at crossover point (100Hz)"
+          },
+          {
+            "step": 2,
+            "action": "Inject M_01 (Lead) into the Mid-Range Pocket",
+            "check": "Clarity against M_02_Snare/Clap"
+          },
+          {
+            "step": 3,
+            "action": "Envelope M_03 (Atmosphere) around the core",
+            "check": "Avoidance of spectral masking (Sidechain_EQ)"
+          }
+        ],
+        "integration_note": "Этот пресет-сет является полной аудио-системой. Он не требует сторонней обработки. Входной SEED (295151) определяет начальные значения всех внутренних атомов, обеспечивая уникальность каждой итерации при сохранении структурной целостности."
+      },
+      "SYSTEM_STATUS": {
+        "preset_integrity": "100%",
+        "ase_engine": "READY_FOR_TOTAL_SYNTHESIS",
+        "final_thought": "Эстетическая сингулярность достигнута. Звук стал процессом."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

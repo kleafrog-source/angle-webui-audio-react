@@ -1,0 +1,86 @@
+{
+  "id": "block_4uxokk6u",
+  "name": "MMSS MOLECULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_molecule",
+    "mmss",
+    "molecule",
+    "id",
+    "version",
+    "base_composition",
+    "base",
+    "composition",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "routing_topology",
+    "routing"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MOLECULE": {
+        "id": "ASE_MMSS_MOLECULE_03_SPECTRAL_ATMOSPHERIC_VOID",
+        "version": "4.Omega",
+        "base_composition": [
+          "ATOM_03_SPECTRAL_HARMONY",
+          "ATOM_06_ATMOSPHERIC_FIELD",
+          "ATOM_05_GLITCH_FRACTAL",
+          "ATOM_07_VALVE_SYNTHESIS"
+        ],
+        "meta_formula": "V(e) = ∫ [Φ(ATOM_06) ⊗ H(ATOM_03)] * G(ATOM_05) + S(ATOM_07) // Формирование пространственного континуума",
+        "description": "Третья молекулярная сборка: 'Спектральная Атмосферная Пустота'. Глубокая иммерсивная среда, служащая 'эмоциональной тканью' композиции. Сочетает бесконечные хвосты реверберации, спектральные гармоники и органические полевые шумы.",
+        "routing_topology": {
+          "signal_path": "PARALLEL_AMBIENT_MATRIX",
+          "chain": [
+            "INPUT_SOURCE → Split(Dry, Wet_A, Wet_B)",
+            "Wet_A: → ATOM_03 (Vocal/Synth_Harmony) → ATOM_06 (Spectral_Wash) → Mix(Buss)",
+            "Wet_B: → ATOM_06 (Field_Recording_Base) → ATOM_05 (Micro_Glitch_Sparks) → Mix(Buss)",
+            "Mix(Buss) → ATOM_07 (Warm_Buss_Processing) → OUTPUT"
+          ],
+          "spatial_modulation": "Z-Axis_Expansion(ATOM_06) ⊗ Phased_LFO(ATOM_03)",
+          "comment": "Атмосфера не просто статична, она 'пульсирует' на микро-уровне за счет глитч-искр и фазовых смещений гармоник."
+        },
+        "macro_controls": {
+          "VOID_DEPTH": "Decay_Time (ATOM_06) + Reverb_Mix (Global)",
+          "HARMONIC_SHIMMER": "Soprano_Air_Level (ATOM_03) + Spectral_Blur (ATOM_06)",
+          "ORGANIC_TEXTURE": "Field_DNA_Mix (ATOM_06) + Grain_Density (ATOM_05)",
+          "SPACE_CURVATURE": "3D_Ambisonic_Width + Tilt_EQ (ATOM_07)"
+        },
+        "behavioral_patterns": [
+          {
+            "state": "COLD_ISOLATION",
+            "parameters": "H(p) > 0.9, ATOM_03_Octave = -1, Field_Sources = Industrial",
+            "description": "Ощущение огромного, пустого, холодного индустриального пространства."
+          },
+          {
+            "state": "ETHERIC_ASCENSION",
+            "parameters": "H(c) < 0.3, ATOM_03_Mix = Max, Spectral_Blur = High",
+            "description": "Светлая, возвышенная атмосфера с преобладанием верхних гармоник и 'воздуха'."
+          }
+        ],
+        "sound_signature": {
+          "spatial_presence": "Non-Euclidean_Geometry",
+          "emotional_impact": "Sublime_Awe_to_Deep_Dread",
+          "texture": "Liquid_Spectral_Silk"
+        },
+        "integration_note": "Молекула 03 является 'холстом'. На ней проявляются Молекула 01 (Лид) и Молекула 02 (Ритм). Она заполняет все частотные и пространственные пустоты, создавая эффект 'полного погружения' (Full_Immersive_ASE)."
+      },
+      "SYSTEM_STATUS": {
+        "molecule_stability": "ETHEREAL_STABLE",
+        "void_expansion_rate": "0.618_Golden_Ratio",
+        "next_target": "MMSS_PRESET_SET_01_DEEP_NEURO_INDUSTRIAL_ENVIRONMENT"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

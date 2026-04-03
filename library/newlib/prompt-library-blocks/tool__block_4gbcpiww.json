@@ -1,0 +1,35 @@
+{
+  "id": "block_4gbcpiww",
+  "name": "tool",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "tool",
+    "threshold_db",
+    "threshold",
+    "db",
+    "ceiling_db",
+    "ceiling",
+    "release_ms",
+    "release",
+    "ms",
+    "mode"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "tool": "Limiter_Surgical",
+      "threshold_db": -0.5,
+      "ceiling_db": -0.3,
+      "release_ms": 120,
+      "mode": "Look-ahead (2ms), True_Peak_Enabled"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

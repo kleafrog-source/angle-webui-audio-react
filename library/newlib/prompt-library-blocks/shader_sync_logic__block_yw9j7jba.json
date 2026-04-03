@@ -1,0 +1,45 @@
+{
+  "id": "block_yw9j7jba",
+  "name": "shader sync logic",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "shader_sync_logic",
+    "shader",
+    "sync",
+    "logic",
+    "variables_mapping",
+    "variables",
+    "mapping",
+    "u_time",
+    "u",
+    "time",
+    "u_audio_low",
+    "audio",
+    "low",
+    "u_audio_mid"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "shader_sync_logic": {
+        "variables_mapping": {
+          "u_time": "Song progress (Temporal Vector)",
+          "u_audio_low": "Sub-bass amplitude (Foundation pump)",
+          "u_audio_mid": "Mid-range energy (Semantic density)",
+          "u_audio_high": "High-freq transients (Fractal detail)"
+        },
+        "geometry": "Raymarching fractals (Mandelbulb/Sierpinski) controlled by ASE-coefficients",
+        "color_palette": "Inherited from Synesthesia Matrix (Block 14)",
+        "rule": "Shader complexity must increase with Entropy H(p,c)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

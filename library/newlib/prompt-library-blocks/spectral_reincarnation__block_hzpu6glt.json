@@ -1,0 +1,35 @@
+{
+  "id": "block_hzpu6glt",
+  "name": "spectral reincarnation",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "spectral_reincarnation",
+    "spectral",
+    "reincarnation",
+    "action",
+    "processing",
+    "psycho_goal",
+    "psycho",
+    "goal",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "spectral_reincarnation": {
+        "action": "Mixing back G(s_0) elements at -52dB during the final Coda",
+        "processing": "Band-pass (1kHz-2kHz) + 100% Wet Reverb + Reverse playback",
+        "psycho_goal": "Creating the sense of 'Eternal Recurrence' (Nietzschean-Recursion)",
+        "rule": "The ghost must be unrecognizable but emotionally resonant."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

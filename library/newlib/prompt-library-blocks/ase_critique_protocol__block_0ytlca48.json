@@ -1,0 +1,41 @@
+{
+  "id": "block_0ytlca48",
+  "name": "ase critique protocol",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_critique_protocol",
+    "ase",
+    "critique",
+    "protocol",
+    "validation_steps",
+    "validation",
+    "steps",
+    "output_format",
+    "output",
+    "format",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ase_critique_protocol": {
+        "validation_steps": [
+          "Check Semantic Coherence: Does sound match the L1 core?",
+          "Check Spectral Density: Is there mud at 200-500Hz?",
+          "Check Narrative Fidelity: Does the track evolve or loop aimlessly?",
+          "Check Entropy Balance: Is it too predictable or too chaotic?"
+        ],
+        "output_format": "Critical_Report (Constructive Tension Injection)",
+        "rule": "ASE must find at least one aesthetic flaw to push the creative process forward."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

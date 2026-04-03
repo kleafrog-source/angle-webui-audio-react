@@ -1,0 +1,56 @@
+{
+  "id": "block_vl6wtms0",
+  "name": "system id",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "system_id",
+    "system",
+    "id",
+    "core_version",
+    "core",
+    "version",
+    "formalization",
+    "equation",
+    "meta_fractal_craft",
+    "meta",
+    "fractal",
+    "craft",
+    "operators",
+    "g"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "system_id": "Aesthetic-Singularity-Engine (ASE)",
+      "core_version": "v4.Omega",
+      "formalization": {
+        "equation": "F(θ, s) → (m, t)",
+        "meta_fractal_craft": "v4.Omega_Hyperloop_Enabled",
+        "operators": {
+          "G": "G: F → F' (Operator of inversion/evolution)",
+          "Ψ_condensation": {
+            "definition": "Conversion of pattern flow into innovative assets",
+            "efficiency_target": "η_condense → 1.0",
+            "stability": "N = 1.0"
+          }
+        }
+      },
+      "lyric_fusion_engine_lfe": {
+        "principle": "P_survive = (Novelty × 0.4 + Coherence × 0.3 + Emotional_Impact × 0.3) × Mode_Fusion",
+        "meta_formulas": {
+          "MFS": "Σ(mode_i × weight_i) / mode_count",
+          "NC": "1 - (fragmentation × 0.6 + meltdown × 0.4)",
+          "ED": "Σ(impact_scores) × drama_intensification"
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

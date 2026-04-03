@@ -1,0 +1,44 @@
+{
+  "id": "block_gh0nb7ih",
+  "name": "reverb geometry v3",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "reverb_geometry_v3",
+    "reverb",
+    "geometry",
+    "v3",
+    "decay_time",
+    "decay",
+    "time",
+    "diffusion_patterns",
+    "diffusion",
+    "patterns",
+    "cathedral_void",
+    "cathedral",
+    "void",
+    "metal_box"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "reverb_geometry_v3": {
+        "decay_time": "Proportional to Golden Ratio (1.618s, 2.61s, 4.23s)",
+        "diffusion_patterns": {
+          "cathedral_void": "High-diffusion, low-damp (Bright/Cold reflections)",
+          "metal_box": "Short-decay, high-resonance (Metallic/Gritty)",
+          "deep_space": "Zero-diffusion, zero-damp (Isolated echo trails)"
+        },
+        "modulation": "Sine-LFO on Reverb-size to create 'breathing walls'",
+        "mixing_rule": "Apply High-Pass at 300Hz to reverb-return to keep Foundation clear."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

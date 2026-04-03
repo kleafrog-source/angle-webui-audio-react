@@ -1,0 +1,38 @@
+{
+  "id": "block_0v1f4ce8",
+  "name": "sub harmonic spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "sub_harmonic_spec",
+    "sub",
+    "harmonic",
+    "spec",
+    "action",
+    "mixing",
+    "processing",
+    "psychoacoustic_effect",
+    "psychoacoustic",
+    "effect",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "sub_harmonic_spec": {
+        "action": "Generate f/2 (Sub-octave) sine wave linked to Layer 2 (Lead)",
+        "mixing": "Mix at -18dB relative to the main Bass (Block 41)",
+        "processing": "Strict low-pass at 40Hz. No harmonics allowed.",
+        "psychoacoustic_effect": "The sense of 'Massive Weight' that bypasses the ears",
+        "rule": "Only use during Climax (Block 47) for maximum impact."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

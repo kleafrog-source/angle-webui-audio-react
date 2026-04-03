@@ -1,0 +1,41 @@
+{
+  "id": "block_akwtfabc",
+  "name": "non euclidean spaces",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "non_euclidean_spaces",
+    "non",
+    "euclidean",
+    "spaces",
+    "paradox_1_infinite_closet",
+    "paradox",
+    "1",
+    "infinite",
+    "closet",
+    "paradox_2_liquid_cathedral",
+    "2",
+    "liquid",
+    "cathedral",
+    "paradox_3_metallic_void"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "non_euclidean_spaces": {
+        "paradox_1_infinite_closet": "Short decay (0.5s) + Infinite feedback (99%) + Low-pass (500Hz)",
+        "paradox_2_liquid_cathedral": "Long decay (8s) + High diffusion + Fractal modulation (Block 18)",
+        "paradox_3_metallic_void": "Zero diffusion + High resonance + Bitcrush-return (6-bit)",
+        "algorithm": "Mixing 3 different reverb-sizes in parallel using MLGS_QUATERNION coefficients",
+        "goal": "Acoustic disorientation (The 'Where am I?' effect)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

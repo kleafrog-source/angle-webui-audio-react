@@ -1,0 +1,86 @@
+{
+  "id": "block_crnncfjl",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "granular_scatter",
+    "granular"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_05_MICRO_TEMPORAL_GLITCH_FRACTAL",
+        "version": "4.Omega",
+        "meta_formula": "G(ε) = Σ (Error_Pulse[i] ⊗ Grain_Cloud(W)) * Recursive_Fold(F)^n",
+        "description": "Модуль внедрения высокочастотной детализации и микро-временных ошибок. Использует рекурсивные петли обратной связи и гранулярный синтез для создания эффекта 'цифрового распада' и фрактального усложнения текстуры.",
+        "sub_structure": {
+          "GRANULAR_SCATTER": {
+            "grain_size": "5ms - 50ms (Dynamic_Jitter)",
+            "spray_radius": "Gaussian_Distribution (Spatial_Scatter)",
+            "pitch_variation": "±12_Semitones (Quantized_to_Scale)",
+            "envelope_shape": "Gaussian_Bell_Curve"
+          },
+          "RECURSIVE_FEEDBACK_MATRIX": {
+            "delay_lines": "12_Parallel_Micro_Taps (Prime_Number_Spacing)",
+            "feedback_gain": "0.98 (Auto-Limiting_at_Threshold)",
+            "bit_depth_reduction": "Dynamic_LFO_8bit_to_24bit",
+            "fold_operator": "Sine_Fold_Distortion (Threshold=-6dB)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Capture Transient Slice",
+            "trigger": "ATOM_02_PERCUSSION_PEAKS",
+            "comment": "Захват коротких фрагментов аудио для последующего гранулярного дробления."
+          },
+          {
+            "step": 2,
+            "action": "Execute Fractal Recursion",
+            "logic": "Output[n] = Input + G(Output[n-1]) * 0.618",
+            "comment": "Создание самоподобных звуковых структур, уходящих в бесконечность."
+          },
+          {
+            "step": 3,
+            "action": "Inject 'Controlled Error'",
+            "method": "Zero-Crossing_Disruption",
+            "comment": "Внесение артефактов в точках пересечения нуля для создания органического 'хруста'."
+          }
+        ],
+        "sound_design_params": {
+          "glitch_density": "Variable (Sync_to_BPM)",
+          "timbral_abrasiveness": 0.75,
+          "stereo_movement": "Chaotic_Orbital_Panning",
+          "aliasing_purity": "Low_Pass_Resonant_Sweep"
+        },
+        "integration_note": "Служит 'специей' для аранжировки. Рекомендуется использовать на шинах (Buss) с ATOM_01 и ATOM_03. При H(c) > 0.9 превращает структуру в чистый поток данных (Data_Stream_Aesthetic)."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_04",
+        "sync_status": "FRACTAL_ALIGNED",
+        "system_feedback": "Recursive loops confirmed. Aesthetic entropy rising."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

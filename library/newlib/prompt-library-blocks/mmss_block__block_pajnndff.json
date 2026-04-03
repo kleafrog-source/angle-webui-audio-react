@@ -1,0 +1,82 @@
+{
+  "id": "block_pajnndff",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "formula",
+    "producer_ai_mapping",
+    "producer",
+    "ai",
+    "mapping"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-SYNTH-001-VOID-MORPH",
+        "meta_name": "Spectral Void Morphism",
+        "version": "1.0.0",
+        "description": "Блок для создания динамических текстур, имитирующих расширение пустоты. Использует инверсию фазы и гранулярный синтез через параметры эффектов.",
+        "formula": "V(t) = ∫ (S(f) ⊗ G(inv)) dt // Спектральная плотность, умноженная на инвертированный гранулярный отклик",
+        "producer_ai_mapping": {
+          "sound_prompt": "cinematic dark ambient, shifting spectral void, granular textures, high-frequency micro-glitches, 60 bpm",
+          "effects_graph": [
+            {
+              "node": "Reverb",
+              "params": {
+                "room_size": 0.95,
+                "damping": 0.2,
+                "mix": 0.4
+              },
+              "purpose": "Создание бесконечного акустического пространства"
+            },
+            {
+              "node": "HighPass",
+              "params": {
+                "cutoff_frequency_hz": 400
+              },
+              "purpose": "Устранение низкочастотного гула для акцента на 'холоде'"
+            },
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 0.8,
+                "rate_hz": 0.2,
+                "mix": 0.5
+              },
+              "purpose": "Фазовое размытие границ звука"
+            }
+          ]
+        },
+        "entropy_settings": {
+          "order_p": 0.3,
+          "chaos_c": 0.7,
+          "logic": "Высокий хаос необходим для непредсказуемого движения 'пустоты' в стереополе"
+        },
+        "implementation_steps": [
+          "1. Инициализация базового слоя через sound_prompt с фокусом на текстуру.",
+          "2. Применение эффекта Reverb для создания 'хвоста' бесконечности.",
+          "3. Динамическая модуляция через Chorus для имитации текучести пространства."
+        ],
+        "combination_rules": "Совместим с блоками 'Rhythmic Entropy' (v3) для создания лоу-фай структур или 'Vocal Resonance' для призрачных гармоник."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

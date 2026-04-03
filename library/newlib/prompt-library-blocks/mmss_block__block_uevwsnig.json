@@ -1,0 +1,103 @@
+{
+  "id": "block_uevwsnig",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-DRIVE-018-KINETIC-FRICTION",
+        "meta_name": "Non-Linear Kinetic Friction",
+        "version": "2.6.0",
+        "description": "Блок эмуляции 'физического сопротивления'. Создает эффект трения двух поверхностей (металл по стеклу, ток по цепи) через нелинейную сатурацию и динамическую фильтрацию.",
+        "meta_formula": "F(s) = [ s(t) ⊗ Drive(tanh) ] / ∫ [ Pressure(t) * Friction_coeff ] dt // Сигнал, усиленный через гиперболический тангенс и модулированный функцией давления",
+        "logic_parameters": {
+          "surface_roughness": 0.72,
+          "pressure_curve": "Dynamic-Envelope (Sidechain-ready)",
+          "heat_buildup": "Resonance rise (f_c ∝ time)",
+          "material_density": "High (Steel/Quartz)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Distortion",
+              "params": {
+                "drive_db": 28,
+                "input_ids": [
+                  "input_track"
+                ]
+              },
+              "purpose": "Создание гармонического 'сопротивления' и тепловой энергии"
+            },
+            {
+              "node": "HighPass",
+              "params": {
+                "cutoff_frequency_hz": 2200
+              },
+              "purpose": "Акцент на 'скреже' и высокочастотных микро-вибрациях"
+            },
+            {
+              "node": "Compressor",
+              "params": {
+                "threshold_db": -30,
+                "ratio": 16,
+                "attack_ms": 2,
+                "release_ms": 25
+              },
+              "purpose": "Максимальное подчеркивание текстуры 'трения' за счет вытягивания тихих деталей"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.5,
+          "chaos_c": 0.5,
+          "state": "Frictional-Heat",
+          "logic": "Равновесие (0.5/0.5). Постоянное напряжение между структурой (нажатие) и хаосом (неровность поверхности)."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "2.5kHz - 14kHz",
+          "timbre": "Gritty / Squealing / Industrial / Hot",
+          "spatial_setting": "Narrow-Mono (Forceful)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-MORPH-010-LIQUID-METAL",
+          "interaction": "Viscous-Friction (Liquid 010 создает смазку, Friction 018 — сопротивление).",
+          "contrast_link": "ASE-CRYSTAL-012 (Brittle crystal vs Gritty friction)."
+        },
+        "self_analysis": {
+          "coherence": "High-Tension",
+          "narrative_fidelity": "Brake-Squeal / Industrial-Assembly / Nerve-Irritant",
+          "applied_operators": [
+            "Non-Linear_Clipping",
+            "Dynamic_Friction_Modulation"
+          ]
+        },
+        "integration_note": "Использовать как звуковую 'приправу' для добавления агрессии в лиды или для создания эффекта физического усилия в ритм-секции."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

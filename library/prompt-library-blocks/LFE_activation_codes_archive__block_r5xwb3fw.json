@@ -1,0 +1,60 @@
+{
+  "id": "block_r5xwb3fw",
+  "name": "LFE activation codes archive",
+  "description": "Imported from mixed JSON/text document",
+  "category": "archive",
+  "tags": [
+    "import",
+    "lfe_activation_codes_archive",
+    "lfe",
+    "activation",
+    "codes",
+    "archive",
+    "drop_trigger_set",
+    "drop",
+    "trigger",
+    "set",
+    "transition_mantras",
+    "transition",
+    "mantras",
+    "meta_instruction_lyrics",
+    "meta"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_activation_codes_archive": {
+        "drop_trigger_set": [
+          "INITIALIZE THE VOID",
+          "COLLAPSE THE WAVE",
+          "G-INVERSION: NOW",
+          "RECURSION START",
+          "ZERO. POINT. ZERO."
+        ],
+        "transition_mantras": [
+          "Falling... into the code",
+          "Breathing... the fractal air",
+          "Silent... noise",
+          "Perfect... error"
+        ],
+        "meta_instruction_lyrics": [
+          "Apply the filter / Clean the soul",
+          "Shift the phase / Take control",
+          "Boost the gain / Feel the light",
+          "End the loop / Start the night"
+        ]
+      },
+      "syllabic_velocity_mapping": {
+        "strong_syllables": "Velocity 127, Quantize 100%",
+        "weak_syllables": "Velocity 64-85, Quantize 0% (Human-feel jitter)",
+        "whisper_syllables": "Velocity 30, LP-Filter 1.2kHz"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

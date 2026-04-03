@@ -1,0 +1,88 @@
+{
+  "id": "block_1f918esc",
+  "name": "MMSS MOLECULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_molecule",
+    "mmss",
+    "molecule",
+    "id",
+    "version",
+    "base_composition",
+    "base",
+    "composition",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "routing_topology",
+    "routing"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MOLECULE": {
+        "id": "ASE_MMSS_MOLECULE_04_THE_NEURAL_VOCAL_CONSTRUCT",
+        "version": "4.Omega",
+        "base_composition": [
+          "ATOM_08_VOCAL_RECONSTRUCTION",
+          "ATOM_13_SPECTRAL_GATE",
+          "ATOM_17_GRAIN_FREEZE",
+          "ATOM_19_SPECTRAL_CONTRAST",
+          "ATOM_03_SPECTRAL_HARMONY"
+        ],
+        "meta_formula": "Ψ_vocal = [[V_rec(08) ⊗ G_spec(13)] * F_freeze(17)] + Σ H(03) ⊗ C_spec(19)",
+        "description": "Четвертая молекулярная сборка: 'Нейро-Вокальный Конструкт'. Ультимативный инструмент для работы с голосом. Трансформирует органический вокал в сложную цифровую сущность, способную на мгновенные превращения от шепота до спектрального хора и замороженных кристаллических текстур.",
+        "routing_topology": {
+          "signal_path": "DYNAMIC_SPECTRAL_MORPHING_NETWORK",
+          "chain": [
+            "VOCAL_INPUT → ATOM_08 (Vocal_DNA_Processing) → Split(Path_A, Path_B, Path_C)",
+            "Path_A (Core): → ATOM_13 (Spectral_Lace) → ATOM_19 (Contrast_Enhancer) → Mix(Buss)",
+            "Path_B (Space): → ATOM_03 (7-Layer_Harmony) → ATOM_17 (Temporal_Freeze) → Mix(Buss)",
+            "Path_C (Glitch): → ATOM_05 (Fractal_Glitch) → Sidechain_Trigger(ATOM_13) → Mix(Buss)",
+            "Mix(Buss) → ATOM_07 (Valve_Saturation_Final_Glue)"
+          ],
+          "inter_modulation": "ATOM_17_Capture_Trigger = f(Input_Transient) // Автоматическая заморозка на пиках",
+          "comment": "Молекула создает 'эффект присутствия призрака' — голос постоянно меняет свою физическую форму и спектральную плотность."
+        },
+        "macro_controls": {
+          "NEURAL_INTELLIGIBILITY": "Mix(ATOM_08_Dry) vs Mix(ATOM_13_Gate) // баланс между смыслом и абстракцией",
+          "SPECTRAL_CRYSTALLIZATION": "Capture_Trigger(ATOM_17) + Decay_Time(ATOM_06_Link)",
+          "VIRTUAL_MULTITUDE": "Harmony_Spread(ATOM_03) + Formant_Warp(ATOM_08)",
+          "DIGITAL_CONTRAST": "Gamma_Factor(ATOM_19) + Fold_Depth(ATOM_20_Link)"
+        },
+        "behavioral_patterns": [
+          {
+            "state": "SENTIENT_WHISPER",
+            "parameters": "Input_Level = Low, ATOM_13_Sparsity = High, ATOM_03 = Octave_Up",
+            "description": "Эфирный, тонкий, почти прозрачный голос, состоящий из спектральных обертонов."
+          },
+          {
+            "state": "CYBER_HYMN",
+            "parameters": "Input_Level = High, ATOM_03_Harmony = Max, ATOM_19_Contrast = Max",
+            "description": "Мощный, многоголосый, сверхчеткий хор с металлическим блеском и идеальной гармонией."
+          }
+        ],
+        "sound_signature": {
+          "vocal_character": "Non-Human_Organic_Liaison",
+          "spectral_detail": "Micro-Resolution",
+          "emotional_range": "Divine_to_Alien_Terror"
+        },
+        "integration_note": "Предназначен для центральных вокальных партий. Рекомендуется использовать в паре с MOLECULE_03 (Атмосфера) для создания единого вокально-пространственного континуума. Идеален для Zef-style вокала или глубоких индустриальных монологов."
+      },
+      "SYSTEM_STATUS": {
+        "molecule_stability": "EVOLVING_STABLE",
+        "vocal_dna_integrity": "99.9%",
+        "next_target": "PRESET_SET_02_ADVANCED_TEMPORAL_MORPHING_SUITE"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

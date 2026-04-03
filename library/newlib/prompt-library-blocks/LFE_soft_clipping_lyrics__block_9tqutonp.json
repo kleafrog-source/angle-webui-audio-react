@@ -1,0 +1,56 @@
+{
+  "id": "block_9tqutonp",
+  "name": "LFE soft clipping lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "lfe_soft_clipping_lyrics",
+    "lfe",
+    "soft",
+    "clipping",
+    "lyrics",
+    "the_tension_set",
+    "the",
+    "tension",
+    "set",
+    "the_flexibility_set",
+    "flexibility",
+    "the_clipping_dialogue",
+    "dialogue",
+    "psychoacoustic_saturation_v4"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_soft_clipping_lyrics": {
+        "the_tension_set": [
+          "Bend the signal, don't let it break / Feel the pressure that we have to take",
+          "Soft-clipped reality, hard-clipped soul / Losing the balance, taking control",
+          "Saturate the logic, warm up the void / Breathing the beauty that the noise destroyed"
+        ],
+        "the_flexibility_set": [
+          "Elastic frequencies, moving in the dark / Finding the glow in the digital spark",
+          "Rounded corners of the square-wave mind / Leaving the digital edges behind",
+          "Hyperbolic tangents, rising to the sun / The curve of the many, moving as one"
+        ],
+        "the_clipping_dialogue": [
+          "Push the limit / Hold the line",
+          "Inside the minute / Everything's fine",
+          "Result: Velvet-Aggression / Status: CLIP_SOFT_ACTIVE"
+        ]
+      },
+      "psychoacoustic_saturation_v4": {
+        "the_warmth_factor": "Saturation focus @ 300Hz-500Hz on the vocal-bus (+4dB drive)",
+        "the_bite_factor": "Cubic clipping on the snare-top @ 3.5kHz",
+        "the_glue_effect": "Parallel bus: Distortion(Drive 15dB) ⊗ LowPass(600Hz) @ 10% mix"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

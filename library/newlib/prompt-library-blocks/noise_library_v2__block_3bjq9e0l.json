@@ -1,0 +1,43 @@
+{
+  "id": "block_3bjq9e0l",
+  "name": "noise library v2",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "noise_library_v2",
+    "noise",
+    "library",
+    "v2",
+    "categories",
+    "void_noise",
+    "void",
+    "glitch_organic",
+    "glitch",
+    "organic",
+    "industrial_dirt",
+    "industrial",
+    "dirt",
+    "digital_plasma"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "noise_library_v2": {
+        "categories": {
+          "void_noise": "High-shelf filtered white noise + fractal reverb (Spatial emptiness)",
+          "glitch_organic": "Recording of ice cracking / paper tearing + granular delay (Bio-mechanic focus)",
+          "industrial_dirt": "Bitcrushed vinyl crackle + low-mids distortion at 400Hz (Gritty texture)",
+          "digital_plasma": "High-speed FM-chirps + phasing (Neon/High-tech vibe)"
+        },
+        "injection_rule": "Mix at -18dB to -24dB relative to Layer 2. Apply sidechain from Layer 1 Foundation."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

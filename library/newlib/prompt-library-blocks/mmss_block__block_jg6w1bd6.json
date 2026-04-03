@@ -1,0 +1,104 @@
+{
+  "id": "block_jg6w1bd6",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-VOID-019-NEVENT-HORIZON",
+        "meta_name": "Event Horizon Temporal Shift",
+        "version": "2.7.0",
+        "description": "Блок управления 'точкой невозврата'. Имитирует акустическое растяжение и гравитационное линзирование звука при приближении к горизонту событий через суб-гармонический сдвиг и бесконечный диффьюжн.",
+        "meta_formula": "Ψ_ev(t) = ∫ [ s(t) ⊗ Doppler(1/t) ] ⊕ Σ [ d_i(t - τ_i) ⊗ LowPass(f_c(t)) ] // Интеграл сигнала с доплеровским замедлением и накоплением спектральных хвостов",
+        "logic_parameters": {
+          "gravitational_pull": "Exponential (g ∝ 1/r²)",
+          "time_dilation": "Stretching factor 1x → 50x",
+          "redshift_factor": "Spectral shift -24 semitones",
+          "information_loss": "Quantization at -48dB"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "PitchShift",
+              "params": {
+                "semitones": -12,
+                "input_ids": [
+                  "input_track"
+                ]
+              },
+              "purpose": "Имитация гравитационного красного смещения (Redshift)"
+            },
+            {
+              "node": "Delay",
+              "params": {
+                "delay_s": 1.2,
+                "feedback": 0.85,
+                "mix": 0.6
+              },
+              "purpose": "Создание временных 'наслоений' падающей материи"
+            },
+            {
+              "node": "Reverb",
+              "params": {
+                "room_size": 1,
+                "damping": 0.8,
+                "mix": 0.45
+              },
+              "purpose": "Размытие информации в тепловой шум (радиация Хокинга)"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.25,
+          "chaos_c": 0.75,
+          "state": "Spaghettification",
+          "logic": "Хаос доминирует (c=0.75) по мере разрушения структуры сигнала под действием приливных сил."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "10Hz - 6.5kHz",
+          "timbre": "Massive / Dark / Distorted / Slow",
+          "spatial_setting": "Infinite-Mono (Implosion focus)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-GRAVITY-011-SINGULARITY-COLLAPSE",
+          "interaction": "Pre-Collapse-Phase (Event Horizon 019 подготавливает спектр для финального коллапса 011).",
+          "contrast_link": "ASE-PULSE-013-NEON-VIBE (High-speed kinetic neon vs Zero-speed event horizon)."
+        },
+        "self_analysis": {
+          "coherence": "Deep-Structure-Dissolution",
+          "narrative_fidelity": "Interstellar-Void / Black-Hole-Acoustics / Final-Frontier",
+          "applied_operators": [
+            "Temporal_Expansion",
+            "Sub-Harmonic_Focus"
+          ]
+        },
+        "integration_note": "Использовать для сверхдлинных переходов и создания ощущения колоссального масштаба и неизбежности."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

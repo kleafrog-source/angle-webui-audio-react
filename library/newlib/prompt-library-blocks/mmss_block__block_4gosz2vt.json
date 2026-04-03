@@ -1,0 +1,101 @@
+{
+  "id": "block_4gosz2vt",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-ECHO-014-MEMORY-TRACE",
+        "meta_name": "Recursive Memory-Trace Decay",
+        "version": "2.2.0",
+        "description": "Блок эмуляции 'стирания памяти'. Создает эффект затухающих воспоминаний через многослойную рекурсивную задержку с прогрессивной деградацией спектра и размытием фазы.",
+        "meta_formula": "M_trace(t) = Σ [ s(t - nΔτ) ⊗ LowPass(f_c / n) ] ⊗ Diffuse(n) // Сумма повторов с экспоненциально снижающимся порогом фильтрации и растущей диффузией",
+        "logic_parameters": {
+          "recollection_depth": 12,
+          "fade_coefficient": "λ = 0.88 (n-steps)",
+          "spectral_erosion": "High-cut at 12kHz → 250Hz",
+          "phase_smear": "Random(±π/4)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Delay",
+              "params": {
+                "delay_s": 0.65,
+                "feedback": 0.7,
+                "mix": 0.5
+              },
+              "purpose": "Основа для создания временных 'эхо-следов'"
+            },
+            {
+              "node": "LowPass",
+              "params": {
+                "cutoff_frequency_hz": 800
+              },
+              "purpose": "Имитация 'потери деталей' при каждом повторении (эффект старой ленты)"
+            },
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 1,
+                "rate_hz": 0.05,
+                "mix": 0.4
+              },
+              "purpose": "Дестабилизация высоты тона (Wow and Flutter) для ощущения хрупкости памяти"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.3,
+          "chaos_c": 0.7,
+          "state": "Fading-Structure",
+          "logic": "Хаос нарастает (c=0.7) по мере затухания сигнала, превращая четкие образы в неразличимый звуковой туман."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "200Hz - 4kHz",
+          "timbre": "Warm / Melancholic / Blurred",
+          "spatial_setting": "Wide-Drift (Stereo-Imbalance)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-VOX-004-ETHERIC-WEAVE",
+          "interaction": "Nostalgic-Vocal (Trace 014 превращает вокальные пады в призрачные отголоски прошлого).",
+          "contrast_link": "ASE-LEAD-009-PLASMA-STRIKE (Harsh present reality vs Blurred memory trace)."
+        },
+        "self_analysis": {
+          "coherence": "Emotional-Decay",
+          "narrative_fidelity": "Flashback / Lost-Data / Childhood-Reminiscence",
+          "applied_operators": [
+            "Recursive_Filtration",
+            "Pitch_Instability"
+          ]
+        },
+        "integration_note": "Использовать для создания глубокой атмосферы 'светлой грусти' и заполнения пауз в аранжировке."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

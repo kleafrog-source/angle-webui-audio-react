@@ -1,0 +1,56 @@
+{
+  "id": "block_8tbyp1d7",
+  "name": "LFE gate logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_gate_logic_lyrics",
+    "lfe",
+    "gate",
+    "logic",
+    "lyrics",
+    "the_vacuum_set",
+    "the",
+    "vacuum",
+    "set",
+    "the_tension_set",
+    "tension",
+    "the_gate_dialogue",
+    "dialogue",
+    "psychoacoustic_tension_v4"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_gate_logic_lyrics": {
+        "the_vacuum_set": [
+          "Cut the signal, cut the breath / Dreaming of life in the digital death",
+          "Zero-point-zero: the floor of the void / Everything I am is everything I destroyed",
+          "Total silence, total control / Cleaning the path of the digital soul"
+        ],
+        "the_tension_set": [
+          "Pressure rising in the static air / Waiting for the impact that is everywhere",
+          "Between the pulses, between the light / The vacuum-heart of the digital night",
+          "Hold the tension, hold the spark / In the silent void, inside the dark"
+        ],
+        "the_gate_dialogue": [
+          "Shut the door / End the noise",
+          "Wait for more / Find the voice",
+          "Result: Vacuum-Singularity / Status: GATE_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_tension_v4": {
+        "the_suction_effect": "Sudden gate-close 100ms before the drop on all reverb-tails (The 'Inhale' effect)",
+        "the_contrast_boost": "Using expansion on the 'Release' phase of the snare to emphasize the silence that follows",
+        "spectral_notching_v4": "Fading out all frequencies except 1kHz-3kHz during the final 2 bars of the build-up"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

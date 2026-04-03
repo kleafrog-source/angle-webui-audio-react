@@ -1,0 +1,45 @@
+{
+  "id": "block_0xpqi6j1",
+  "name": "rhythmic geometry",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "rhythmic_geometry",
+    "rhythmic",
+    "geometry",
+    "base_grid",
+    "base",
+    "grid",
+    "overlay_polyrhythms",
+    "overlay",
+    "polyrhythms",
+    "swing_logic",
+    "swing",
+    "logic",
+    "euclidean_sequences",
+    "euclidean"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "rhythmic_geometry": {
+        "base_grid": "4/4 (The Anchor)",
+        "overlay_polyrhythms": [
+          "5/8 (Lead Sync)",
+          "7/16 (Percussive Glitch)",
+          "3/4 (Sub-Bass Pulse)"
+        ],
+        "swing_logic": "Micro-timing shifts (±5-12ms) for 'Organic-Machine' feel",
+        "euclidean_sequences": "Generating drum patterns via Euclidean algorithm distribution",
+        "rule_of_three": "One rhythmic layer stays stable, two evolve fractally."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

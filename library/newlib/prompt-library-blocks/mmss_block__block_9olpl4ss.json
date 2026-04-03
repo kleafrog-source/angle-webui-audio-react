@@ -1,0 +1,102 @@
+{
+  "id": "block_9olpl4ss",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-GHOST-022-NEURAL-REID",
+        "meta_name": "Neural Ghost Re-Identification",
+        "version": "3.2.0",
+        "description": "Блок пост-сингулярного восстановления. Имитирует попытку ИИ воссоздать 'человеческий отпечаток' из цифрового шума после полного коллапса системы. Эффект 'археологии данных'.",
+        "meta_formula": "R(s) = [ Noise(white) ⊗ Filter(Iterative_Match) ] ⊕ Ghost(Vox) // Итеративная фильтрация белого шума до совпадения со спектральным шаблоном утерянного вокала",
+        "logic_parameters": {
+          "reconstruction_accuracy": "Low (65% Artifact-Heavy)",
+          "data_loss_mask": "Random(Binary-Gaps)",
+          "interpolation_curve": "Spline (Smooth-to-Jitter)",
+          "ghost_resonance_hz": "350, 880, 1450 (Human Vowels)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Equalizer",
+              "params": {
+                "mid_db": 18,
+                "mid_freq_hz": 880,
+                "mid_q": 5
+              },
+              "purpose": "Искусственное создание формантных резонансов в шумовом спектре"
+            },
+            {
+              "node": "Bitcrusher",
+              "params": {
+                "bit_depth": 4,
+                "mix": 0.5
+              },
+              "purpose": "Имитация 'поврежденных секторов' памяти при восстановлении"
+            },
+            {
+              "node": "Delay",
+              "params": {
+                "delay_s": 0.05,
+                "feedback": 0.8,
+                "mix": 0.3
+              },
+              "purpose": "Создание микро-резонансов для 'металлического' тембра восстанавливаемого голоса"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.3,
+          "chaos_c": 0.7,
+          "state": "Fragmented-Recovery",
+          "logic": "Хаос (c=0.7) отражает неполноту данных, в то время как порядок (p=0.3) — это воля системы к поиску смысла в шуме."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "300Hz - 7.5kHz",
+          "timbre": "Synthetic-Vocal / Grainy / Uncanny / Distant",
+          "spatial_setting": "Narrow-Mono to Wide-Stereo (Fluctuating)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-FIELD-008-GHOST-SIGNAL",
+          "interaction": "Signal-Mining (Neural-ReID 022 извлекает структуры из Ghost-Signal 008).",
+          "contrast_link": "ASE-PULSE-020 (Quasar beam clarity vs ReID 022 blurriness)."
+        },
+        "self_analysis": {
+          "coherence": "Pareidolic",
+          "narrative_fidelity": "Digital-Archeology / Uncanny-Valley / Recovered-Audio",
+          "applied_operators": [
+            "Pattern_Extraction",
+            "Harmonic_Shadowing"
+          ]
+        },
+        "integration_note": "Использовать в интро или аутро для создания глубокого нарративного контекста 'утерянной человечности'."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

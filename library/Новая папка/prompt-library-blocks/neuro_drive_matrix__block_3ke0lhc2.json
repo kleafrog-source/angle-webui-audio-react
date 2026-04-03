@@ -1,0 +1,41 @@
+{
+  "id": "block_3ke0lhc2",
+  "name": "neuro drive matrix",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "neuro_drive_matrix",
+    "neuro",
+    "drive",
+    "matrix",
+    "level_1_latent",
+    "level",
+    "1",
+    "latent",
+    "level_2_active",
+    "2",
+    "active",
+    "level_3_aggressive",
+    "3",
+    "aggressive"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "neuro_drive_matrix": {
+        "level_1_latent": "Saturation at 100Hz, subtle phase-drift (The 'Unrest')",
+        "level_2_active": "Hard-clipping Layer 2, Resonant filtering (The 'Bite')",
+        "level_3_aggressive": "Multiband-OTT x2, Bitcrushing master, 195 BPM (The 'Attack')",
+        "level_4_singularity": "Total inversion of all parameters, maximum entropy H=1.0 (The 'Collapse')",
+        "rule": "High aggression must be balanced by 'Absolute Zero' pauses (Block 33)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

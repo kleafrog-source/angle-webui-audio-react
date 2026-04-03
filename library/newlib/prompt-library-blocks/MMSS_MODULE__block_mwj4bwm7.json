@@ -1,0 +1,92 @@
+{
+  "id": "block_mwj4bwm7",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "buffer_warp_system",
+    "buffer"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_10_TEMPORAL_DILATION_REVERSE_ENGINE",
+        "version": "4.Omega",
+        "meta_formula": "D(t, s) = ∫ [Input(τ) ⊗ Reverse_Buffer(t-τ)] * e^(-k * Δt) // Экспоненциальное всасывание времени",
+        "description": "Модуль временной дилатации и реверсивного синтеза. Предназначен для создания 'вакуумных' переходов, эффектов замедления времени (Time-Stop) и сложных реверсивных хвостов, которые подготавливают слушателя к следующему такту композиции.",
+        "sub_structure": {
+          "BUFFER_WARP_SYSTEM": {
+            "sampling_window": "1/4 - 2_Bars (Sync_to_BPM)",
+            "dilation_factor": "1.0 → 0.1 (Linear/Exp_Ramp)",
+            "pitch_decoupling": "Frequency_Shifter_v2 (Keeps_Format_Stable)",
+            "reverse_mode": "Ping-Pong_Granular_Reverse"
+          },
+          "VACUUM_TRANSITION_LOGIC": {
+            "envelope_shaping": "Inverse_Exponential_Attack",
+            "high_pass_sweep": "200Hz → 18kHz (Resonant_Peak=+6dB)",
+            "spectral_narrowing": "Stereo_to_Mono_Collapse",
+            "suction_gain": "Gain_Boost(+12dB_at_Peak) → Sudden_Silence"
+          },
+          "REVERSE_GRAIN_CLOUD": {
+            "grain_direction": "Backward_Only",
+            "overlap_density": 0.75,
+            "shimmer_link": "Atom_03_Harmonics",
+            "diffusion_blur": "Soft_Clipping_Saturation"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Buffer Capture Init",
+            "target": "Last_4_Beats_of_Phrase",
+            "comment": "Захват финального сегмента фразы для трансформации в переход."
+          },
+          {
+            "step": 2,
+            "action": "Apply Temporal Dilation",
+            "logic": "Stretch_Factor=x2, Pitch=Constant",
+            "comment": "Замедление звука без изменения его тональности для создания эффекта 'остановки мгновения'."
+          },
+          {
+            "step": 3,
+            "action": "Execute Reverse-Sucking_Sweep",
+            "method": "Reverse(Buffer) + LP/HP_Filter_Morph",
+            "comment": "Звук 'всасывается' обратно в точку сингулярности перед взрывным возвратом ритма."
+          }
+        ],
+        "sound_design_params": {
+          "warping_intensity": 0.85,
+          "transition_energy": "Negative_to_Positive_Shift",
+          "rhythmic_alignment": "Zero-Phase_Reentry",
+          "texture": "Time-Stretched_Glass"
+        },
+        "integration_note": "Идеально работает как инструмент для создания 'Fill' и 'Drop-In' эффектов. Рекомендуется использовать в паре с ATOM_02 (Ритм) для подчеркивания сильных долей через предварительное затишье. Является ключевым инструментом для управления динамическим напряжением (Tension_Management)."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_02",
+        "sync_status": "TEMPORAL_LOCKED",
+        "system_feedback": "Time-dilation buffer verified. Ready for transition-event-generation."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

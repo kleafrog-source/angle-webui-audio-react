@@ -1,0 +1,44 @@
+{
+  "id": "block_p93w1dtk",
+  "name": "micro mutation logic",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "micro_mutation_logic",
+    "micro",
+    "mutation",
+    "logic",
+    "iteration",
+    "targets",
+    "filter_resonance",
+    "filter",
+    "resonance",
+    "delay_time",
+    "delay",
+    "time",
+    "harmonic_content",
+    "harmonic"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "micro_mutation_logic": {
+        "iteration": "G(s_n+1) = G(s_n) + Δ_mutation",
+        "targets": {
+          "filter_resonance": "Shift ±0.05 Q every 8 bars",
+          "delay_time": "Micro-drift (±2ms) to create phase-smearing",
+          "harmonic_content": "Add/Subtract 1 harmonic partial (Sine-additive synthesis)"
+        },
+        "trigger": "Always active in ASE-Autonomous-Mode (Block 67)",
+        "goal": "Avoid 'Loop-Fatigue' and maintain Narrative Fidelity through infinite variation."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "block_h5l990hv",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "field_sampled_base",
+    "field"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_06_ATMOSPHERIC_FIELD_RECONSTRUCTION",
+        "version": "4.Omega",
+        "meta_formula": "Φ(e) = ∫ [Field_Recording(f) ⊗ Spectral_Wash(s)] dt * Spatial_Curvature(C)",
+        "description": "Модуль воссоздания глубоких атмосферных пространств. Использует синтез полевых записей и спектральных пластов для формирования 'эмоционального вакуума' или 'ландшафтной бесконечности'.",
+        "sub_structure": {
+          "FIELD_SAMPLED_BASE": {
+            "sources": [
+              "Electromagnetic_Interference",
+              "Deep_Industrial_Hum",
+              "Fluid_Dynamics_Echo"
+            ],
+            "texture_layering": "Sum(Layer[i] * sin(t/T_i)) // медленное фазовое смещение слоев",
+            "low_frequency_anchor": "Sub-Threshold_Rumble(15Hz)"
+          },
+          "SPECTRAL_WASH_ENGINE": {
+            "synthesis": "Additive_Sine_Bank(n=128)",
+            "harmonic_blur": "Convolution(Custom_IR_Infinity_Tail)",
+            "filter_sweep": "Notch_Filter_Scan(Frequency_Range=Random_Walk_500Hz_5kHz)",
+            "motion": "Slow_Random_Pulse(0.01Hz)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Generate 'Vacuum' State",
+            "target": "Wide_Band_Noise_Shaping",
+            "comment": "Создание ощущения пустого пространства через подавление средних частот (Mid-Scoop)."
+          },
+          {
+            "step": 2,
+            "action": "Inject Field-DNA",
+            "logic": "Sidechain_A(Field_Layer) by B(Lead_Transient)",
+            "comment": "Атмосфера 'дышит' в ответ на основные события трека."
+          },
+          {
+            "step": 3,
+            "action": "Curvature_Processing",
+            "method": "3D_Audio_Ambisonic_Rendering",
+            "comment": "Размещение звуковых объектов вне стандартного стерео-поля (Z-Axis_Expansion)."
+          }
+        ],
+        "sound_design_params": {
+          "spatial_depth": "Infinite_Horizon",
+          "emotional_density": "Melancholic_Coldness",
+          "panning": "Slow_Orbital_Drift",
+          "transparency": "High_Resolution_Spectral_Detail"
+        },
+        "integration_note": "Служит фундаментом для всех остальных модулей. Рекомендуется подавать на этот модуль посылы (Send) от ATOM_03 и ATOM_05 для создания единой звуковой экосистемы."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_05",
+        "sync_status": "ATMOS_ALIGNED",
+        "system_feedback": "Space curvature verified. Soundscape expansion stable."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

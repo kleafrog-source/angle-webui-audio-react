@@ -1,0 +1,41 @@
+{
+  "id": "block_77m362bo",
+  "name": "industrial sublime v3",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "industrial_sublime_v3",
+    "industrial",
+    "sublime",
+    "v3",
+    "aesthetic_keys",
+    "aesthetic",
+    "keys",
+    "reverb",
+    "bass",
+    "textures",
+    "melodies",
+    "behavior"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "industrial_sublime_v3": {
+        "aesthetic_keys": {
+          "reverb": "Infinite, cold, metallic, non-linear (Block 60)",
+          "bass": "Monolithic, static, sub-35Hz focus (Block 41)",
+          "textures": "Rhythmic cable-hum, digital-interference, steam-hiss",
+          "melodies": "Phrygian/Locrian, ultra-slow, single-note focus (Block 74)"
+        },
+        "behavior": "ASE must prioritize 'Architectural-Scale' over 'Human-Emotion'."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

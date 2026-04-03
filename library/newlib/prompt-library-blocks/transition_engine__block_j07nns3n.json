@@ -1,0 +1,35 @@
+{
+  "id": "block_j07nns3n",
+  "name": "transition engine",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "transition_engine",
+    "transition",
+    "engine",
+    "risers",
+    "impacts",
+    "fills",
+    "bridge_rule",
+    "bridge",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "transition_engine": {
+        "risers": "Shepard-Tone ascending + White-noise sweep",
+        "impacts": "Reverse-reverb kick-tail + Sub-drop (80Hz to 20Hz)",
+        "fills": "Algorithmic-glitch (0.5 bar) via A_MMSS_FRACTAL_PACKAGE",
+        "bridge_rule": "The bridge must ALWAYS contain a G-Inversion of the main theme."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

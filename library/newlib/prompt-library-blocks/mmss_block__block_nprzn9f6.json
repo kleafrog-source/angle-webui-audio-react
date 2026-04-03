@@ -1,0 +1,103 @@
+{
+  "id": "block_nprzn9f6",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-CRYSTAL-012-LATTICE-GEN",
+        "meta_name": "Crystalline Harmonic Lattice",
+        "version": "2.0.0",
+        "description": "Блок синтеза 'кристаллической решетки'. Формирует жесткие, прозрачные и математически совершенные гармонические структуры, имитирующие рост минералов и ледяных фракталов.",
+        "meta_formula": "H_lattice(f) = Σ [ Sine(f₀ * n) ⊗ Quantize(f, step) ] / sqrt(n) // Сумма гармоник, привязанных к жесткой сетке квантования частот",
+        "logic_parameters": {
+          "lattice_purity": 0.99,
+          "harmonic_ratio": "Integers only (1, 2, 3, 5, 8, 13)",
+          "refraction_index": "Phase-Offset (φ = π/n)",
+          "growth_rate": "Geometric progression (2^n)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Equalizer",
+              "params": {
+                "treble_db": 15,
+                "mid_db": -6,
+                "bass_db": -24,
+                "auto_limit": true
+              },
+              "purpose": "Придание звуку 'бриллиантового' блеска и прозрачности"
+            },
+            {
+              "node": "Delay",
+              "params": {
+                "delay_s": 0.005,
+                "feedback": 0.9,
+                "mix": 0.4
+              },
+              "purpose": "Короткие резонансные задержки для имитации 'внутренних отражений' кристалла"
+            },
+            {
+              "node": "Bitcrusher",
+              "params": {
+                "bit_depth": 12,
+                "mix": 0.15
+              },
+              "purpose": "Добавление легкой 'зернистости' на гранях звуковых фракталов"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.9,
+          "chaos_c": 0.1,
+          "state": "Solid-State-Order",
+          "logic": "Доминирующий порядок (p=0.9) отражает идеальную симметрию кристаллической структуры."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "3kHz - 20kHz",
+          "timbre": "Glassy / Cold / Transparent",
+          "transient_profile": "Rigid / Sharp / Bell-like"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-VOX-004-ETHERIC-WEAVE",
+          "interaction": "Refractive-Layering (Etheric pads проходят сквозь Crystal Lattice, преломляясь на гармоники).",
+          "contrast_link": "ASE-SUB-003-VOID-GRAVITY (Heavy dark mass vs Light crystalline structure)."
+        },
+        "self_analysis": {
+          "coherence": "High-Resolution",
+          "narrative_fidelity": "Ice-Palace / Fractal-Geometry / Diamond-Mind",
+          "applied_operators": [
+            "Harmonic_Quantization",
+            "Spectral_Refraction"
+          ]
+        },
+        "integration_note": "Использовать для высокочастотных орнаментов, создающих ощущение 'дорогого' и 'чистого' цифрового пространства."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "block_pv8la7q1",
+  "name": "spectral vision",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "spectral_vision",
+    "spectral",
+    "vision",
+    "target_curve",
+    "target",
+    "curve",
+    "energy_distribution",
+    "energy",
+    "distribution",
+    "sub_20_60hz",
+    "sub",
+    "20",
+    "60hz",
+    "low_mids_200_500hz"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "spectral_vision": {
+        "target_curve": "Tilt-Shift (-3dB per octave for 'Warm/Dark' analog feel)",
+        "energy_distribution": {
+          "sub_20_60hz": "Maximum power (The Foundation)",
+          "low_mids_200_500hz": "Surgical cut (-4dB) to avoid 'boxiness'",
+          "high_mids_1_4khz": "Aggressive presence (The Attack)",
+          "air_10khz_plus": "Fractal shimmer (The Void)"
+        },
+        "real_time_fix": "If 2kHz exceeds threshold, apply Dynamic EQ (De-esser style)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

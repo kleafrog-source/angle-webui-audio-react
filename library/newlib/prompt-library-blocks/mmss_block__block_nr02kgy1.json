@@ -1,0 +1,93 @@
+{
+  "id": "block_nr02kgy1",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "producer_ai_mapping",
+    "producer",
+    "ai"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-SUB-003-VOID-GRAVITY",
+        "meta_name": "Subterranean Gravity Resonance",
+        "version": "1.1.0",
+        "description": "Низкочастотный фундамент системы. Блок предназначен для создания 'физического присутствия' звука через суб-басовые модуляции и аналоговое насыщение.",
+        "meta_formula": "G_low(f) = (Sin(f₀) ⊕ Dist(h)) ⊗ LFO(rate, depth) // Синусоидальная основа, суммированная с гармонической дисторсией и модулированная LFO",
+        "producer_ai_mapping": {
+          "sound_prompt": "massive sub-bass, 808 glides, analog warmth, deep frequency saturation, subsonic vibrations, 60 bpm, subterranean atmosphere",
+          "effects_graph": [
+            {
+              "node": "Distortion",
+              "params": {
+                "drive_db": 18
+              },
+              "purpose": "Добавление верхних гармоник для читаемости саб-баса на мобильных устройствах"
+            },
+            {
+              "node": "LowPass",
+              "params": {
+                "cutoff_frequency_hz": 120
+              },
+              "purpose": "Очистка спектра от нежелательного шума в СЧ-диапазоне"
+            },
+            {
+              "node": "Compressor",
+              "params": {
+                "threshold_db": -12,
+                "ratio": 4,
+                "attack_ms": 30,
+                "release_ms": 150
+              },
+              "purpose": "Склеивание динамики для стабильного давления"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.8,
+          "c_chaos": 0.2,
+          "logic": "Низкочастотный блок требует высокой стабильности (p=0.8) для удержания структуры всего микса."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "20Hz - 150Hz",
+          "timbre": "Warm / Thick / Vibrational",
+          "transient_profile": "Soft-Attack / Long-Sustain"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-RHYTHM-002",
+          "interaction": "Sidechain-like effect (Rhythm 002 transients should pierce through Sub 003 tail).",
+          "spatial_setting": "Mono-Centered (Strict)"
+        },
+        "self_analysis": {
+          "coherence": "Structural",
+          "narrative_fidelity": "Earth-Core / Heavy-Industry",
+          "applied_operators": [
+            "Frequency_Anchoring",
+            "Harmonic_Injection"
+          ]
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

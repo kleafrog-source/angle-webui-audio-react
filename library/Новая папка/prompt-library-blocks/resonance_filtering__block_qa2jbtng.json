@@ -1,0 +1,48 @@
+{
+  "id": "block_qa2jbtng",
+  "name": "resonance filtering",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "resonance_filtering",
+    "resonance",
+    "filtering",
+    "notch_points",
+    "notch",
+    "points",
+    "peak_boosts",
+    "peak",
+    "boosts",
+    "filter_morphing",
+    "filter",
+    "morphing",
+    "q_factor",
+    "q"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "resonance_filtering": {
+        "notch_points": [
+          "250Hz (Mud-cut)",
+          "400Hz (Boxy-cut)",
+          "800Hz (Nasal-cut)"
+        ],
+        "peak_boosts": [
+          "1.2kHz (The Grit)",
+          "3.5kHz (The Edge)",
+          "12kHz (The Fractal-Air)"
+        ],
+        "filter_morphing": "Sweep 24dB Resonant Band-pass from 100Hz to 10kHz (1 bar duration)",
+        "q_factor": "High (Q > 4.0) for 'whistling' harmonics during G-Inversion peaks."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

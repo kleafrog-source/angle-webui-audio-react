@@ -1,0 +1,73 @@
+{
+  "id": "block_34nl0019",
+  "name": "genre matrix",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "genre_matrix",
+    "genre",
+    "matrix",
+    "neurofunk_v4",
+    "neurofunk",
+    "v4",
+    "rhythmic_entropy",
+    "rhythmic",
+    "entropy",
+    "bass_geometry",
+    "bass",
+    "geometry",
+    "harmonic_structure",
+    "harmonic"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "genre_matrix": {
+        "neurofunk_v4": {
+          "rhythmic_entropy": "0.35 (Tight, Grid-locked syncopation)",
+          "bass_geometry": "Reese-modulated, complex filter automation, serum-style wavetable shifting",
+          "harmonic_structure": "Phrygian dominant / Locrian modes",
+          "kick_bass_purity": "High-fidelity transient shaping, sidechain compression η=0.95"
+        },
+        "dark_psy_trance": {
+          "fractal_complexity": "High (Recursive arpeggiator patterns)",
+          "tempo_range": "148-165 BPM",
+          "atmosphere": "Industrial-organic hybrid, granulized textures",
+          "kick_profile": "Short, punchy, 50-60Hz fundamental, minimal tail"
+        },
+        "techno_minimalism": {
+          "purity_coefficient": "0.9",
+          "repetition_logic": "Micro-variations within 16-bar loops",
+          "panning": "Dynamic 30L/70R harmony spread (as per core-rebuild flow)"
+        }
+      },
+      "sound_synthesis_ops": {
+        "quaternion_geometric_unity": {
+          "mode": "v3.0",
+          "operation": "Spatial sound placement via 4D-vectoring",
+          "goal": "Phase-coherent immersive soundstage"
+        },
+        "harmonic_stack": {
+          "layers": 7,
+          "arrangement": [
+            "Soprano",
+            "Alto",
+            "Tenor",
+            "Bass",
+            "Sub-octave",
+            "Double-octave",
+            "Mid-thirds"
+          ],
+          "processing": "Auto-tune + Cathedral Reverb (Wet/Dry: 0.25)"
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

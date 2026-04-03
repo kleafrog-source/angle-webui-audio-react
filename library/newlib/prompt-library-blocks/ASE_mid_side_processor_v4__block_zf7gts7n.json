@@ -1,0 +1,56 @@
+{
+  "id": "block_zf7gts7n",
+  "name": "ASE mid side processor v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_mid_side_processor_v4",
+    "ase",
+    "mid",
+    "side",
+    "processor",
+    "v4",
+    "ms_splitting_logic",
+    "ms",
+    "splitting",
+    "logic",
+    "mid_channel_focus",
+    "channel",
+    "focus",
+    "target"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_mid_side_processor_v4": {
+        "MS_splitting_logic": {
+          "mid_channel_focus": {
+            "target": "Kick / Sub-Bass / Vocal-Intelligibility",
+            "EQ_surgical": "Notch @ 250Hz (-2dB), Boost @ 52Hz (+1.5dB)",
+            "compression": "Mono-Glue (4:1, slow attack, fast release)",
+            "result": "Solid, punchy core that cuts through any soundstage"
+          },
+          "side_channel_expansion": {
+            "target": "Fractal-Dust / Reverb-Tails / Stereo-Unison",
+            "EQ_surgical": "High-pass @ 180Hz (Safe-Mono), Boost @ 8kHz (+3dB)",
+            "widening": "Phase-rotation ⊗ Delay-offset (δt=12ms)",
+            "result": "Immersive 'air' and width without mono-cancellation"
+          }
+        },
+        "dynamic_MS_balance": "Increase Side-gain by 3dB during transitions (H_entropy up), collapse Sides to zero 100ms before Drop (Focus-impact)"
+      },
+      "stereo_fidelity_metrics_v4": {
+        "correlation_target": "+0.7 to +0.9 (Safe for vinyl/club playback)",
+        "side_energy_ratio": "35% (Balanced) to 55% (Maximum immersion)",
+        "mono_compatibility_check": "Verified η=0.99 (No lost frequencies in mono-sum)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "block_hx5dqtot",
+  "name": "LFE bitcrush logic lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "lfe_bitcrush_logic_lyrics",
+    "lfe",
+    "bitcrush",
+    "logic",
+    "lyrics",
+    "the_reduction_set",
+    "the",
+    "reduction",
+    "set",
+    "the_aliasing_set",
+    "aliasing",
+    "the_crush_dialogue",
+    "crush",
+    "dialogue"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_bitcrush_logic_lyrics": {
+        "the_reduction_set": [
+          "Sixteen bits of the digital sky / Falling down, ready to die",
+          "Eight bits of the logic, eight bits of the soul / Taking the fragments, taking control",
+          "Crushing the mirror, crushing the light / In the pixelated heart of the night"
+        ],
+        "the_aliasing_set": [
+          "Mirror harmonics, screaming in the dark / Mirroring the spark of the machine's heart",
+          "Folding the signal, folding the time / Everything's perfect, everything's mine",
+          "Nyquist is broken, the logic is gone / Under the light of the bit-clock sun"
+        ],
+        "the_crush_dialogue": [
+          "Reduce the life / Find the grain",
+          "Sharp as a knife / Inside the rain",
+          "Result: Digital-Corrosion / Status: CRUSH_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_degradation_v4": {
+        "the_static_factor": "Injecting 8-bit noise into the reverb-tail for 'industrial' atmosphere",
+        "the_stutter_bit": "Bitcrusher-mix synced to 1/64 note for rhythmic 'glitching'",
+        "the_spectral_tilt": "Darkening the crush-layer (High-cut @ 5kHz) to avoid 'ear-piercing' artifacts"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

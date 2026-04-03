@@ -1,0 +1,99 @@
+{
+  "id": "block_dm8fxckf",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-NERVE-016-BIO-ELECTRO",
+        "meta_name": "Neural Nerve-Pulse Bio-Engine",
+        "version": "2.4.0",
+        "description": "Блок моделирования 'нервного импульса'. Имитирует биоэлектрическую активность мозга через случайные всплески напряжения, нелинейные затухания и микро-дрожание частоты.",
+        "meta_formula": "N(t) = Σ [ Exp(-t/τ) ⊗ Sine(f + BrownNoise(t)) ] ⊕ Jitter(Δt) // Экспоненциальный импульс, модулированный броуновским шумом и временным джиттером",
+        "logic_parameters": {
+          "synaptic_fire_rate": "3Hz - 45Hz (Stochastic)",
+          "threshold_potential": "Variable (-60mV to -40mV equivalent)",
+          "refractory_period": "2ms - 15ms",
+          "myelin_insulation": "Resonance damping factor (0.1 - 0.9)"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Chorus",
+              "params": {
+                "depth": 0.3,
+                "rate_hz": 8.5,
+                "mix": 0.4
+              },
+              "purpose": "Имитация 'тремора' нервных окончаний через высокочастотную модуляцию"
+            },
+            {
+              "node": "Distortion",
+              "params": {
+                "drive_db": 8
+              },
+              "purpose": "Легкое насыщение для подчеркивания 'биологического тепла' электрического тока"
+            },
+            {
+              "node": "LowPass",
+              "params": {
+                "cutoff_frequency_hz": 3200
+              },
+              "purpose": "Ограничение спектра для создания ощущения 'внутричерепного' звучания"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.4,
+          "chaos_c": 0.6,
+          "state": "Biological-Unpredictability",
+          "logic": "Баланс хаоса (c=0.6) отражает сложность нейронных сетей, где порядок возникает из случайных взаимодействий."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "200Hz - 5.5kHz",
+          "timbre": "Twitchy / Organic-Electric / Intimate",
+          "spatial_setting": "Binaural-like (Close-to-Ear)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-GLITCH-005-NEURAL-DECAY",
+          "interaction": "Neural-Feedback (Nerve-Pulse 016 пытается восстановить структуру после Decay 005).",
+          "contrast_link": "ASE-GRID-015-QUANTUM-LATTICE (Organic Nerve vs Rigid Quantum Grid)."
+        },
+        "self_analysis": {
+          "coherence": "Somatosensory",
+          "narrative_fidelity": "Brain-Machine-Interface / Nervous-System / Bio-Hacking",
+          "applied_operators": [
+            "Micro-Modulation",
+            "Stochastic-Triggering"
+          ]
+        },
+        "integration_note": "Использовать для создания 'живых' арпеджио или фоновых ритмических текстур, реагирующих на динамику трека."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "block_qde8honj",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "mono_anchor_core",
+    "mono"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_09_SUB_SPATIALIZER_GEOMETRY",
+        "version": "4.Omega",
+        "meta_formula": "S_sub(p, φ) = [Mono_Core(f_0) + Stereo_Exciter(2f_0)] ⊗ Phase_Rotation(Δθ) * Spatial_Depth(Z)",
+        "description": "Модуль управления пространственной геометрией низких частот. Решает фундаментальную задачу: придание саб-басу и мид-басу ощущения 'объема' и 'ширины' без разрушения фазовой моно-совместимости и потери панча.",
+        "sub_structure": {
+          "MONO_ANCHOR_CORE": {
+            "frequency_range": "20Hz - 90Hz",
+            "processing": "Hard_Mono_Sum",
+            "phase_alignment": "Zero-Latency_Lock",
+            "comment": "Абсолютно неподвижное ядро, обеспечивающее физическое давление."
+          },
+          "HARMONIC_STEREO_EXCITER": {
+            "target_band": "90Hz - 250Hz",
+            "method": "Mid-Side_Harmonic_Generation",
+            "side_gain": "+3dB_to_+6dB (Dynamic_Modulation)",
+            "saturation_type": "Asymmetric_Soft_Clip",
+            "comment": "Создание стерео-образа через вторые и третьи гармоники, которые наш мозг локализует как 'широкий бас'."
+          },
+          "PHASE_OFFSET_ENGINE": {
+            "algorithm": "Micro-Delay_Differential (Δt < 1.5ms)",
+            "band_split": "Linkwitz-Riley_4th_Order",
+            "rotation": "LFO_Modulated_Phase_Shift(0.05Hz)",
+            "width_control": "Frequency_Dependent_Spread"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Split Spectrum at 90Hz",
+            "target": "Crossover_Calibration",
+            "comment": "Ниже 90Гц — строго моно. Выше — зона формирования пространственной геометрии."
+          },
+          {
+            "step": 2,
+            "action": "Inject 'Side-Only' Harmonics",
+            "logic": "Generate(Sum(f_i)) → High-Pass(100Hz) → M/S_Encoder(Side_Channel)",
+            "comment": "Добавление информации только в Side-канал для расширения без влияния на центральный панч."
+          },
+          {
+            "step": 3,
+            "action": "Apply Haas-Induced Depth",
+            "method": "Inverse_Phase_Reflection",
+            "comment": "Создание ощущения, что бас 'обволакивает' слушателя сзади (Z-Axis_Simulation)."
+          }
+        ],
+        "sound_design_params": {
+          "mono_compatibility": "100%_Guaranteed",
+          "perceived_width": "Ultra-Wide_Sub",
+          "phase_correlation": "Target > 0.8",
+          "impact_focus": "Center-Heavy"
+        },
+        "integration_note": "Критически важный модуль для больших акустических систем. Соединяется с ATOM_04 (Кинетика). При использовании с ATOM_07 (Сатурация) создает эффект 'живого, дышащего низа'. Необходим для достижения Эстетической Сингулярности в Низкочастотном домене."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_ATOM_04",
+        "sync_status": "LOW_END_GEOMETRY_LOCKED",
+        "system_feedback": "Spatial sub-geometry verified for club-environment-stability."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

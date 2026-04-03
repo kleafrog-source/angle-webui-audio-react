@@ -1,0 +1,59 @@
+{
+  "id": "block_505sn4uu",
+  "name": "semantic gravity v4 deep",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "semantic_gravity_v4_deep",
+    "semantic",
+    "gravity",
+    "v4",
+    "deep",
+    "attraction_force_f_gs",
+    "attraction",
+    "force",
+    "f",
+    "gs",
+    "variable_m1_concept",
+    "variable",
+    "m1",
+    "concept"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "semantic_gravity_v4_deep": {
+        "attraction_force_F_gs": "F_gs = (G * m1 * m2) / (r² * √Novelty)",
+        "variable_m1_concept": "Mass of the core idea (e.g., 'Recursive Chaos')",
+        "variable_m2_soundscape": "Mass of the sonic environment (e.g., 'Dystopian Industrial')",
+        "distance_r": "Conceptual distance in the MMSS-latent-space",
+        "collision_logic": "IF F_gs > Threshold THEN apply Semantic_Fusion(Fusion_Mode_Fractal)"
+      },
+      "MMSS_latent_space_coordinates": {
+        "node_alpha_dark": [
+          -0.85,
+          0.42,
+          0.95
+        ],
+        "node_beta_psy": [
+          0.33,
+          -0.78,
+          0.61
+        ],
+        "node_gamma_industrial": [
+          0.91,
+          0.15,
+          -0.22
+        ]
+      },
+      "GS_normalization": "Ensure Σ(Mass_i) = 1.0 (Conservation of Meaning)"
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

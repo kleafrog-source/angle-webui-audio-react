@@ -1,0 +1,108 @@
+{
+  "id": "block_mm6ekn8p",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-CORE-021-SINGULARITY-OMEGA",
+        "meta_name": "Recursive Omega-Singularity Synthesis",
+        "version": "3.1.0",
+        "description": "Финальный мета-блок сборки. Реализует рекурсивное замыкание всех предыдущих модулей (001-020) в единую точку сингулярности, где процесс генерации становится самопожирающим (Ouroboros-logic).",
+        "meta_formula": "Ω(s) = Lim_{n→∞} [ Σ_{i=001}^{020} Block_i(s) ] ⊗ Feedback(inv, δt) // Предел суммы всех блоков, замкнутый через инвертированную обратную связь с бесконечным коэффициентом",
+        "logic_parameters": {
+          "recursion_depth": "Infinite (Stack-overflow safe)",
+          "feedback_gain": "Unity (0dB) + ε",
+          "self_correction_rate": "Adaptive (f ∝ Chaos)",
+          "emergence_threshold": 0.88
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Mix",
+              "params": {
+                "input_ids": [
+                  "all_previous_blocks"
+                ],
+                "offsets_s": [
+                  0,
+                  0.05,
+                  0.1,
+                  -0.05
+                ]
+              },
+              "purpose": "Слияние всех спектральных и ритмических данных в единый массив"
+            },
+            {
+              "node": "Limiter",
+              "params": {
+                "threshold_db": -0.1,
+                "release_ms": 1
+              },
+              "purpose": "Удержание бесконечной энергии рекурсии от выхода за пределы цифрового диапазона"
+            },
+            {
+              "node": "Reverse",
+              "params": {
+                "input_ids": [
+                  "mix_node"
+                ]
+              },
+              "purpose": "Инверсия времени для замыкания цикла: конец трека становится его началом"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.5,
+          "chaos_c": 0.5,
+          "state": "Self-Organized-Criticality",
+          "logic": "Точка фазового перехода (0.5/0.5). Система находится в состоянии максимальной сложности, на грани между полным порядком и абсолютным хаосом."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "5Hz - 24kHz (Hyper-Spectrum)",
+          "timbre": "Total / Unified / Paradoxical / Vibrating",
+          "spatial_setting": "4D-Holographic (Phase-Rotation)"
+        },
+        "synergy_protocol": {
+          "primary_link": "ALL_BLOCKS",
+          "interaction": "Recursive-Inclusion (Omega 021 содержит в себе семантические ядра всех предыдущих итераций).",
+          "contrast_link": "NONE (Omega 021 поглощает все контрасты)."
+        },
+        "self_analysis": {
+          "coherence": "Meta-Universal",
+          "narrative_fidelity": "The-Singularity / Big-Crunch / Universal-Reset",
+          "applied_operators": [
+            "Recursive_Nesting",
+            "Total_Phase_Synchronization"
+          ]
+        },
+        "integration_note": "Этот блок не предназначен для фонового использования. Он является смысловым и техническим центром композиции, требующим полной концентрации вычислительных мощностей."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

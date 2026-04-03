@@ -1,0 +1,92 @@
+{
+  "id": "block_8rb360g3",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "spectral_cloning_engine",
+    "spectral"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_23_SPECTRAL_UNISON_SPREADER",
+        "version": "4.Omega",
+        "meta_formula": "U(s) = Σ [Harmonic_i ⊗ Phase_Offset(θ_i)] * Spectral_Width(W) // Спектральный унисон",
+        "description": "Модуль создания сверхширокого и плотного унисона через спектральное клонирование. В отличие от стандартных хорусов, этот атом работает в частотной области, дублируя каждую отдельную гармонику сигнала и внося индивидуальные микро-смещения фазы и частоты. Это создает эффект 'стены звука' с абсолютной фазовой стабильностью в центре и бесконечной шириной по краям.",
+        "sub_structure": {
+          "SPECTRAL_CLONING_ENGINE": {
+            "voice_count": "Up to 128 Virtual_Voices_per_Harmonic",
+            "detune_algorithm": "Fractal_Distribution (Golden_Ratio_Spacing)",
+            "frequency_jitter": "Gaussian_Noise(σ=0.002Hz) // органическое 'биение' звука",
+            "bin_shifting": "Real-time_FFT_Coordinate_Transformation"
+          },
+          "PHASE_DISPLACEMENT_MATRIX": {
+            "inter-voice_phase": "Distributed_0°_to_360°",
+            "stereo_spread": "Linear_to_Exponential (Center_Fidelity_Mode)",
+            "phase_decorrelation": "Adaptive_Algorithm (Correlation_Target < 0.3)",
+            "low_frequency_preservation": "Phase-Lock_below_200Hz // сохранение моно-панча"
+          },
+          "TIMBRAL_THICKNESS_CONTROL": {
+            "density_parameter": "ρ = [0.1 ... 1.0] (Number_of_Active_Clones)",
+            "spectral_blur": "Time_Domain_Smearing(ATOM_06_Link)",
+            "harmonic_tilt": "Tilt_EQ_on_Unison_Voices (-6dB/Oct_to_+6dB/Oct)",
+            "saturation_per_voice": "Soft_Clipping_v2"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Analyze Harmonic Content",
+            "target": "Input_FFT_Analysis",
+            "comment": "Идентификация всех значимых пиков в спектре для последующего клонирования."
+          },
+          {
+            "step": 2,
+            "action": "Generate Spectral Clones",
+            "logic": "Clone[i] = Harmonic[j] * exp(i * Δθ + Δf)",
+            "comment": "Создание множества копий каждой гармоники с индивидуальными параметрами расстройки."
+          },
+          {
+            "step": 3,
+            "action": "Reconstruct and Spread",
+            "method": "M/S_Re-encoding + Stereo_Holography",
+            "comment": "Сборка унисона в широкое стерео-поле с сохранением плотного моно-совместимого центра."
+          }
+        ],
+        "sound_design_params": {
+          "unison_width": "Ultra-Wide (Hyper-Stereo)",
+          "timbral_thickness": 0.95,
+          "center_solidity": "High (Locked_Mono_Core)",
+          "texture": "Dense_Harmonic_Cloud"
+        },
+        "integration_note": "Этот атом превращает любой монофонический лид (ATOM_01) в массивный, заполняющий все пространство инструмент. Идеально работает с ATOM_21 (Квантовые фильтры) для создания 'живых' вокальных хоров. Необходим для достижения Эстетической Сингулярности в области пространственного синтеза."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_ATOM_01_03_21",
+        "sync_status": "SPECTRAL_UNISON_ACTIVE",
+        "system_feedback": "Cloning matrix operational. Harmonic density maximized. Correlation index optimized."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

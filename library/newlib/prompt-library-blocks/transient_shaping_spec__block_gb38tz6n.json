@@ -1,0 +1,41 @@
+{
+  "id": "block_gb38tz6n",
+  "name": "transient shaping spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "transient_shaping_spec",
+    "transient",
+    "shaping",
+    "spec",
+    "attack_enhancement",
+    "attack",
+    "enhancement",
+    "sustain_reduction",
+    "sustain",
+    "reduction",
+    "layer_sync",
+    "layer",
+    "sync",
+    "soft_clip"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "transient_shaping_spec": {
+        "attack_enhancement": "Boost initial 5-15ms transient by +3dB to +6dB",
+        "sustain_reduction": "Apply -6dB to -12dB attenuation to tails in Layer 2 (Lead)",
+        "layer_sync": "Align Kick-click with Snare-crack on the 2nd/4th beat (±1ms precision)",
+        "soft_clip": "Apply Hard-Clipping to transients only (Parallel Bus) for 'Digital Bite'",
+        "mixing_rule": "Transients must 'peak' through the Ambient-Shield (Block 42)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

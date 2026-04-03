@@ -1,0 +1,45 @@
+{
+  "id": "block_7i8ego8n",
+  "name": "geometric fills spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "geometric_fills_spec",
+    "geometric",
+    "fills",
+    "spec",
+    "logic",
+    "rhythm_shaper",
+    "rhythm",
+    "shaper",
+    "acceleration",
+    "deceleration",
+    "swing",
+    "timbre",
+    "spatial",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "geometric_fills_spec": {
+        "logic": "Stochastic distribution of 1/64 and 1/32 notes",
+        "rhythm_shaper": {
+          "acceleration": "Gradual decrease of Δt between hits (The 'Bouncing Ball' effect)",
+          "deceleration": "Gradual increase of Δt (The 'Collapse' effect)",
+          "swing": "Non-linear swing (65% to 45% back and forth)"
+        },
+        "timbre": "Short FM-clicks + 8-bit noise + Reverse-snare-tails",
+        "spatial": "Hard-left to Hard-right ping-pong (Speed: 1/16)",
+        "rule": "Fills must be the point of maximum Entropy H(p,c)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

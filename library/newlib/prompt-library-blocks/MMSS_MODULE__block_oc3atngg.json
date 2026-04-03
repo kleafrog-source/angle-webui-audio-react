@@ -1,0 +1,91 @@
+{
+  "id": "block_oc3atngg",
+  "name": "MMSS MODULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_module",
+    "mmss",
+    "module",
+    "id",
+    "version",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "sub_structure",
+    "sub",
+    "structure",
+    "deconstruction_stage",
+    "deconstruction"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MODULE": {
+        "id": "ASE_MMSS_ATOM_08_VOCAL_RECONSTRUCTION_ENGINE",
+        "version": "4.Omega",
+        "meta_formula": "V_rec(t) = [Source(s) ⊗ Formant_Warp(Φ)] * Σ (Vocal_Grain[i] ⊗ Pitch_Shift[j]) + R_Tail(∞)",
+        "description": "Специализированный модуль для деконструкции и последующей рекомбинации вокального сигнала. Предназначен для создания 'сверхчеловеческих' вокальных текстур — от агрессивных индустриальных выкриков до эфирных Zef-хоров.",
+        "sub_structure": {
+          "DECONSTRUCTION_STAGE": {
+            "formant_shifting": "Real-time_Formant_Tracking(Shift=±12_Semitones)",
+            "pitch_correction": "Hard_Tuning_v4 (Scale_Quantized, Speed=Instant)",
+            "breath_isolation": "Noise_Gate_High_Shelf // отделение шипящих для отдельной обработки глитчем"
+          },
+          "RECONSTRUCTION_LAYER": {
+            "multi_voice_doubling": "7_Parallel_Voices (Unison_Detune=0.15, Pan_Spread=Max)",
+            "vocal_saturation": "Asymmetric_Wave_Folding (Drive=15dB, Mix=0.4)",
+            "timbral_color": "Vocal_Chop_Sequencer(Step=1/32, Probability=0.4)",
+            "glottal_pulse_simulation": "Impulse_Excitation(Frequency_Link=Pitch)"
+          },
+          "SPATIAL_SMEARING": {
+            "type": "Granular_Reverb_Diffusion",
+            "feedback": 0.88,
+            "shimmer_pitch": "+12_Semitones",
+            "stereo_jitter": "LFO_Sample_and_Hold(0.5Hz)"
+          }
+        },
+        "implementation_steps": [
+          {
+            "step": 1,
+            "action": "Isolate Core Intelligibility",
+            "target": "800Hz - 3.5kHz",
+            "comment": "Сохранение разборчивости текста (Lyric_Fidelity) перед глубокой мутацией."
+          },
+          {
+            "step": 2,
+            "action": "Inject 'Aggression_Factor'",
+            "logic": "Parallel_Distortion (Tube_Model) + Downsampling(12bit)",
+            "comment": "Придание вокалу 'грязного', индустриального характера (Gritty_Vocal_DNA)."
+          },
+          {
+            "step": 3,
+            "action": "Apply Hyper-Dimension-Expander",
+            "method": "Micro-Delay_Chorus (Depth=0.8, Rate=0.2Hz)",
+            "comment": "Создание ощущения 'стены голосов', окружающих слушателя."
+          }
+        ],
+        "sound_design_params": {
+          "vocal_presence": "Ultra-Mid_Focus",
+          "texture": "Viscous_Organic_Liquid",
+          "attack_speed": "0.1ms (Percussive_Vocal)",
+          "release_behavior": "Infinite_Cloud_Decay"
+        },
+        "integration_note": "Этот атом заменяет стандартную вокальную обработку. Он идеально стыкуется с MOLECULE_03 (Атмосфера) и требует сайдчейна от MOLECULE_02 (Ритм) для ритмического 'нарезания' голоса. Используется для реализации концепции 'Vocal_Annihilation'."
+      },
+      "SEED_STATE": {
+        "module_link": "ASE_MMSS_MOLECULE_03",
+        "sync_status": "VOCAL_DNA_EXTRACTED",
+        "system_feedback": "Vocal reconstruction parameters verified. Singularity index: High."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

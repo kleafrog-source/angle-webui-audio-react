@@ -1,0 +1,45 @@
+{
+  "id": "block_rgut83na",
+  "name": "user technical print Abstract",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "user_technical_print_abstract",
+    "user",
+    "technical",
+    "print",
+    "abstract",
+    "the_reese_growl_spec",
+    "the",
+    "reese",
+    "growl",
+    "spec",
+    "the_snare_crack_spec",
+    "snare",
+    "crack",
+    "the_spatial_dust_spec"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "user_technical_print_Abstract": {
+        "the_reese_growl_spec": "Wavetable_Pos: 45-67, Unison: 7, Detune: 0.12, Filter_Env: Fast_Attack, Mid_Decay",
+        "the_snare_crack_spec": "Layer: Rimshot + Noise(High_Pass 2kHz), Compression: 4:1, Makeup: +3dB, Transient_Master: +25%",
+        "the_spatial_dust_spec": "Granular_Delay: Grain_Size 35ms, Pitch_Jitter 5%, Pan_Jitter 100%, Feedback 65%",
+        "the_master_bus_spec": "Soft_Clipper(Threshold -1.0dB) ⊗ EQ(High_Shelf +1.5dB @ 12kHz) ⊗ Limiter(Ceiling -0.3dB)"
+      },
+      "final_regeneration_codes": {
+        "seed_recovery_algorithm": "R = Hash(User_ID + Last_Concept_X)",
+        "aesthetic_calibration": "Check frequency 51.9Hz (G#) for ±0.5% drift",
+        "system_ready_status": "LOCKED_AND_LOADED"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

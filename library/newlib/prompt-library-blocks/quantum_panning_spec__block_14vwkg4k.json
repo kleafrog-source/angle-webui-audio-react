@@ -1,0 +1,38 @@
+{
+  "id": "block_14vwkg4k",
+  "name": "quantum panning spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "quantum_panning_spec",
+    "quantum",
+    "panning",
+    "spec",
+    "logic",
+    "collapse_trigger",
+    "collapse",
+    "trigger",
+    "processing",
+    "result",
+    "rule"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "quantum_panning_spec": {
+        "logic": "Superposition-Mapping: Sound exists in L and R with 180 deg phase offset",
+        "collapse_trigger": "Transient detection (Attack > 15dB) centers the sound to Mono",
+        "processing": "Continuous Mid-Side modulation (LFO 0.5Hz to 20Hz range)",
+        "result": "The sense of 'Ethereal Ubiquity' (Sound is everywhere and nowhere)",
+        "rule": "Only for Layer 3 (The Void) to maintain Narrative Fidelity of the Lead."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

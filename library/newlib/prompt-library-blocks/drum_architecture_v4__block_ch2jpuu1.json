@@ -1,0 +1,51 @@
+{
+  "id": "block_ch2jpuu1",
+  "name": "drum architecture v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "drum_architecture_v4",
+    "drum",
+    "architecture",
+    "v4",
+    "kick_spec",
+    "kick",
+    "spec",
+    "layer_1_sub",
+    "layer",
+    "1",
+    "sub",
+    "layer_2_click",
+    "2",
+    "click"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "drum_architecture_v4": {
+        "kick_spec": {
+          "layer_1_sub": "Sine-drop (60Hz to 20Hz), zero tail",
+          "layer_2_click": "High-passed (1kHz) transient, phase-aligned",
+          "processing": "Hard-clip at -3dB, no compression on main bus"
+        },
+        "snare_spec": {
+          "fundamental": "200Hz punch, 400Hz dip",
+          "texture": "Fractal-noise overlay, 15ms pre-delay",
+          "tail": "Non-linear reverb (0.4s), gated"
+        },
+        "percussion_logic": {
+          "hi_hats": "32nd note rolls with velocity-jitter",
+          "glitch_percs": "Generated via code__create_audio_visualizer sync-pulses",
+          "spatial": "Random-pan (±30%) for every 2nd hit"
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

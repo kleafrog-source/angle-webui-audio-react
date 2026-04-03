@@ -1,0 +1,44 @@
+{
+  "id": "block_ty1i0ipy",
+  "name": "negative space spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "negative_space_spec",
+    "negative",
+    "space",
+    "spec",
+    "definition",
+    "usage",
+    "types",
+    "absolute_zero",
+    "absolute",
+    "zero",
+    "void_silence",
+    "void",
+    "silence",
+    "rhythmic_gap"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "negative_space_spec": {
+        "definition": "Intentional removal of all audio signals for Δt",
+        "usage": "Before the 'Drop' or at the end of a Narrative Cycle",
+        "types": {
+          "absolute_zero": "Total digital silence (0dB)",
+          "void_silence": "Extremely low-volume noise-floor (-48dB) + long reverb tail",
+          "rhythmic_gap": "Missing kick on the 4th beat to create 'gravity pull'"
+        },
+        "goal": "Reset the listener's ear for the next G-Inversion iteration."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "block_wjrhyv7d",
+  "name": "micro dynamic shaping v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "micro_dynamic_shaping_v4",
+    "micro",
+    "dynamic",
+    "shaping",
+    "v4",
+    "kick_transient_geometry",
+    "kick",
+    "transient",
+    "geometry",
+    "click_layer",
+    "click",
+    "layer",
+    "body_layer",
+    "body"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "micro_dynamic_shaping_v4": {
+        "kick_transient_geometry": {
+          "click_layer": "Pitch-envelope: Start +24st, End 0st, Decay 15ms",
+          "body_layer": "Sine-drop from 120Hz to 52Hz (G#) over 80ms",
+          "sub_tail": "Phase-aligned sine, fade-out 150ms, saturation 12%",
+          "transient_master": "Attack +25%, Sustain -10%, Gain +2.5dB"
+        },
+        "snare_impact_physics": {
+          "initial_crack": "White-noise burst, Band-pass @ 2kHz, Q=1.5, Decay 10ms",
+          "resonant_body": "Fundamental @ 220Hz (A), Notch-cut @ 450Hz (remove 'boxiness')",
+          "tail_refinement": "Gated reverb (120ms), Pre-delay 2ms, Diffusion 85%"
+        },
+        "hi_hat_spectral_dust": {
+          "top_end": "High-shelf @ 12kHz (+4dB), High-pass @ 8kHz",
+          "panning_jitter": "LFO-random, Depth 15%, Rate 1/16t",
+          "velocity_scaling": "Soft-knee compression, threshold -22dB"
+        }
+      },
+      "signal_flow_purity_v4": {
+        "multiband_splitting": "Band 1: 0-120Hz (Mono), Band 2: 120-2500Hz (Wide), Band 3: 2500Hz+ (Fractal)",
+        "phase_alignment_check": "Correlation meter target: +0.8 to +0.95 (Avoid 180° cancellation)",
+        "dynamic_eq_nodes": "Node 1: -3dB @ 200Hz triggered by Kick for Snare-clarity"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

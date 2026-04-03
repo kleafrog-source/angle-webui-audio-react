@@ -1,0 +1,56 @@
+{
+  "id": "block_z7xoui1s",
+  "name": "LFE mid side lyrics",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "lfe_mid_side_lyrics",
+    "lfe",
+    "mid",
+    "side",
+    "lyrics",
+    "the_center_set",
+    "the",
+    "center",
+    "set",
+    "the_side_set",
+    "the_ms_dialogue",
+    "ms",
+    "dialogue",
+    "psychoacoustic_ms_v4"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "LFE_mid_side_lyrics": {
+        "the_center_set": [
+          "One point of truth, standing in the middle / Solving the logic, solving the riddle",
+          "Mono-soul, locked to the G-sharp core / Everything I am and everything more",
+          "Stay in the center, stay in the light / The anchor of the sound in the digital night"
+        ],
+        "the_side_set": [
+          "Expanding to the edges, expanding to the void / Finding the beauty that the center destroyed",
+          "Side-channel whispers, side-channel dreams / Flowing forever in the digital streams",
+          "Wider than the sky, wider than the fear / Floating in a space where nothing is near"
+        ],
+        "the_MS_dialogue": [
+          "Hold the core / Feel the wide",
+          "Open the door / Step inside",
+          "Result: Spatial-Precision / Status: MS_LOCK_ACTIVE"
+        ]
+      },
+      "psychoacoustic_MS_v4": {
+        "the_depth_illusion": "Applying High-cut (4kHz) on the Mid-channel only for background pads (Pushing them back)",
+        "the_proximity_effect": "Boosting 2-5kHz on the Mid-channel of the vocal (Bringing it forward)",
+        "the_stereo_breath": "LFO-modulating the Side-gain (Rate: 1 bar) for a 'pumping' space effect"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

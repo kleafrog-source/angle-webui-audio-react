@@ -1,0 +1,103 @@
+{
+  "id": "block_zzvyfjtd",
+  "name": "mmss block",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_block",
+    "mmss",
+    "block",
+    "id",
+    "meta_name",
+    "meta",
+    "name",
+    "version",
+    "description",
+    "meta_formula",
+    "formula",
+    "logic_parameters",
+    "logic",
+    "parameters"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "mmss_block": {
+        "id": "ASE-GLITCH-005-NEURAL-DECAY",
+        "meta_name": "Neural Decay & Bit-Restoration",
+        "version": "1.3.0",
+        "description": "Блок имитации 'распада нейронной сети'. Сочетает экстремальную деградацию сигнала с последующим восстановлением через резонансные фильтры.",
+        "meta_formula": "D(s) = Lim( Bit(s, 2bit) ⊗ Res(f, q) ) ⊕ Dry(s) // Сигнал, пониженный до 2 бит, пропущенный через резонанс и смешанный с исходным",
+        "logic_parameters": {
+          "bit_crush_depth": 2,
+          "resonance_q": 0.9,
+          "decay_rate": "Exponential (t/τ)",
+          "restoration_gain": "+12dB at 2.5kHz"
+        },
+        "producer_ai_mapping": {
+          "effects_graph": [
+            {
+              "node": "Bitcrusher",
+              "params": {
+                "bit_depth": 2,
+                "mix": 0.8
+              },
+              "purpose": "Полное разрушение гармонической структуры до состояния шума"
+            },
+            {
+              "node": "AdvancedEqualizer",
+              "params": {
+                "mid_freq_hz": 2500,
+                "mid_gain_db": 18,
+                "mid_q": 4.5,
+                "high_mid_freq_hz": 6000,
+                "high_mid_gain_db": 12
+              },
+              "purpose": "Выделение 'артефактов' распада как новых мелодических элементов"
+            },
+            {
+              "node": "Compressor",
+              "params": {
+                "threshold_db": -24,
+                "ratio": 20,
+                "attack_ms": 0.1
+              },
+              "purpose": "Максимальное сплющивание динамики для эффекта 'стены цифрового шума'"
+            }
+          ]
+        },
+        "entropy_logic": {
+          "p_order": 0.1,
+          "chaos_c": 0.9,
+          "state": "Entropic-Collapse",
+          "logic": "Минимальный порядок (p=0.1) для достижения эффекта полной непредсказуемости цифрового мусора."
+        },
+        "sonic_characteristics": {
+          "frequency_range": "800Hz - 16kHz",
+          "timbre": "Harsh / Digital / Fragmented",
+          "transient_profile": "Immediate / Clip-style"
+        },
+        "synergy_protocol": {
+          "primary_link": "ASE-SUB-003",
+          "interaction": "Upper-Frequency-Friction (шум 005 'трется' о стабильный низ 003).",
+          "application": "Insert-Effect on master or parallel-bus."
+        },
+        "self_analysis": {
+          "coherence": "Anti-Aesthetic",
+          "narrative_fidelity": "System_Error / Data_Corruption",
+          "applied_operators": [
+            "Destructive_Sampling",
+            "Artifact_Amplification"
+          ]
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

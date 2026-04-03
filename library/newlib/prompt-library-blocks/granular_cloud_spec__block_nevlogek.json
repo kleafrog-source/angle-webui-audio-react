@@ -1,0 +1,41 @@
+{
+  "id": "block_nevlogek",
+  "name": "granular cloud spec",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "granular_cloud_spec",
+    "granular",
+    "cloud",
+    "spec",
+    "grain_size",
+    "grain",
+    "size",
+    "density",
+    "pitch_jitter",
+    "pitch",
+    "jitter",
+    "position_drift",
+    "position",
+    "drift"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "granular_cloud_spec": {
+        "grain_size": "Ultra-small (10ms-30ms) for 'shimmer' or Large (200ms) for 'rhythm'",
+        "density": "Stochastic distribution (Random intervals)",
+        "pitch_jitter": "±1 octave variance (The 'Spectral-Smear')",
+        "position_drift": "Moving through the source file via Golden Ratio (Block 1)",
+        "mixing": "Mix at -24dB with 100% wet reverb return (Block 35)."
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

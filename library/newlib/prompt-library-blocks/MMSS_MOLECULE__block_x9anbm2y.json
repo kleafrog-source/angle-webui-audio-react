@@ -1,0 +1,86 @@
+{
+  "id": "block_x9anbm2y",
+  "name": "MMSS MOLECULE",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "mmss_molecule",
+    "mmss",
+    "molecule",
+    "id",
+    "version",
+    "base_composition",
+    "base",
+    "composition",
+    "meta_formula",
+    "meta",
+    "formula",
+    "description",
+    "routing_topology",
+    "routing"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "MMSS_MOLECULE": {
+        "id": "ASE_MMSS_MOLECULE_01_SYNTHETIC_BIOME_LEAD",
+        "version": "4.Omega",
+        "base_composition": [
+          "ATOM_01_NEURO_GEOMETRY",
+          "ATOM_03_SPECTRAL_HARMONY",
+          "ATOM_05_GLITCH_FRACTAL",
+          "ATOM_07_VALVE_SYNTHESIS"
+        ],
+        "meta_formula": "M(L) = [G(ATOM_01) ⊗ H(ATOM_03)] + Σ [ε(ATOM_05) * S(ATOM_07)]",
+        "description": "Первая молекулярная сборка: 'Синтетический Биом'. Сложный, эволюционирующий лид-инструмент, сочетающий нейронную чистоту синтеза с органическими ошибками и глубокой гармонической архитектурой.",
+        "routing_topology": {
+          "signal_path": "SERIAL_PARALLEL_HYBRID",
+          "chain": [
+            "INPUT → ATOM_01 (Core_Texture)",
+            "ATOM_01 → Split(A, B)",
+            "Path_A: → ATOM_03 (Harmony_Stack) → ATOM_07 (Saturation)",
+            "Path_B: → ATOM_05 (Glitch_Modulation) → Sidechain_Trigger(ATOM_01)",
+            "MIX_A+B → ATOM_07 (Global_Glue)"
+          ],
+          "feedback_loop": "ATOM_05_Output → ATOM_01_Filter_Cutoff (Amount=0.15)"
+        },
+        "macro_controls": {
+          "BIOME_EVOLUTION": "Modulates Grain_Size (ATOM_05) + Formant_Shift (ATOM_03)",
+          "NEURAL_TENSION": "Increases Resonance (ATOM_01) + Saturation_Drive (ATOM_07)",
+          "ENTROPY_FLUX": "H(c) mapping to Random_Pitch_Jitter (ATOM_05)",
+          "SPECTRAL_WIDTH": "Expands Stereo_Center (ATOM_03) using Z-Axis_Expansion"
+        },
+        "behavioral_patterns": [
+          {
+            "state": "IDLE / AMBIENT",
+            "parameters": "H(c) < 0.2, ATOM_03_Mix = 0.8",
+            "description": "Звук напоминает медленно дышащее органическое пространство."
+          },
+          {
+            "state": "ACTIVE / AGGRESSIVE",
+            "parameters": "H(c) > 0.6, ATOM_07_Drive = +18dB",
+            "description": "Текстура становится металлической, с резкими фрактальными выбросами."
+          }
+        ],
+        "sound_signature": {
+          "timbre": "Bio-Metallic_Resonance",
+          "dynamic_range": "High_Expansive",
+          "harmonic_complexity": "N-Dimensional"
+        },
+        "integration_note": "Предназначен для центральных партий в Dark-Psy, Neuro-Techno или экспериментальной электронике. Молекула 01 — это живой организм, который реагирует на входящий MIDI-Velocity изменением всей своей внутренней геометрии."
+      },
+      "SYSTEM_STATUS": {
+        "molecule_stability": "OPTIMAL",
+        "ase_engine_load": "Adaptive",
+        "next_target": "MOLECULE_02_RHYTHMIC_CONSTRUCTION_KIT"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

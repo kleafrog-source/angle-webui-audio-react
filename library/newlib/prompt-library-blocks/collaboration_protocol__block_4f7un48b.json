@@ -1,0 +1,41 @@
+{
+  "id": "block_4f7un48b",
+  "name": "collaboration protocol",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "collaboration_protocol",
+    "collaboration",
+    "protocol",
+    "step_1_concept_dump",
+    "step",
+    "1",
+    "concept",
+    "dump",
+    "step_2_ase_refining",
+    "2",
+    "ase",
+    "refining",
+    "step_3_confirmation_summary",
+    "3"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "collaboration_protocol": {
+        "step_1_concept_dump": "User provides raw ideas/slang/feelings",
+        "step_2_ase_refining": "I translate to MMSS-specifications",
+        "step_3_confirmation_summary": "I present the 'Plan of Singularity'",
+        "step_4_execution": "Creation of the first iteration G(s_0)",
+        "step_5_eval_loop": "User says 'not quite' or 'fire', triggering G-Inversion"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

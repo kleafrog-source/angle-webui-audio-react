@@ -1,0 +1,65 @@
+{
+  "id": "block_8tf8ho2t",
+  "name": "ASE multiband expansion v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_multiband_expansion_v4",
+    "ase",
+    "multiband",
+    "expansion",
+    "v4",
+    "expansion_matrix_logic",
+    "matrix",
+    "logic",
+    "band_1_low_kick_punch",
+    "band",
+    "1",
+    "low",
+    "kick",
+    "punch"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_multiband_expansion_v4": {
+        "expansion_matrix_logic": {
+          "band_1_low_kick_punch": {
+            "range": "50Hz - 100Hz",
+            "ratio": "1.0 : 1.5 (Upward)",
+            "threshold": "-12dB",
+            "attack": "2ms (Preserve the click)",
+            "result": "Enhancing the physical 'thump' of the kick"
+          },
+          "band_2_mid_snare_crack": {
+            "range": "1kHz - 3kHz",
+            "ratio": "1.0 : 1.8",
+            "threshold": "-18dB",
+            "attack": "0.5ms (Instant snap)",
+            "result": "Adding surgical 'crack' to the snare impact"
+          },
+          "band_3_high_fractal_air": {
+            "range": "8kHz+",
+            "ratio": "1.0 : 1.2",
+            "threshold": "-24dB",
+            "attack": "10ms (Smooth lift)",
+            "result": "Dynamic 'sparkle' that reacts to the energy of the track"
+          }
+        },
+        "dynamic_transient_recovery": "Using expansion to 'undo' over-compression from previous distortion stages."
+      },
+      "kinetic_metrics_v4": {
+        "dynamic_range_index": "Target 14-16dB (The 'Breating' Master)",
+        "transient_acceleration": "ΔV / Δt = max (Absolute speed of impact)",
+        "impact_consistency": "η = 0.94 (Rock-solid energy transfer)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

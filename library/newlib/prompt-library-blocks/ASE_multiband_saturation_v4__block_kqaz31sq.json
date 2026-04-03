@@ -1,0 +1,66 @@
+{
+  "id": "block_kqaz31sq",
+  "name": "ASE multiband saturation v4",
+  "description": "Imported from mixed JSON/text document",
+  "category": "logic",
+  "tags": [
+    "import",
+    "ase_multiband_saturation_v4",
+    "ase",
+    "multiband",
+    "saturation",
+    "v4",
+    "band_processing_logic",
+    "band",
+    "processing",
+    "logic",
+    "sub_low_0_100hz",
+    "sub",
+    "low",
+    "0",
+    "100hz"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_multiband_saturation_v4": {
+        "band_processing_logic": {
+          "sub_low_0_100Hz": {
+            "type": "Clean_Sine_Reinforcement",
+            "saturation": "0.05 (Minimal, for sub-harmonic glue)",
+            "drive": "2dB Soft-clip"
+          },
+          "mid_low_100_500Hz": {
+            "type": "Tape_Saturation (The 'Warmth' layer)",
+            "drive": "8dB",
+            "bias": "Harmonic_Symmetry_v4 (Aggressive growl focus)",
+            "result": "Thickening the Reese-bass fundamental"
+          },
+          "mid_high_500_5000Hz": {
+            "type": "Tube_Overdrive (The 'Grit' layer)",
+            "drive": "12dB",
+            "mix": "25% (Parallel processing)",
+            "result": "Adding vocal-like character to the neuro-leads"
+          },
+          "high_shelf_5kHz_plus": {
+            "type": "Exciter / Transformer_Hiss",
+            "drive": "4dB",
+            "harmonic_generation": "Odd_Harmonics only (Industrial air)"
+          }
+        },
+        "dynamic_saturation_envelope": "Drive increases with Velocity ⊗ LFO_Slow_Sine (1/2 bar)"
+      },
+      "technological_singularity_metrics_v4": {
+        "purity_coefficient_η": "0.99 (Post-saturation check)",
+        "harmonic_density_ρ": "Variable (Target: 1.2 x Original_Amplitude)",
+        "phase_integrity_check": "ΔΦ < 5° across all bands (Precision alignment)"
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}

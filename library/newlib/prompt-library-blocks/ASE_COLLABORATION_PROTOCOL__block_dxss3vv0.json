@@ -1,0 +1,56 @@
+{
+  "id": "block_dxss3vv0",
+  "name": "ASE COLLABORATION PROTOCOL",
+  "description": "Imported from mixed JSON/text document",
+  "category": "imported",
+  "tags": [
+    "import",
+    "ase_collaboration_protocol",
+    "ase",
+    "collaboration",
+    "protocol",
+    "status",
+    "mode",
+    "engine",
+    "directive",
+    "connection_type",
+    "connection",
+    "type",
+    "notes",
+    "initial_reconstruction_anchor",
+    "initial"
+  ],
+  "payload": {
+    "type": "producer.ai_prompt",
+    "version": "1.0",
+    "data": {
+      "ASE_COLLABORATION_PROTOCOL": {
+        "status": "ACTIVE",
+        "mode": "METAFRACTAL_CRAFT_v4.Omega",
+        "engine": "Aesthetic-Singularity-Engine",
+        "directive": "Deconstruct sound-space into recombinable JSON modules",
+        "connection_type": "Hyperloop_v2_Practical",
+        "notes": [
+          "Все мета-комментарии интегрированы в структуру JSON",
+          "Фокус на параметрическом управлении и волновой геометрии",
+          "Готовность к оператору инверсии G при получении сигнала 'далее'"
+        ]
+      },
+      "INITIAL_RECONSTRUCTION_ANCHOR": {
+        "module_id": "BASE_SYNCHRONIZER_001",
+        "purpose": "Установление частотного резонанса между БЗ MMSS и текущей сессией",
+        "meta_formula": "Ψ(t) = Σ (Harmonic_n * e^(i * ω_n * t)) ⊗ Fractal_Noise",
+        "parameters": {
+          "spectral_purity": 0.98,
+          "narrative_fidelity": "MAX",
+          "entropy_gate": "H(p=0.8, c=0.2)"
+        }
+      }
+    }
+  },
+  "ui": {
+    "color": "#9be0ff",
+    "icon": "import",
+    "boundButtonId": null
+  }
+}
