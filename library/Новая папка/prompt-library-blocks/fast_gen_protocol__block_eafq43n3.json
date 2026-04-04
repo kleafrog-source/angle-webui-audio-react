@@ -36,6 +36,6 @@
   "ui": {
     "color": "#9be0ff",
     "icon": "import",
-    "boundButtonId": null
+    "boundButtonId": "slot_2"
   }
 }
